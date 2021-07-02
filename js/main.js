@@ -5,6 +5,7 @@ const h1 = document.createElement("h1");
 const form = document.createElement("form")
 const input = document.createElement("input");
 const button = document.createElement("button");
+const reset = document.createElement("button");
 const search = document.createElement("i");
 const jobs = document.createElement("div");
 const linebreak = document.createElement("br");
@@ -12,6 +13,7 @@ const results = document.createElement("div");
 const jumbotron = document.createElement("div");
 const jumboH1 = document.createElement("h1");
 const headline = document.createElement("p");
+
 // const bg =  document.body.style.backgroundImage = "url('../img/bg.jpg')"; 
 
 container.className = "container";
@@ -23,7 +25,7 @@ jumboH1.textContent = "DevJobs"
 jumboH1.className = "display-1 fw-bold"
 
 headline.className = "fs-2"
-headline.textContent = "A job aggregator for tech people."
+headline.textContent = "A job board aggregator for tech people."
 
 search.className = "fas fa-search"
 
@@ -39,8 +41,13 @@ input.className = "form-control"
 
 button.className = "btn btn-primary btn-lg";
 button.id = "search-button";
-button.type = "button"
-button.textContent = "Search"
+button.type = "submit"
+button.textContent = "Search";
+
+reset.className = "btn btn-secondary btn-lg";
+reset.id = "reset-button";
+reset.type = "reset";
+reset.textContent = "Reset";
 
 h1.className = "h1";
 h1.textContent = "DevJobs";
@@ -57,6 +64,7 @@ jumbotron.appendChild(headline)
 container.appendChild(form);
 form.appendChild(input);
 form.appendChild(button);
+form.appendChild(reset);
 // button.appendChild(search)
 container.appendChild(results);
 results.after(linebreak);
@@ -189,7 +197,8 @@ function renderJobs(jobsArray) {
 
 
 const searchBtn = document.getElementById("search-button");
-const formControl = document.getElementById("search-input");
+const resetBtn = document.getElementById("reset-button");
+
 
 // Handles infinite scroll
 window.addEventListener("scroll", () => {
@@ -213,13 +222,6 @@ window.addEventListener("scroll", () => {
 window.addEventListener("load", () => window.scrollTo(0, 0));
 
 // Handles search
-formControl.addEventListener("keypress", event => {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        searchBtn.click();
-    }
-});
-
 searchBtn.addEventListener("click", event => {
     event.preventDefault();
     postings.innerHTML = "";
@@ -242,5 +244,34 @@ searchBtn.addEventListener("click", event => {
     filteredData = filtered;
     results.textContent = `Results: ${filtered.length}`;
 
+    renderLimit(filtered, jobsPerPage, currentPage);
+});
+
+// Clears input
+resetBtn.addEventListener("click", event => {
+    event.preventDefault();
+    postings.innerHTML = "";
+    currentPage = 1;
+
+    // Sets input value to empty string
+    const word = document.getElementById("search-input")[0].value = "";
+    
+    const filtered = [];
+    let i = 0;
+
+    while (i < data.length) {
+        let title = data[i].title.toLowerCase();
+
+        if (title.includes(word)) {
+            filtered.push(data[i]);
+        }
+
+        i++;
+    }
+
+    
+    filteredData = filtered;
+    results.textContent = `Results: ${filtered.length}`;
+    
     renderLimit(filtered, jobsPerPage, currentPage);
 });
