@@ -41,8 +41,6 @@ container.appendChild(jobs);
 const endpoint = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
 const request = new XMLHttpRequest();
 const jobsPerPage = 20;
-const searchBtn = document.getElementById("search-button");
-const formControl = document.getElementById("search-input")
 const postings = document.getElementById("jobs");
 const pagination = document.getElementById("pages");
 
@@ -132,7 +130,7 @@ function renderJobs(jobsArray) {
         const t = d.getDay();
         const year = d.getFullYear();
 
-        date.textContent = `${days[t]} ${months[month]} ${day}, ${year}`;
+        date.textContent = `Posted: ${days[t]} ${months[month]} ${day}, ${year}`;
         title.textContent = `${jobInfo.title}`;
         company.textContent = `${jobInfo.company}`;
         location.textContent = `${jobInfo.location}`;
@@ -158,6 +156,10 @@ function renderJobs(jobsArray) {
         // job.after(linebreak);
     })
 }
+
+
+const searchBtn = document.getElementById("search-button");
+const formControl = document.getElementById("search-input");
 
 // Handles infinite scroll
 window.addEventListener("scroll", () => {
