@@ -123,12 +123,15 @@ function renderJobs(jobsArray) {
         sourceURL.rel = "noopener noreferrer";
         
         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
         const d = new Date(jobInfo.timestamp * 1000);
         const month = d.getMonth();
         const day = d.getDate();
         const t = d.getDay();
         const year = d.getFullYear();
+        const hour = d.getHours();
+        const min = d.getMinutes();
+        const time = d.toString("hh:mm tt")
 
         date.textContent = `Posted: ${days[t]} ${months[month]} ${day}, ${year}`;
         title.textContent = `${jobInfo.title}`;
