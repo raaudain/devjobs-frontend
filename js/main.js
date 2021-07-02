@@ -1,14 +1,31 @@
 const body = document.querySelector("body");
 const container = document.createElement("div");
+const fluid = document.createElement("div");
 const h1 = document.createElement("h1");
 const form = document.createElement("form")
 const input = document.createElement("input");
 const button = document.createElement("button");
+const search = document.createElement("i");
 const jobs = document.createElement("div");
 const linebreak = document.createElement("br");
 const results = document.createElement("div");
+const jumbotron = document.createElement("div");
+const jumboH1 = document.createElement("h1");
+const headline = document.createElement("p");
+// const bg =  document.body.style.backgroundImage = "url('../img/bg.jpg')"; 
 
 container.className = "container";
+
+fluid.className = "jumbotron container";
+jumbotron.className = "jumbotron";
+
+jumboH1.textContent = "DevJobs"
+jumboH1.className = "display-1 fw-bold"
+
+headline.className = "fs-2"
+headline.textContent = "A job aggregator for tech people."
+
+search.className = "fas fa-search"
 
 jobs.id = "jobs";
 jobs.className = "d-flex justify-content-between flex-wrap";
@@ -20,7 +37,7 @@ input.placeholder = "Enter job title";
 input.type = "text";
 input.className = "form-control"
 
-button.className = "btn btn-outline-dark btn-lg";
+button.className = "btn btn-primary btn-lg";
 button.id = "search-button";
 button.type = "button"
 button.textContent = "Search"
@@ -28,11 +45,19 @@ button.textContent = "Search"
 h1.className = "h1";
 h1.textContent = "DevJobs";
 
+body.appendChild(fluid);
 body.appendChild(container);
-container.appendChild(h1);
+
+fluid.appendChild(jumbotron)
+// fluid.appendChild(bg)
+jumbotron.appendChild(jumboH1)
+jumbotron.appendChild(headline)
+
+// container.appendChild(h1);
+container.appendChild(form);
 form.appendChild(input);
 form.appendChild(button);
-container.appendChild(form);
+// button.appendChild(search)
 container.appendChild(results);
 results.after(linebreak);
 container.appendChild(jobs);
@@ -87,18 +112,20 @@ function renderJobs(jobsArray) {
         const sourceURL = document.createElement("a");
         const button = document.createElement("button");
 
-        jobCard.className = "card border border-3 mb-5";
-        jobCard.style = "width: 25rem;"
+        jobCard.className = "card border border-1 mb-5 shadow";
+        jobCard.style = "width: 25rem";
+        
+        job.className = "card-body d-flex flex-column justify-content-between";
+        job.style = "height: 100%";
+        job.style = "height: 15rem";
 
-        job.className = "card-body";
-        // job.style.backgroundColor = "#ffffed";
 
         date.className = "card-header";
 
         title.id = "title";
         title.className = "card-title";
 
-        button.className = "btn btn-dark btn-md"
+        button.className = "btn btn-primary btn-md";
         button.style = "width: 100%;"
 
         company.id = "company";
@@ -145,10 +172,10 @@ function renderJobs(jobsArray) {
         jobCard.appendChild(job)
         job.appendChild(title);
         
-        if (company.textContent != "None" || company.textContent != null) {
+        if (company != null) {
             job.appendChild(company);
         }
-        if (location.textContent != "None" || location.textContent != null) {
+        if (location != null) {
             job.appendChild(location);
         }
 
