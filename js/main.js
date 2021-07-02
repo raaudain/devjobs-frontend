@@ -117,7 +117,7 @@ function renderJobs(jobsArray) {
         
         job.className = "card-body d-flex flex-column justify-content-between";
         job.style = "height: 100%";
-        job.style = "height: 15rem";
+        // job.style = "height: 15rem";
 
 
         date.className = "card-header";
