@@ -1,0 +1,6 @@
+@import url("./header.css");
+
+body {
+    background-repeat: repeat;
+    background-image: url("../img/bg2.png")
+}

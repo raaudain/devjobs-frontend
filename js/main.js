@@ -14,15 +14,13 @@ const jumbotron = document.createElement("div");
 const jumboH1 = document.createElement("h1");
 const headline = document.createElement("p");
 
-// const bg =  document.body.style.backgroundImage = "url('../img/bg.jpg')"; 
-
 container.className = "container";
 
 fluid.className = "jumbotron container";
 jumbotron.className = "jumbotron";
 
 jumboH1.textContent = "DevJobs"
-jumboH1.className = "display-1 fw-bold"
+jumboH1.className = "display-1 fw-bold";
 
 headline.className = "fs-2"
 headline.textContent = "A job board aggregator for tech people."
@@ -73,7 +71,7 @@ container.appendChild(jobs);
 
 const endpoint = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
 const request = new XMLHttpRequest();
-const jobsPerPage = 20;
+const jobsPerPage = 30;
 const postings = document.getElementById("jobs");
 const pagination = document.getElementById("pages");
 
