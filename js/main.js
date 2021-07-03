@@ -173,9 +173,9 @@ function renderJobs(jobsArray) {
         const time = d.toString("hh:mm tt")
 
         date.textContent = `Posted: ${days[t]} ${months[month]} ${day}, ${year}`;
-        title.textContent = `${jobInfo.title}`;
-        company.textContent = `${jobInfo.company}`;
-        location.textContent = `${jobInfo.location}`;
+        title.textContent = jobInfo.title;
+        company.textContent = jobInfo.company;
+        location.textContent = jobInfo.location;
         source.textContent = `Source: ${jobInfo.source}`;
         button.textContent = "Apply"
         
@@ -184,10 +184,10 @@ function renderJobs(jobsArray) {
         jobCard.appendChild(job)
         job.appendChild(title);
         
-        if (company != null) {
+        if (company !== null) {
             job.appendChild(company);
         }
-        if (location != null) {
+        if (location !== null) {
             job.appendChild(location);
         }
 
