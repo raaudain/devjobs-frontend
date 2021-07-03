@@ -4,6 +4,7 @@ const fluid = document.createElement("div");
 const h1 = document.createElement("h1");
 const form = document.createElement("form")
 const input = document.createElement("input");
+const locationInput = document.createElement("input");
 const button = document.createElement("button");
 const reset = document.createElement("button");
 const search = document.createElement("i");
@@ -37,6 +38,10 @@ input.placeholder = "Enter job title";
 input.type = "text";
 input.className = "form-control"
 
+locationInput.placeholder = "Enter location";
+locationInput.type = "text";
+locationInput.className = "form-control"
+
 button.className = "btn btn-primary btn-lg";
 button.id = "search-button";
 button.type = "submit"
@@ -61,6 +66,7 @@ jumbotron.appendChild(headline)
 // container.appendChild(h1);
 container.appendChild(form);
 form.appendChild(input);
+form.appendChild(locationInput);
 form.appendChild(button);
 form.appendChild(reset);
 // button.appendChild(search)
@@ -226,13 +232,17 @@ searchBtn.addEventListener("click", event => {
     currentPage = 1;
 
     const word = document.getElementById("search-input")[0].value.toLowerCase();
+    const place = document.getElementById("search-input")[1].value.toLowerCase();
+
     const filtered = [];
     let i = 0;
 
     while (i < data.length) {
         let title = data[i].title.toLowerCase();
+        // If location exists, use the location. Else location is an empty string.
+        let location = data[i].location ? data[i].location.toLowerCase() : "";
 
-        if (title.includes(word)) {
+        if (title.includes(word) && location.includes(place)) {
             filtered.push(data[i]);
         }
 
@@ -253,14 +263,16 @@ resetBtn.addEventListener("click", event => {
 
     // Sets input value to empty string
     const word = document.getElementById("search-input")[0].value = "";
+    const place = document.getElementById("search-input")[1].value = "";
     
     const filtered = [];
     let i = 0;
 
     while (i < data.length) {
         let title = data[i].title.toLowerCase();
-
-        if (title.includes(word)) {
+        let location = data[i].location ? data[i].location.toLowerCase() : "";
+        
+        if (title.includes(word) && location.includes(place)) {
             filtered.push(data[i]);
         }
 
