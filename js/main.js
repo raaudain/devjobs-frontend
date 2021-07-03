@@ -255,33 +255,5 @@ searchBtn.addEventListener("click", event => {
     renderLimit(filtered, jobsPerPage, currentPage);
 });
 
-// Clears input
-resetBtn.addEventListener("click", event => {
-    event.preventDefault();
-    postings.innerHTML = "";
-    currentPage = 1;
-
-    // Sets input value to empty string
-    const word = document.getElementById("search-input")[0].value = "";
-    const place = document.getElementById("search-input")[1].value = "";
-    
-    const filtered = [];
-    let i = 0;
-
-    while (i < data.length) {
-        let title = data[i].title.toLowerCase();
-        let location = data[i].location ? data[i].location.toLowerCase() : "";
-        
-        if (title.includes(word) && location.includes(place)) {
-            filtered.push(data[i]);
-        }
-
-        i++;
-    }
-
-    
-    filteredData = filtered;
-    results.textContent = `Results: ${filtered.length}`;
-    
-    renderLimit(filtered, jobsPerPage, currentPage);
-});
+// Reloads page
+resetBtn.addEventListener("click", () => location.reload());
