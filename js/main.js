@@ -99,7 +99,7 @@ function renderLimit(jobsArray, jobsPerPage, currPage) {
 
 // Renders job postings
 function renderJobs(jobsArray) {
-    jobsArray.map(jobInfo => {
+    jobsArray.map((jobInfo, i) => {
         const jobCard = document.createElement("div");
         const job = document.createElement("div");
         const date = document.createElement("p")
@@ -112,6 +112,7 @@ function renderJobs(jobsArray) {
         const button = document.createElement("button");
 
         jobCard.className = "card border border-1 mb-5 shadow";
+        jobCard.id = `card_${i+1}`;
         jobCard.style = "width: 25rem";
         
         job.className = "card-body d-flex flex-column justify-content-between";
@@ -119,16 +120,13 @@ function renderJobs(jobsArray) {
 
         date.className = "card-header";
 
-        title.id = "title";
         title.className = "card-title";
 
         button.className = "btn btn-primary btn-md";
         button.style = "width: 100%;"
 
-        company.id = "company";
         company.className = "card-subtitle mb-2 text-muted";
 
-        location.id = "location";
         location.className = "card-subtitle mb-2 text-muted";
 
         url.className = "url";
