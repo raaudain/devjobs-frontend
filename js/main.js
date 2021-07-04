@@ -1,3 +1,6 @@
+// import { body } from "./basic";
+// import { renderLimit } from "./render";
+
 const body = document.querySelector("body");
 const container = document.createElement("div");
 const fluid = document.createElement("div");
@@ -55,15 +58,17 @@ reset.textContent = "Reset";
 h1.className = "h1";
 h1.textContent = "DevJobs";
 
-body.appendChild(fluid);
+// body.appendChild(fluid);
 body.appendChild(container);
 
-fluid.appendChild(jumbotron)
+// fluid.appendChild(jumbotron)
 // fluid.appendChild(bg)
-jumbotron.appendChild(jumboH1)
-jumbotron.appendChild(headline)
+// jumbotron.appendChild(jumboH1)
+// jumbotron.appendChild(headline)
 
 // container.appendChild(h1);
+container.appendChild(jumboH1)
+container.appendChild(headline)
 container.appendChild(form);
 form.appendChild(input);
 form.appendChild(locationInput);
@@ -123,6 +128,7 @@ function renderJobs(jobsArray) {
         const source = document.createElement("p");
         const sourceURL = document.createElement("a");
         const button = document.createElement("button");
+        const added = document.createElement("i");
 
         jobCard.className = "card border border-1 mb-5 shadow";
         jobCard.style = "width: 25rem";
@@ -161,16 +167,18 @@ function renderJobs(jobsArray) {
         sourceURL.target = "_blank";
         sourceURL.rel = "noopener noreferrer";
         
+        
         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-        const d = new Date(jobInfo.timestamp * 1000);
-        const month = d.getMonth();
-        const day = d.getDate();
-        const t = d.getDay();
-        const year = d.getFullYear();
-        const hour = d.getHours();
-        const min = d.getMinutes();
-        const time = d.toString("hh:mm tt")
+        const dt = new Date(jobInfo.timestamp * 1000);
+        const month = dt.getMonth();
+        const day = dt.getDate();
+        const t = dt.getDay();
+        const year = dt.getFullYear();
+        const hour = dt.getHours() === 0 ? "12" : dt.getHours();
+        const min = `${dt.getMinutes()}`.length < 2 ? "0"+`${dt.getMinutes()}` : dt.getMinutes();
+        const sec = `${dt.getSeconds()}`.length < 2 ? +"0"+`${dt.getSeconds()}` : dt.getSeconds();
+        const time = hour > 12 ? `${hour-12}:${min}:${sec} PM` : `${hour}:${min}:${sec} AM`;
 
         date.textContent = `Posted: ${days[t]} ${months[month]} ${day}, ${year}`;
         title.textContent = jobInfo.title;
@@ -183,14 +191,8 @@ function renderJobs(jobsArray) {
         jobCard.appendChild(date);
         jobCard.appendChild(job)
         job.appendChild(title);
-        
-        if (company !== null) {
-            job.appendChild(company);
-        }
-        if (location !== null) {
-            job.appendChild(location);
-        }
-
+        if (company) job.appendChild(company);
+        if (location) job.appendChild(location);
         job.appendChild(sourceURL);
         url.appendChild(button);
         sourceURL.appendChild(source);
@@ -257,3 +259,6 @@ searchBtn.addEventListener("click", event => {
 
 // Reloads page
 resetBtn.addEventListener("click", () => location.reload());
+
+// const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+// console.log(tz);
