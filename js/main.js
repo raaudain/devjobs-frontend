@@ -1,9 +1,6 @@
-// import { body } from "./basic";
-// import { renderLimit } from "./render";
 
 const body = document.querySelector("body");
 const container = document.createElement("div");
-const fluid = document.createElement("div");
 const h1 = document.createElement("h1");
 const form = document.createElement("form")
 const input = document.createElement("input");
@@ -14,17 +11,14 @@ const search = document.createElement("i");
 const jobs = document.createElement("div");
 const linebreak = document.createElement("br");
 const results = document.createElement("div");
-const jumbotron = document.createElement("div");
-const jumboH1 = document.createElement("h1");
 const headline = document.createElement("p");
+
 
 container.className = "container";
 
-fluid.className = "jumbotron container";
-jumbotron.className = "jumbotron";
+h1.textContent = "DevJobs"
+h1.className = "display-1 fw-bold";
 
-jumboH1.textContent = "DevJobs"
-jumboH1.className = "display-1 fw-bold";
 
 headline.className = "fs-2"
 headline.textContent = "A job board aggregator for tech people."
@@ -32,7 +26,8 @@ headline.textContent = "A job board aggregator for tech people."
 search.className = "fas fa-search"
 
 jobs.id = "jobs";
-jobs.className = "d-flex justify-content-between flex-wrap";
+// jobs.className = "d-flex justify-content-between flex-wrap";
+
 
 form.id = "search-input";
 form.className = "input-group mb-3";
@@ -55,26 +50,15 @@ reset.id = "reset-button";
 reset.type = "reset";
 reset.textContent = "Reset";
 
-h1.className = "h1";
-h1.textContent = "DevJobs";
 
-// body.appendChild(fluid);
 body.appendChild(container);
-
-// fluid.appendChild(jumbotron)
-// fluid.appendChild(bg)
-// jumbotron.appendChild(jumboH1)
-// jumbotron.appendChild(headline)
-
-// container.appendChild(h1);
-container.appendChild(jumboH1)
+container.appendChild(h1)
 container.appendChild(headline)
 container.appendChild(form);
 form.appendChild(input);
 form.appendChild(locationInput);
 form.appendChild(button);
 form.appendChild(reset);
-// button.appendChild(search)
 container.appendChild(results);
 results.after(linebreak);
 container.appendChild(jobs);
@@ -116,27 +100,22 @@ function renderLimit(jobsArray, jobsPerPage, currPage) {
 // Renders job postings
 function renderJobs(jobsArray) {
     jobsArray.map(jobInfo => {
-
         const jobCard = document.createElement("div");
         const job = document.createElement("div");
         const date = document.createElement("p")
         const title = document.createElement("h5");
         const company = document.createElement("h6");
         const location = document.createElement("h6");
-        const linebreak = document.createElement("br");
         const url = document.createElement("a");
         const source = document.createElement("p");
         const sourceURL = document.createElement("a");
         const button = document.createElement("button");
-        const added = document.createElement("i");
 
         jobCard.className = "card border border-1 mb-5 shadow";
         jobCard.style = "width: 25rem";
         
         job.className = "card-body d-flex flex-column justify-content-between";
         job.style = "height: 100%";
-        // job.style = "height: 15rem";
-
 
         date.className = "card-header";
 
@@ -177,7 +156,7 @@ function renderJobs(jobsArray) {
         const year = dt.getFullYear();
         const hour = dt.getHours() === 0 ? "12" : dt.getHours();
         const min = `${dt.getMinutes()}`.length < 2 ? "0"+`${dt.getMinutes()}` : dt.getMinutes();
-        const sec = `${dt.getSeconds()}`.length < 2 ? +"0"+`${dt.getSeconds()}` : dt.getSeconds();
+        const sec = `${dt.getSeconds()}`.length < 2 ? "0"+`${dt.getSeconds()}` : dt.getSeconds();
         const time = hour > 12 ? `${hour-12}:${min}:${sec} PM` : `${hour}:${min}:${sec} AM`;
 
         date.textContent = `Posted: ${days[t]} ${months[month]} ${day}, ${year}`;

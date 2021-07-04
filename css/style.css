@@ -2,3 +2,20 @@ body {
     background-repeat: repeat;
     background-image: url("../img/dot.webp");
 }
+
+#jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+    #jobs {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #search-button {
+        display: none;
+    }
+}
