@@ -79,7 +79,7 @@ request.onload = () => {
     const response = JSON.parse(request.responseText);
     
     data = response;
-    results.textContent = `Results: ${response.length}`;
+    results.textContent = `Total jobs: ${response.length}`;
     
     renderLimit(response, jobsPerPage, currentPage);
 }
@@ -194,7 +194,7 @@ window.addEventListener("scroll", () => {
         }
     }
     else {
-        if (scrollTop + clientHeight > scrollHeight - 10) {
+        if (scrollTop + clientHeight > scrollHeight - 100) {
             currentPage++;
             setTimeout(renderLimit(filteredData, jobsPerPage, currentPage), 2000);
         }
@@ -216,6 +216,7 @@ searchBtn.addEventListener("click", event => {
     const filtered = [];
     let i = 0;
 
+
     while (i < data.length) {
         let title = data[i].title.toLowerCase();
         // If location exists, use the location. Else location is an empty string.
@@ -227,9 +228,16 @@ searchBtn.addEventListener("click", event => {
 
         i++;
     }
-
+    
+    
     filteredData = filtered;
-    results.textContent = `Results: ${filtered.length}`;
+    
+    if (filteredData.length === data.length) {
+        results.textContent = `Total jobs: ${filtered.length}`;
+    }
+    else {
+        results.textContent = `Results: ${filtered.length}`;
+    }
 
     renderLimit(filtered, jobsPerPage, currentPage);
 });
