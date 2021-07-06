@@ -2,3 +2,8 @@
 /.DS_Store
 
 /node_modules
+
+/js/uncompressed.js
+/js/stuff.js
+.gitignore
+/.gitignore
