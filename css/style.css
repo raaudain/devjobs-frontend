@@ -9,6 +9,10 @@ body {
     justify-content: space-between;
 }
 
+#loading img{
+    width: 225px;
+}
+
 @media (max-width: 991px) {
     #jobs {
         display: flex;
