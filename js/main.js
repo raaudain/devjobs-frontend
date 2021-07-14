@@ -50,6 +50,7 @@ reset.type = "reset";
 reset.textContent = "Reset";
 
 loading.id = "loading";
+
 loader.alt = "Loading...";
 loader.src = "../img/loader.gif";
 
@@ -68,7 +69,7 @@ results.after(linebreak);
 container.appendChild(jobs);
 
 
-const endpoint = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
+const endpoint = "https://devjobsapp-backend.herokuapp.com/data/data.json";
 const request = new XMLHttpRequest();
 const jobsPerPage = 30;
 const postings = document.getElementById("jobs");
@@ -84,7 +85,7 @@ request.onload = () => {
     const response = JSON.parse(request.responseText);
 
     // Displays image when loading
-    results.innerText ?  loading.style.display = "inline" : loading.style.display = "none";
+    results.innerText ? loading.style.display = "block" : loading.style.display = "none";
 
     data = response;
     results.textContent = `Total jobs: ${response.length}`;
