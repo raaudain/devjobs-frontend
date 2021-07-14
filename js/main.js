@@ -69,7 +69,7 @@ results.after(linebreak);
 container.appendChild(jobs);
 
 
-const endpoint = "https://devjobsapp-backend.herokuapp.com/data/data.json";
+const endpoint = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
 const request = new XMLHttpRequest();
 const jobsPerPage = 30;
 const postings = document.getElementById("jobs");
