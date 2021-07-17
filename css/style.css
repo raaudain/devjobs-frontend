@@ -3,6 +3,10 @@ body {
     background-image: url("../img/dot.webp");
 }
 
+h1 {
+    color: #212529;;
+}
+
 #jobs {
     display: flex;
     flex-wrap: wrap;

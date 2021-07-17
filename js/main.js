@@ -14,11 +14,15 @@ const results = document.createElement("div");
 const headline = document.createElement("p");
 const loading = document.createElement("div");
 const loader = document.createElement("img");
+const home = document.createElement("a");
 
 container.className = "container";
 
 h1.textContent = "DevJobs";
 h1.className = "display-1 fw-bold";
+
+home.className = "text-decoration-none";
+home.href = "/";
 
 headline.className = "fs-2";
 headline.textContent = "A job board aggregator for tech people.";
@@ -55,7 +59,8 @@ loader.alt = "Loading...";
 loader.src = "../img/loader.gif";
 
 body.appendChild(container);
-container.appendChild(h1);
+container.appendChild(home);
+home.appendChild(h1);
 container.appendChild(headline);
 container.appendChild(form);
 form.appendChild(input);
