@@ -54,7 +54,6 @@ reset.type = "reset";
 reset.textContent = "Reset";
 
 loading.id = "loading";
-
 loader.alt = "Loading...";
 loader.src = "../img/loader.gif";
 
@@ -200,13 +199,13 @@ window.addEventListener("scroll", () => {
     const {scrollHeight, scrollTop, clientHeight} = document.documentElement;
 
     if (!filteredData.length) {
-        if (scrollTop + clientHeight > scrollHeight - 100) {
+        if (scrollTop + clientHeight > scrollHeight - 200) {
             currentPage++;
             setTimeout(renderLimit(data, jobsPerPage, currentPage), 2000);
         }
     }
     else {
-        if (scrollTop + clientHeight > scrollHeight - 100) {
+        if (scrollTop + clientHeight > scrollHeight - 200) {
             currentPage++;
             setTimeout(renderLimit(filteredData, jobsPerPage, currentPage), 2000);
         }
