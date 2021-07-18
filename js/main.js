@@ -251,14 +251,27 @@ searchBtn.addEventListener("click", event => {
         results.textContent = `Total jobs: ${filtered.length}`;
     }
     else {
-        if (word.length && place.length) {
-            results.textContent = `Results for "${word}, ${place}": ${filtered.length}`;
-        }
-        else if (word.length && !place.length){
-            results.textContent = `Results for "${word}": ${filtered.length}`;
+        if (filtered.length) {
+            if (word.length && place.length) {
+                results.textContent = `Results for "${word}, ${place}": ${filtered.length}`;
+            }
+            else if (word.length && !place.length){
+                results.textContent = `Results for "${word}": ${filtered.length}`;
+            }
+            else {
+                results.textContent = `Results for "${place}": ${filtered.length}`;
+            }
         }
         else {
-            results.textContent = `Results for "${place}": ${filtered.length}`;
+            if (word.length && place.length) {
+                results.textContent = `No results for "${word}, ${place}"`;
+            }
+            else if (word.length && !place.length){
+                results.textContent = `No results for "${word}"`;
+            }
+            else {
+                results.textContent = `No results for "${place}"`;
+            }
         }
     }
 
