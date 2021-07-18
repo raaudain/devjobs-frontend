@@ -35,7 +35,7 @@ jobs.id = "jobs";
 form.id = "search-input";
 form.className = "input-group mb-3";
 
-input.placeholder = "Enter job title";
+input.placeholder = "Enter job title or company";
 input.type = "text";
 input.className = "form-control";
 
@@ -234,10 +234,11 @@ searchBtn.addEventListener("click", event => {
 
     while (i < data.length) {
         let title = data[i].title.toLowerCase();
+        let company = data[i].company.toLowerCase();
         // If location exists, use the location. Else location is an empty string.
         let location = data[i].location ? data[i].location.toLowerCase() : "";
 
-        if (title.includes(word.toLowerCase()) && location.includes(place.toLowerCase())) {
+        if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
             filtered.push(data[i]);
         }
 
