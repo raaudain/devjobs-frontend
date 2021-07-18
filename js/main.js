@@ -239,41 +239,23 @@ searchBtn.addEventListener("click", event => {
             // If location exists, use the location. Else location is an empty string.
             let location = data[i].location ? data[i].location.toLowerCase() : "";
 
-            if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
-                filtered.push(data[i]);
-            }
-
+            if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) filtered.push(data[i]);
+            
             i++;
         }
         
+        // filteredData is used for infinite scroll event listener
         filteredData = filtered;
 
-        if (filteredData.length === data.length) {
-            results.textContent = `Total jobs: ${filtered.length}`;
+        if (filtered.length) {
+            if (word.length && place.length) results.textContent = `Results for "${word}, ${place}": ${filtered.length}`;
+            else if (word.length && !place.length) results.textContent = `Results for "${word}": ${filtered.length}`;
+            else results.textContent = `Results for "${place}": ${filtered.length}`;
         }
         else {
-            if (filtered.length) {
-                if (word.length && place.length) {
-                    results.textContent = `Results for "${word}, ${place}": ${filtered.length}`;
-                }
-                else if (word.length && !place.length){
-                    results.textContent = `Results for "${word}": ${filtered.length}`;
-                }
-                else {
-                    results.textContent = `Results for "${place}": ${filtered.length}`;
-                }
-            }
-            else {
-                if (word.length && place.length) {
-                    results.textContent = `No results for "${word}, ${place}"`;
-                }
-                else if (word.length && !place.length){
-                    results.textContent = `No results for "${word}"`;
-                }
-                else {
-                    results.textContent = `No results for "${place}"`;
-                }
-            }
+            if (word.length && place.length) results.textContent = `No results for "${word}, ${place}"`;
+            else if (word.length && !place.length) results.textContent = `No results for "${word}"`;
+            else results.textContent = `No results for "${place}"`;
         }
 
         // Clears inputs
