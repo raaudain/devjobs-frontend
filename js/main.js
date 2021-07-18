@@ -222,65 +222,66 @@ const resetBtn = document.getElementById("reset-button");
 // Handles search
 searchBtn.addEventListener("click", event => {
     event.preventDefault();
-    postings.innerHTML = "";
-    currentPage = 1;
 
     const word = document.getElementById("search-input")[0].value;
     const place = document.getElementById("search-input")[1].value;
 
-    const filtered = [];
-    let i = 0;
+    if (word.length || place.length) {
+        postings.innerHTML = "";
+        currentPage = 1;
 
+        const filtered = [];
+        let i = 0;
 
-    while (i < data.length) {
-        let title = data[i].title.toLowerCase();
-        let company = data[i].company.toLowerCase();
-        // If location exists, use the location. Else location is an empty string.
-        let location = data[i].location ? data[i].location.toLowerCase() : "";
+        while (i < data.length) {
+            let title = data[i].title.toLowerCase();
+            let company = data[i].company.toLowerCase();
+            // If location exists, use the location. Else location is an empty string.
+            let location = data[i].location ? data[i].location.toLowerCase() : "";
 
-        if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
-            filtered.push(data[i]);
+            if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
+                filtered.push(data[i]);
+            }
+
+            i++;
         }
+        
+        filteredData = filtered;
 
-        i++;
-    }
-    
-    
-    filteredData = filtered;
-
-    if (filteredData.length === data.length) {
-        results.textContent = `Total jobs: ${filtered.length}`;
-    }
-    else {
-        if (filtered.length) {
-            if (word.length && place.length) {
-                results.textContent = `Results for "${word}, ${place}": ${filtered.length}`;
-            }
-            else if (word.length && !place.length){
-                results.textContent = `Results for "${word}": ${filtered.length}`;
-            }
-            else {
-                results.textContent = `Results for "${place}": ${filtered.length}`;
-            }
+        if (filteredData.length === data.length) {
+            results.textContent = `Total jobs: ${filtered.length}`;
         }
         else {
-            if (word.length && place.length) {
-                results.textContent = `No results for "${word}, ${place}"`;
-            }
-            else if (word.length && !place.length){
-                results.textContent = `No results for "${word}"`;
+            if (filtered.length) {
+                if (word.length && place.length) {
+                    results.textContent = `Results for "${word}, ${place}": ${filtered.length}`;
+                }
+                else if (word.length && !place.length){
+                    results.textContent = `Results for "${word}": ${filtered.length}`;
+                }
+                else {
+                    results.textContent = `Results for "${place}": ${filtered.length}`;
+                }
             }
             else {
-                results.textContent = `No results for "${place}"`;
+                if (word.length && place.length) {
+                    results.textContent = `No results for "${word}, ${place}"`;
+                }
+                else if (word.length && !place.length){
+                    results.textContent = `No results for "${word}"`;
+                }
+                else {
+                    results.textContent = `No results for "${place}"`;
+                }
             }
         }
+
+        // Clears inputs
+        document.getElementById("search-input")[0].value = "";
+        document.getElementById("search-input")[1].value = "";
+
+        renderLimit(filtered, jobsPerPage, currentPage);
     }
-
-    // Clears inputs
-    document.getElementById("search-input")[0].value = "";
-    document.getElementById("search-input")[1].value = "";
-
-    renderLimit(filtered, jobsPerPage, currentPage);
 });
 
 // Reloads page
