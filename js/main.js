@@ -66,7 +66,7 @@ container.appendChild(form);
 form.appendChild(input);
 form.appendChild(locationInput);
 form.appendChild(button);
-form.appendChild(reset);
+// form.appendChild(reset);
 container.appendChild(loading);
 loading.appendChild(loader);
 container.appendChild(results);
@@ -225,8 +225,8 @@ searchBtn.addEventListener("click", event => {
     postings.innerHTML = "";
     currentPage = 1;
 
-    const word = document.getElementById("search-input")[0].value.toLowerCase();
-    const place = document.getElementById("search-input")[1].value.toLowerCase();
+    const word = document.getElementById("search-input")[0].value;
+    const place = document.getElementById("search-input")[1].value;
 
     const filtered = [];
     let i = 0;
@@ -237,7 +237,7 @@ searchBtn.addEventListener("click", event => {
         // If location exists, use the location. Else location is an empty string.
         let location = data[i].location ? data[i].location.toLowerCase() : "";
 
-        if (title.includes(word) && location.includes(place)) {
+        if (title.includes(word.toLowerCase()) && location.includes(place.toLowerCase())) {
             filtered.push(data[i]);
         }
 
@@ -251,14 +251,26 @@ searchBtn.addEventListener("click", event => {
         results.textContent = `Total jobs: ${filtered.length}`;
     }
     else {
-        results.textContent = `Results: ${filtered.length}`;
+        if (word.length && place.length) {
+            results.textContent = `Results for "${word}, ${place}": ${filtered.length}`;
+        }
+        else if (word.length && !place.length){
+            results.textContent = `Results for "${word}": ${filtered.length}`;
+        }
+        else {
+            results.textContent = `Results for "${place}": ${filtered.length}`;
+        }
     }
+
+    // Clears inputs
+    document.getElementById("search-input")[0].value = "";
+    document.getElementById("search-input")[1].value = "";
 
     renderLimit(filtered, jobsPerPage, currentPage);
 });
 
 // Reloads page
-resetBtn.addEventListener("click", () => location.reload());
+// resetBtn.addEventListener("click", () => location.reload());
 
 
 // const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
