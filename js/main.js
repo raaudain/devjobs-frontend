@@ -21,7 +21,7 @@ container.className = "container";
 h1.textContent = "DevJobs";
 h1.className = "display-1 fw-bold";
 
-home.className = "text-decoration-none";
+home.className = "header";
 home.href = "/";
 
 headline.className = "fs-2";
@@ -144,9 +144,9 @@ function renderJobs(jobsArray) {
 
         url.className = "url";
 
-        source.className = "fw-light text-muted"
+        source.className = "fw-light text-muted";
 
-        sourceURL.className = "url text-decoration-none";
+        sourceURL.className = "sourceURL";
         // linebreak.id = i;
 
         url.href = jobInfo.url;
