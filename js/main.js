@@ -247,19 +247,19 @@ searchBtn.addEventListener("click", event => {
         filteredData = filtered;
 
         if (filtered.length) {
-            if (word.length && place.length) results.textContent = `Results for "${word}, ${place}": ${filtered.length}`;
-            else if (word.length && !place.length) results.textContent = `Results for "${word}": ${filtered.length}`;
-            else results.textContent = `Results for "${place}": ${filtered.length}`;
+            if (word.length && place.length) results.innerHTML = `Results for <i>${word}, ${place}</i>: ${filtered.length}`;
+            else if (word.length && !place.length) results.innerHTML = `Results for <i>${word}</i>: ${filtered.length}`;
+            else results.innerHTML = `Results for <i>${place}</i>: ${filtered.length}`;
         }
         else {
-            if (word.length && place.length) results.textContent = `No results for "${word}, ${place}"`;
-            else if (word.length && !place.length) results.textContent = `No results for "${word}"`;
-            else results.textContent = `No results for "${place}"`;
+            if (word.length && place.length) results.innerHTML = `No results for <i>${word}, ${place}</i>`;
+            else if (word.length && !place.length) results.innerHTML = `No results for <i>${word}</i>`;
+            else results.innerHTML = `No results for <i>${place}</i>`;
         }
 
         // Clears inputs
-        document.getElementById("search-input")[0].value = "";
-        document.getElementById("search-input")[1].value = "";
+        // document.getElementById("search-input")[0].value = "";
+        // document.getElementById("search-input")[1].value = "";
 
         renderLimit(filtered, jobsPerPage, currentPage);
     }
