@@ -13,7 +13,7 @@ const linebreak = document.createElement("br");
 const results = document.createElement("div");
 const headline = document.createElement("p");
 const loading = document.createElement("div");
-const loader = document.createElement("img");
+const loader = document.createElement("span");
 const home = document.createElement("a");
 
 container.className = "container";
@@ -54,8 +54,8 @@ reset.type = "reset";
 reset.textContent = "Reset";
 
 loading.id = "loading";
-loader.alt = "Loading...";
-loader.src = "../img/loader.gif";
+loader.textContent = "Loading...";
+// loader.src = "../img/loader.gif";
 
 body.appendChild(container);
 container.appendChild(home);
@@ -73,7 +73,8 @@ results.after(linebreak);
 container.appendChild(jobs);
 
 // const endpoint = "https://devjobsapp-backend.herokuapp.com/data/data.json";
-const endpoint = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
+// const endpoint = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
+const endpoint = "../json/data.json";
 const request = new XMLHttpRequest();
 const jobsPerPage = 30;
 const postings = document.getElementById("jobs");
