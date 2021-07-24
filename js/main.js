@@ -84,7 +84,6 @@ let data = [];
 let filteredData = [];
 let currentPage = 1;
 
-
 request.open("GET", endpoint);
 request.onload = () => {
     const response = JSON.parse(request.responseText);

@@ -12,6 +12,10 @@ h1 {
     color: #212529;
 }
 
+#loading {
+    font-size: 1.2rem;
+}
+
 .sourceURL {
     text-decoration: none;
     width: auto;
