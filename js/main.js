@@ -96,8 +96,8 @@ request.onload = () => {
     
     renderLimit(response, jobsPerPage, currentPage);
 }
-request.onerror = () => console.warn("Request error...");
-request.send();
+// request.onerror = () => console.warn("Request error...");
+request.send(null);
 
 // Sets a limit on the number of job postings rendered
 function renderLimit(jobsArray, jobsPerPage, currPage) {
