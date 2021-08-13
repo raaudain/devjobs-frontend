@@ -199,13 +199,13 @@ window.addEventListener("scroll", () => {
     const {scrollHeight, scrollTop, clientHeight} = document.documentElement;
 
     if (!filteredData.length) {
-        if (scrollTop + clientHeight > scrollHeight - 200) {
+        if (scrollTop + clientHeight > scrollHeight - 300) {
             currentPage++;
             setTimeout(renderLimit(data, jobsPerPage, currentPage), 2000);
         }
     }
     else {
-        if (scrollTop + clientHeight > scrollHeight - 200) {
+        if (scrollTop + clientHeight > scrollHeight - 300) {
             currentPage++;
             setTimeout(renderLimit(filteredData, jobsPerPage, currentPage), 2000);
         }
