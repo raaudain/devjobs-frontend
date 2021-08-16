@@ -234,7 +234,8 @@ searchBtn.addEventListener("click", event => {
 
         while (i < data.length) {
             let title = data[i].title.toLowerCase();
-            let company = data[i].company.toLowerCase();
+            // If compay exists, use company. Else use empty string.
+            let company = data[i].company ? data[i].company.toLowerCase() : "";
             // If location exists, use the location. Else location is an empty string.
             let location = data[i].location ? data[i].location.toLowerCase() : "";
 
