@@ -4,6 +4,6 @@
 /node_modules
 
 /js/uncompressed.js
-/js/stuff.js
+/js/stuff
 .gitignore
 /.gitignore
