@@ -27,6 +27,15 @@ h1 {
     justify-content: space-between;
 }
 
+.card {
+    transition: .5s;
+}
+  
+.card:hover {
+    z-index: 9999;
+    transform: scale(1.05);
+}
+
 #loading img{
     width: 225px;
 }
@@ -35,6 +44,10 @@ h1 {
     #jobs {
         display: flex;
         justify-content: space-around;
+    }
+
+    .card:hover {
+        transform: none;
     }
 
     #search-button {
