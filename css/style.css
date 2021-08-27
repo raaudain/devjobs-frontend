@@ -27,13 +27,28 @@ h1 {
     justify-content: space-between;
 }
 
-.card {
+.zoom {
     transition: .5s;
 }
-  
-.card:hover {
+
+.zoom:hover {
     z-index: 9999;
     transform: scale(1.05);
+}
+
+.loading-card {
+    opacity: .7;
+    animation: card-loading .9s linear infinite alternate;
+}
+
+@keyframes card-loading {
+    0% {
+        background-color: hsl(200, 20%, 90%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 99%);
+    }
 }
 
 #loading img{

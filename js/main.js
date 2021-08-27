@@ -1,3 +1,4 @@
+const jobsPerPage = 30;
 
 const body = document.querySelector("body");
 const container = document.createElement("div");
@@ -72,11 +73,20 @@ container.appendChild(results);
 results.after(linebreak);
 container.appendChild(jobs);
 
+for (let i = 0; i < jobsPerPage; i++) {
+    const card = document.createElement("div");
+
+    card.className = "card border-0 loading-card mb-5";
+    card.style = "height: 14.5rem; width: 25rem;";
+
+    jobs.appendChild(card);
+}
+
+
 // const endpoint = "https://devjobsapp-backend.herokuapp.com/data/data.json";
 // const endpoint = "https://raw.githubusercontent.com/raaudain/devjobs/main/server/data/data.json";
 const endpoint = "../json/data.json";
 const request = new XMLHttpRequest();
-const jobsPerPage = 30;
 const postings = document.getElementById("jobs");
 const pagination = document.getElementById("pages");
 
@@ -88,8 +98,10 @@ request.open("GET", endpoint);
 request.onload = () => {
     const response = JSON.parse(request.responseText);
 
-    // Displays image when loading
+    // Displays loading text when loading
     results.innerText ? loading.style.display = "block" : loading.style.display = "none";
+    // Clears loading cards animation
+    if (loading.style.display = "none") postings.innerHTML = "";
 
     data = response;
     results.textContent = `Total jobs: ${response.length}`;
@@ -124,9 +136,9 @@ function renderJobs(jobsArray) {
         const sourceURL = document.createElement("a");
         const button = document.createElement("button");
 
-        jobCard.className = "card border border-1 mb-5 shadow";
-        jobCard.id = `card_${i+1}`;
-        jobCard.style = "width: 25rem";
+        jobCard.className = "card border-1 mb-5 shadow zoom";
+        jobCard.id = `card-${i+1}`;
+        jobCard.style = "width: 25rem;";
         
         job.className = "card-body d-flex flex-column justify-content-between";
         job.style = "height: 100%";
@@ -216,7 +228,7 @@ window.addEventListener("scroll", () => {
 window.addEventListener("load", () => window.scrollTo(0, 0));
 
 const searchBtn = document.getElementById("search-button");
-const resetBtn = document.getElementById("reset-button");
+// const resetBtn = document.getElementById("reset-button");
 
 // Handles search
 searchBtn.addEventListener("click", event => {
