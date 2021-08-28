@@ -58,6 +58,8 @@ loading.id = "loading";
 loader.textContent = "Loading...";
 // loader.src = "../img/loader.gif";
 
+// results.className = "fade-in-text";
+
 body.appendChild(container);
 container.appendChild(home);
 home.appendChild(h1);
@@ -136,12 +138,12 @@ function renderJobs(jobsArray) {
         const sourceURL = document.createElement("a");
         const button = document.createElement("button");
 
-        jobCard.className = "card border-1 mb-5 shadow zoom";
+        jobCard.className = "card border border-1 mb-5 shadow zoom fade-in-card";
         jobCard.id = `card-${i+1}`;
         jobCard.style = "width: 25rem;";
         
         job.className = "card-body d-flex flex-column justify-content-between";
-        job.style = "height: 100%";
+        job.style = "height: 100%;";
 
         date.className = "card-header";
 
