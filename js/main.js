@@ -164,7 +164,7 @@ function renderJobs(jobsArray) {
         sourceURL.className = "sourceURL";
         // linebreak.id = i;
 
-        logo.src = jobInfo.company_logo;
+        logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
         logo.alt = `${jobInfo.company} logo`;
         logo.className = "logo mb-2"
 
@@ -201,7 +201,7 @@ function renderJobs(jobsArray) {
         jobs.appendChild(jobCard);
         jobCard.appendChild(date);
         jobCard.appendChild(job)
-        if (jobInfo.company_logo) job.appendChild(logo);
+        job.appendChild(logo);
         job.appendChild(title);
         if (company) job.appendChild(company);
         if (location) job.appendChild(location);
