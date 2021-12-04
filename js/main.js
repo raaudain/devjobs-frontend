@@ -132,6 +132,7 @@ function renderJobs(jobsArray) {
         const date = document.createElement("p")
         const title = document.createElement("h5");
         const company = document.createElement("h6");
+        const logo = document.createElement("img");
         const location = document.createElement("h6");
         const url = document.createElement("a");
         const source = document.createElement("p");
@@ -150,7 +151,7 @@ function renderJobs(jobsArray) {
         title.className = "card-title";
 
         button.className = "btn btn-primary btn-md";
-        button.style = "width: 100%;"
+        button.style = "width: 100%;";
 
         company.className = "card-subtitle mb-2 text-muted";
 
@@ -162,6 +163,10 @@ function renderJobs(jobsArray) {
 
         sourceURL.className = "sourceURL";
         // linebreak.id = i;
+
+        logo.src = jobInfo.company_logo;
+        logo.alt = `${jobInfo.company} logo`;
+        logo.className = "logo mb-2"
 
         url.href = jobInfo.url;
         url.target = "_blank";
@@ -196,6 +201,7 @@ function renderJobs(jobsArray) {
         jobs.appendChild(jobCard);
         jobCard.appendChild(date);
         jobCard.appendChild(job)
+        if (jobInfo.company_logo) job.appendChild(logo);
         job.appendChild(title);
         if (company) job.appendChild(company);
         if (location) job.appendChild(location);

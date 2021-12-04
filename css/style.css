@@ -16,6 +16,12 @@ h1 {
     font-size: 1.2rem;
 }
 
+.logo {
+   width: 90px;
+   min-height: 70px;
+   object-fit: contain;
+}
+
 .sourceURL {
     text-decoration: none;
     width: auto;
