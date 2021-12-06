@@ -260,6 +260,14 @@ searchBtn.addEventListener("click", event => {
             let location = data[i].location ? data[i].location.toLowerCase() : "";
 
             if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) filtered.push(data[i]);
+
+            // Looking for remote in both fields
+            else if(place.toLowerCase() === "remote") {
+                if (title.match(word.toLowerCase()) && (title.match(place.toLowerCase()) || location.includes(place.toLowerCase()))) {
+                    console.log(word)
+                    filtered.push(data[i])
+                }
+            }
             
             i++;
         }
