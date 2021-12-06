@@ -1,5 +1,3 @@
-const jobsPerPage = 30;
-
 const body = document.querySelector("body");
 const container = document.createElement("div");
 const h1 = document.createElement("h1");
@@ -74,6 +72,9 @@ loading.appendChild(loader);
 container.appendChild(results);
 results.after(linebreak);
 container.appendChild(jobs);
+
+
+const jobsPerPage = 30;
 
 for (let i = 0; i < jobsPerPage; i++) {
     const card = document.createElement("div");
@@ -254,18 +255,17 @@ searchBtn.addEventListener("click", event => {
 
         while (i < data.length) {
             let title = data[i].title.toLowerCase();
-            // If compay exists, use company. Else use empty string.
+            // If company exists, use company. Else use empty string.
             let company = data[i].company ? data[i].company.toLowerCase() : "";
             // If location exists, use the location. Else location is an empty string.
             let location = data[i].location ? data[i].location.toLowerCase() : "";
 
             if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) filtered.push(data[i]);
 
-            // Looking for remote in both fields
+            // Looks for "remote" in title and location fields
             else if(place.toLowerCase() === "remote") {
-                if (title.match(word.toLowerCase()) && (title.match(place.toLowerCase()) || location.includes(place.toLowerCase()))) {
-                    console.log(word)
-                    filtered.push(data[i])
+                if (title.includes(word.toLowerCase()) && (title.match(place.toLowerCase()) || location.includes(place.toLowerCase()))) {
+                    filtered.push(data[i]);
                 }
             }
             
@@ -291,6 +291,9 @@ searchBtn.addEventListener("click", event => {
         // document.getElementById("search-input")[1].value = "";
 
         renderLimit(filtered, jobsPerPage, currentPage);
+    }
+    else {
+        results.innerHTML = "<span style='color:#dc3545; font-weight:500;'>Please enter a keyword.</span>";
     }
 });
 
