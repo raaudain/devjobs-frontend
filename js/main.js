@@ -185,14 +185,14 @@ function renderJobs(jobsArray) {
         const dt = new Date(jobInfo.timestamp * 1e3);
         const month = dt.getMonth();
         const day = dt.getDate();
-        const t = dt.getDay();
+        const d = dt.getDay();
         const year = dt.getFullYear();
         const hour = dt.getHours() === 0 ? "12" : dt.getHours();
         const min = `${dt.getMinutes()}`.length < 2 ? "0"+`${dt.getMinutes()}` : dt.getMinutes();
         const sec = `${dt.getSeconds()}`.length < 2 ? "0"+`${dt.getSeconds()}` : dt.getSeconds();
         const time = hour > 12 ? `${hour-12}:${min}:${sec} PM` : `${hour}:${min}:${sec} AM`;
 
-        date.textContent = `Posted: ${days[t]}, ${months[month]} ${day}, ${year}`;
+        date.textContent = `Posted: ${days[d]}, ${months[month]} ${day}, ${year}`;
         title.textContent = jobInfo.title;
         company.textContent = jobInfo.company;
         location.textContent = jobInfo.location;
