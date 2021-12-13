@@ -260,15 +260,16 @@ searchBtn.addEventListener("click", event => {
             // If location exists, use the location. Else location is an empty string.
             let location = data[i].location ? data[i].location.toLowerCase() : "";
 
-            if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) filtered.push(data[i]);
-
+            if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
+                filtered.push(data[i]);
+            }
             // Looks for "remote" in title and location fields
-            else if(place.toLowerCase() === "remote") {
-                if (title.includes(word.toLowerCase()) && (title.match(place.toLowerCase()) || location.includes(place.toLowerCase()))) {
+            else if (place.toLowerCase() === "remote") {
+                if (title.includes(word.toLowerCase()) && (title.includes(place.toLowerCase()) || location.includes(place.toLowerCase()))) {
                     filtered.push(data[i]);
                 }
             }
-            
+
             i++;
         }
         
