@@ -104,7 +104,7 @@ request.onload = () => {
     // Displays loading text when loading
     results.innerText ? loading.style.display = "block" : loading.style.display = "none";
     // Clears loading cards animation
-    if (loading.style.display = "none") postings.innerHTML = "";
+    if (loading.style.display = "none") postings.textContent = "";
 
     data = response;
     results.textContent = `Total jobs: ${response.length}`;
@@ -276,15 +276,17 @@ searchBtn.addEventListener("click", event => {
         // filteredData is used for infinite scroll event listener
         filteredData = filtered;
 
+        results.style = "color:#212529;"
+
         if (filtered.length) {
-            if (word.length && place.length) results.innerHTML = `Results for <i>${word}, ${place}</i>: ${filtered.length}`;
-            else if (word.length && !place.length) results.innerHTML = `Results for <i>${word}</i>: ${filtered.length}`;
-            else results.innerHTML = `Results for <i>${place}</i>: ${filtered.length}`;
+            if (word.length && place.length) results.textContent = `Results for ${word}, ${place}: ${filtered.length}`;
+            else if (word.length && !place.length) results.textContent = `Results for ${word}: ${filtered.length}`;
+            else results.textContent = `Results for ${place}: ${filtered.length}`;
         }
         else {
-            if (word.length && place.length) results.innerHTML = `No results for <i>${word}, ${place}</i>`;
-            else if (word.length && !place.length) results.innerHTML = `No results for <i>${word}</i>`;
-            else results.innerHTML = `No results for <i>${place}</i>`;
+            if (word.length && place.length) results.textContent = `No results for ${word}, ${place}`;
+            else if (word.length && !place.length) results.textContent = `No results for ${word}`;
+            else results.textContent = `No results for ${place}`;
         }
 
         // Clears inputs
@@ -294,7 +296,8 @@ searchBtn.addEventListener("click", event => {
         renderLimit(filtered, jobsPerPage, currentPage);
     }
     else {
-        results.innerHTML = "<span style='color:#dc3545; font-weight:500;'>Please enter a keyword.</span>";
+        results.textContent = "Please enter a keyword.";
+        results.style = "color:#dc3545; font-weight:500;"
     }
 });
 
