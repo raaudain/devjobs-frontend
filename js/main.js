@@ -276,7 +276,7 @@ searchBtn.addEventListener("click", event => {
         // filteredData is used for infinite scroll event listener
         filteredData = filtered;
 
-        results.style = "color:#212529;"
+        results.style = "";
 
         if (filtered.length) {
             if (word.length && place.length) results.textContent = `Results for ${word}, ${place}: ${filtered.length}`;
