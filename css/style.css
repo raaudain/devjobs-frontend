@@ -16,13 +16,18 @@ h1 {
     font-size: 1.2rem;
 }
 
+.search-warning {
+    color:#dc3545; 
+    font-weight:500;
+}
+
 .logo {
    width: 60px;
    min-height: 70px;
    object-fit: contain;
 }
 
-.sourceURL {
+.source-url {
     text-decoration: none;
     width: auto;
 }

@@ -162,7 +162,7 @@ function renderJobs(jobsArray) {
 
         source.className = "fw-light text-muted";
 
-        sourceURL.className = "sourceURL";
+        sourceURL.className = "source-url";
         // linebreak.id = i;
 
         logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
@@ -248,6 +248,7 @@ searchBtn.addEventListener("click", event => {
 
     if (word.length || place.length) {
         postings.innerHTML = "";
+        results.removeAttribute("class");
         currentPage = 1;
 
         const filtered = [];
@@ -276,8 +277,6 @@ searchBtn.addEventListener("click", event => {
         // filteredData is used for infinite scroll event listener
         filteredData = filtered;
 
-        results.style = "";
-
         if (filtered.length) {
             if (word.length && place.length) results.textContent = `Results for ${word}, ${place}: ${filtered.length}`;
             else if (word.length && !place.length) results.textContent = `Results for ${word}: ${filtered.length}`;
@@ -297,7 +296,7 @@ searchBtn.addEventListener("click", event => {
     }
     else {
         results.textContent = "Please enter a keyword.";
-        results.style = "color:#dc3545; font-weight:500;"
+        results.setAttribute("class", "search-warning");
     }
 });
 
