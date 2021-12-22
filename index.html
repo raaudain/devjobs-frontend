@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="description"
-      content="DevJobs is a job board aggregator for people working in software development and engineering, DevOps, and IT.  It's goal is to make the job search a little less time consuming."
-    />
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="./js/main.js" defer></script>
-    <title>DevJobs :: A job board aggregator for tech people.</title>
-</head>
-<body>
-</body>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta
+        name="description"
+        content="DevJobs is a job board aggregator for people working in software development and engineering, DevOps, and IT.  It's goal is to make the job search a little less time consuming."
+      />
+      <link rel="stylesheet" href="./css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="./js/main.js" defer></script>
+      <title>DevJobs :: A job board aggregator for tech people.</title>
+  </head>
+  <body>
+    <div class="container">
+      <a class="header" href="/" >
+        <h1 class="display-1 fw-bold">DevJobs</h1>
+      </a>
+      <p class="fs-2">A job board aggregator for tech people.</p>
+      <form class="input-group mb-3" id="search-input">
+        <input class="form-control" placeholder="Enter job title or company" type="text">
+        <input class="form-control" placeholder="Enter location" type="text">
+        <button class="btn btn-primary btn-lg" id="search-button" type="submit">Search</button>
+      </form>
+      <div id="loading">
+        <span>Loading...</span>
+      </div>
+      <div id="results"></div>
+      <br />
+      <div id="jobs"></div>
+    </div>
+  </body>
 </html>
