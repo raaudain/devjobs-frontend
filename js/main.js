@@ -5,7 +5,7 @@ const jobsPerPage = 30;
 for (let i = 0; i < jobsPerPage; i++) {
     const card = document.createElement("div");
     card.className = "card border-0 loading-card mb-5";
-    card.style = "height: 14.5rem; width: 25rem;";
+    card.style = "height: 18rem; width: 25rem;";
     jobs.appendChild(card);
 }
 
@@ -71,18 +71,18 @@ function renderJobs(jobsArray) {
         button.style = "width: 100%;";
         company.className = "card-subtitle mb-2 text-muted";
         location.className = "card-subtitle mb-2 text-muted";
-        url.className = "url";
         source.className = "fw-light text-muted";
-        sourceURL.className = "source-url";
-        logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
-        logo.alt = `${jobInfo.company} logo`;
-        logo.className = "logo mb-2"
-        url.href = jobInfo.url;
-        url.target = "_blank";
-        url.rel = "noopener noreferrer";
         sourceURL.href = jobInfo.source_url;
         sourceURL.target = "_blank";
         sourceURL.rel = "noopener noreferrer";
+        sourceURL.className = "source-url";
+        logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
+        logo.alt = `${jobInfo.company} logo`;
+        logo.className = "logo img-thumbnail mb-2";
+        url.href = jobInfo.url;
+        url.target = "_blank";
+        url.rel = "noopener noreferrer";
+        url.className = "url";
 
         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
