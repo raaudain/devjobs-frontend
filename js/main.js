@@ -78,7 +78,7 @@ function renderJobs(jobsArray) {
         sourceURL.className = "source-url";
         logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
         logo.alt = `${jobInfo.company} logo`;
-        logo.className = "logo mb-2";
+        logo.className = "logo img-thumbnail mb-2";
         url.href = jobInfo.url;
         url.target = "_blank";
         url.rel = "noopener noreferrer";
