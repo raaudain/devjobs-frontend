@@ -51,7 +51,7 @@ function renderJobs(jobsArray) {
     jobsArray.map((jobInfo) => {
         const jobCard = document.createElement("div");
         const job = document.createElement("div");
-        const date = document.createElement("p")
+        const date = document.createElement("p");
         const title = document.createElement("h5");
         const company = document.createElement("h6");
         const logo = document.createElement("img");
