@@ -74,18 +74,20 @@ function renderJobs(jobsArray) {
         source.className = "fw-light text-muted";
         sourceURL.href = jobInfo.source_url;
         sourceURL.target = "_blank";
-        sourceURL.rel = "noopener noreferrer";
+        sourceURL.rel = "noopener noreferrer nofollow";
         sourceURL.className = "source-url";
         logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
         logo.alt = `${jobInfo.company} logo`;
         logo.className = "logo img-thumbnail mb-2";
         url.href = jobInfo.url;
         url.target = "_blank";
-        url.rel = "noopener noreferrer";
+        url.rel = "noopener noreferrer nofollow";
         url.className = "url";
+        // url.title = jobInfo.location.toLowerCase() = "remote" ? `Apply for remote ${jobInfo.title.toLowerCase()} job.` : `Apply for ${jobInfo.title.toLowerCase()} job in ${jobInfo.location}.`;
+        url.title = `Apply for ${jobInfo.title.toLowerCase()} job in ${jobInfo.location}.`;
 
         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
         // 1e3 is equal to 1000.  It's supposed to use less resources
         const dt = new Date(jobInfo.timestamp * 1e3);
