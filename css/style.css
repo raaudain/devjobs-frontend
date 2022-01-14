@@ -58,8 +58,10 @@ h1 {
 }
 
 h2 {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    font-size: 2rem !important;
+    font-weight: 200 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
 }
 
 #loading {
@@ -112,11 +114,6 @@ h2 {
     }
 }
 
-#loading img{
-    width: 225px;
-}
-
-
 .fade-in-card {
     animation: fadeIn 1.5s;
 }
@@ -142,6 +139,10 @@ h2 {
 
     .card:hover {
         transform: none;
+    }
+
+    .form-control[placeholder="Enter location"] {
+        border-radius: 0 .25rem .25rem 0 !important;
     }
 
     #search-button {
