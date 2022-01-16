@@ -52,10 +52,10 @@ function renderJobs(jobsArray) {
         const jobCard = document.createElement("div");
         const job = document.createElement("div");
         const date = document.createElement("p");
-        const title = document.createElement("h5");
-        const company = document.createElement("h6");
+        const title = document.createElement("div");
+        const company = document.createElement("div");
         const logo = document.createElement("img");
-        const location = document.createElement("h6");
+        const location = document.createElement("div");
         const url = document.createElement("a");
         const source = document.createElement("p");
         const sourceURL = document.createElement("a");
