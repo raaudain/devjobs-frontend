@@ -49,7 +49,7 @@ function renderLimit(jobsArray, jobsPerPage, currPage) {
 // Renders job postings
 function renderJobs(jobsArray) {
     jobsArray.map((jobInfo) => {
-        const jobCard = document.createElement("div");
+        const jobCard = document.createElement("article");
         const job = document.createElement("div");
         const date = document.createElement("p");
         const title = document.createElement("div");
