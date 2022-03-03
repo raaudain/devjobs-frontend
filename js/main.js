@@ -51,6 +51,7 @@ function renderJobs(jobsArray) {
     jobsArray.map((jobInfo) => {
         const jobCard = document.createElement("article");
         const job = document.createElement("div");
+        const time = document.createElement("time");
         const date = document.createElement("p");
         const title = document.createElement("div");
         const company = document.createElement("div");
@@ -84,11 +85,11 @@ function renderJobs(jobsArray) {
         url.rel = "noopener noreferrer nofollow";
         url.className = "url";
         // url.title = jobInfo.location.toLowerCase() = "remote" ? `Apply for remote ${jobInfo.title.toLowerCase()} job.` : `Apply for ${jobInfo.title.toLowerCase()} job in ${jobInfo.location}.`;
-        url.title = `Apply for ${jobInfo.title.toLowerCase()} job in ${jobInfo.location}.`;
-
+        url.title = `Apply for ${jobInfo.title} job in ${jobInfo.location}.`;
+        
         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
+        
         // 1e3 is equal to 1000.  It's supposed to use less resources
         const dt = new Date(jobInfo.timestamp * 1e3);
         const month = dt.getMonth();
@@ -98,9 +99,11 @@ function renderJobs(jobsArray) {
         const hour = dt.getHours() === 0 ? "12" : dt.getHours();
         const min = `${dt.getMinutes()}`.length < 2 ? "0"+`${dt.getMinutes()}` : dt.getMinutes();
         const sec = `${dt.getSeconds()}`.length < 2 ? "0"+`${dt.getSeconds()}` : dt.getSeconds();
-        const time = hour > 12 ? `${hour-12}:${min}:${sec} PM` : `${hour}:${min}:${sec} AM`;
-
-        date.textContent = `Posted: ${days[d]}, ${months[month]} ${day}, ${year}`;
+        const t = hour > 12 ? `${hour-12}:${min}:${sec} PM` : `${hour}:${min}:${sec} AM`;
+        
+        time.textContent = `${days[d]}, ${months[month]} ${day}, ${year}`;
+        time.dateTime = `${year}-${month+1}-${day}`;
+        date.textContent = "Posted: ";
         title.textContent = jobInfo.title;
         company.textContent = jobInfo.company;
         location.textContent = jobInfo.location;
@@ -109,7 +112,8 @@ function renderJobs(jobsArray) {
         
         jobs.appendChild(jobCard);
         jobCard.appendChild(date);
-        jobCard.appendChild(job)
+        date.appendChild(time);
+        jobCard.appendChild(job);
         job.appendChild(logo);
         job.appendChild(title);
         if (company) job.appendChild(company);
