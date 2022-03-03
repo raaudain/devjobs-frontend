@@ -51,8 +51,8 @@ function renderJobs(jobsArray) {
     jobsArray.map((jobInfo) => {
         const jobCard = document.createElement("article");
         const job = document.createElement("div");
-        const time = document.createElement("time");
-        const date = document.createElement("p");
+        const date = document.createElement("time");
+        const posted = document.createElement("span");
         const title = document.createElement("div");
         const company = document.createElement("div");
         const logo = document.createElement("img");
@@ -66,7 +66,7 @@ function renderJobs(jobsArray) {
         jobCard.style = "width: 25rem;";
         job.className = "card-body d-flex flex-column justify-content-between";
         job.style = "height: 100%;";
-        date.className = "card-header";
+        posted.className = "card-header";
         title.className = "card-title";
         button.className = "btn btn-primary btn-md";
         button.style = "width: 100%;";
@@ -101,9 +101,9 @@ function renderJobs(jobsArray) {
         const sec = `${dt.getSeconds()}`.length < 2 ? "0"+`${dt.getSeconds()}` : dt.getSeconds();
         const t = hour > 12 ? `${hour-12}:${min}:${sec} PM` : `${hour}:${min}:${sec} AM`;
         
-        time.textContent = `${days[d]}, ${months[month]} ${day}, ${year}`;
-        time.dateTime = `${year}-${month+1}-${day}`;
-        date.textContent = "Posted: ";
+        date.textContent = `${days[d]}, ${months[month]} ${day}, ${year}`;
+        date.dateTime = `${year}-${month+1}-${day}`;
+        posted.textContent = "Posted: ";
         title.textContent = jobInfo.title;
         company.textContent = jobInfo.company;
         location.textContent = jobInfo.location;
@@ -111,8 +111,8 @@ function renderJobs(jobsArray) {
         button.textContent = "Apply"
         
         jobs.appendChild(jobCard);
-        jobCard.appendChild(date);
-        date.appendChild(time);
+        jobCard.appendChild(posted);
+        posted.appendChild(date);
         jobCard.appendChild(job);
         job.appendChild(logo);
         job.appendChild(title);

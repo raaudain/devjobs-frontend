@@ -31,22 +31,26 @@
       <title>The Best Way To Find Your Next Tech Job - DevJobs</title>
   </head>
   <body>
-    <main class="container">
-      <a class="header" href="/">
-        <h1 class="display-1 fw-bold">DevJobs</h1>
-      </a>
-      <p class="fs-2">A job board aggregator for tech people.</p>
-      <form class="input-group mb-3" id="search-input">
-        <input class="form-control" placeholder="Enter job title or company" type="text">
-        <input class="form-control" placeholder="Enter location" type="text">
-        <button class="btn btn-primary btn-lg" id="search-button" type="submit">Search</button>
-      </form>
-      <div id="loading">
-        <span>Loading...</span>
-      </div>
-      <div id="results"></div>
-      <br>
-      <div id="jobs"></div>
-    </main>
+    <div class="container">
+      <header>
+        <a class="header" href="/">
+          <h1 class="display-1 fw-bold">DevJobs</h1>
+        </a>
+        <p class="fs-2">A job board aggregator for tech people.</p>
+      </header>
+      <main>
+        <form class="input-group mb-3" id="search-input">
+          <input class="form-control" placeholder="Enter job title or company" type="text">
+          <input class="form-control" placeholder="Enter location" type="text">
+          <button class="btn btn-primary btn-lg" id="search-button" type="submit">Search</button>
+        </form>
+        <div id="loading">
+          <span>Loading...</span>
+        </div>
+        <div id="results"></div>
+        <br>
+        <div id="jobs"></div>
+      </main>
+    </div>
   </body>
 </html>
