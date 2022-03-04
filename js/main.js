@@ -84,8 +84,10 @@ function renderJobs(jobsArray) {
         url.target = "_blank";
         url.rel = "noopener noreferrer nofollow";
         url.className = "url";
-        // url.title = jobInfo.location.toLowerCase() = "remote" ? `Apply for remote ${jobInfo.title.toLowerCase()} job.` : `Apply for ${jobInfo.title.toLowerCase()} job in ${jobInfo.location}.`;
-        url.title = `Apply for ${jobInfo.title} job in ${jobInfo.location}.`;
+        const isLocationTrue = jobInfo.location ? ` in ${jobInfo.location}.` : ".";
+        const notRemote = `Apply for ${jobInfo.title} job` + isLocationTrue;
+        url.title = jobInfo.location && jobInfo.location.toLowerCase() == "remote" ? `Apply for remote ${jobInfo.title} job.` : notRemote;
+
         
         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
