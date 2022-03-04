@@ -88,7 +88,6 @@ function renderJobs(jobsArray) {
         const notRemote = `Apply for ${jobInfo.title} job` + isLocationTrue;
         url.title = jobInfo.location && jobInfo.location.toLowerCase() == "remote" ? `Apply for remote ${jobInfo.title} job.` : notRemote;
 
-        
         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         
