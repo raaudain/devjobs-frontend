@@ -32,6 +32,7 @@ request.onload = () => {
     results.textContent = `Total jobs: ${response.length}`;
     
     renderLimit(response, jobsPerPage, currentPage);
+    createDatalist(response);
 }
 request.send(null);
 
@@ -73,16 +74,16 @@ function renderJobs(jobsArray) {
         company.className = "card-subtitle mb-2 text-muted";
         location.className = "card-subtitle mb-2 text-muted";
         source.className = "fw-light text-muted";
-        sourceURL.href = jobInfo.source_url;
+        sourceURL.href = jobInfo.source_url+"?referrer=https://devjobs.cc";
         sourceURL.target = "_blank";
-        sourceURL.rel = "noopener noreferrer nofollow";
+        sourceURL.rel = "noopener follow";
         sourceURL.className = "source-url";
         logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
         logo.alt = `${jobInfo.company} logo`;
         logo.className = "logo img-thumbnail mb-2";
         url.href = jobInfo.url;
         url.target = "_blank";
-        url.rel = "noopener noreferrer nofollow";
+        url.rel = "noopener follow";
         url.className = "url";
         const isLocationTrue = jobInfo.location ? ` in ${jobInfo.location}.` : ".";
         const notRemote = `Apply for ${jobInfo.title} job` + isLocationTrue;
@@ -125,6 +126,27 @@ function renderJobs(jobsArray) {
         job.appendChild(url);
     })
 }
+
+function createDatalist(data) {
+    const form = document.querySelector("#search-input");
+    const d1 = document.createElement("datalist");
+    
+    d1.id = "titles";
+
+    const positions = new Set();
+    data.forEach(e => positions.add(e.title.toLowerCase().trim()));
+
+    for (let p of positions) {
+        const option = document.createElement("option");
+        option.value = p;
+        d1.appendChild(option);
+    }
+
+    form.after(d1);
+}
+
+// datalist()
+
 
 // Handles infinite scroll
 window.addEventListener("scroll", () => {
