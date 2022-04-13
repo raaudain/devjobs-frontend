@@ -74,7 +74,7 @@ function renderJobs(jobsArray) {
         company.className = "card-subtitle mb-2 text-muted";
         location.className = "card-subtitle mb-2 text-muted";
         source.className = "fw-light text-muted";
-        sourceURL.href = jobInfo.source_url+"?referrer=https://devjobs.cc";
+        sourceURL.href = jobInfo.source_url+"?source=https://devjobs.cc";
         sourceURL.target = "_blank";
         sourceURL.rel = "noopener follow";
         sourceURL.className = "source-url";
