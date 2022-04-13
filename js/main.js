@@ -74,14 +74,14 @@ function renderJobs(jobsArray) {
         company.className = "card-subtitle mb-2 text-muted";
         location.className = "card-subtitle mb-2 text-muted";
         source.className = "fw-light text-muted";
-        sourceURL.href = jobInfo.source_url+"?source=https://devjobs.cc";
+        sourceURL.href = jobInfo.source_url+"?source=devjobs.cc";
         sourceURL.target = "_blank";
         sourceURL.rel = "noopener follow";
         sourceURL.className = "source-url";
         logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
         logo.alt = `${jobInfo.company} logo`;
         logo.className = "logo img-thumbnail mb-2";
-        url.href = jobInfo.url;
+        url.href = jobInfo.url+"?source=devjobs.cc";
         url.target = "_blank";
         url.rel = "noopener follow";
         url.className = "url";
