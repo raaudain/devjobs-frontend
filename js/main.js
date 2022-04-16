@@ -74,14 +74,14 @@ function renderJobs(jobsArray) {
         company.className = "card-subtitle mb-2 text-muted";
         location.className = "card-subtitle mb-2 text-muted";
         source.className = "fw-light text-muted";
-        sourceURL.href = jobInfo.source_url+"?source=devjobs.cc";
+        sourceURL.href = jobInfo.source_url+"?ref=https://devjobs.cc";
         sourceURL.target = "_blank";
         sourceURL.rel = "noopener follow";
         sourceURL.className = "source-url";
         logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
         logo.alt = `${jobInfo.company} logo`;
         logo.className = "logo img-thumbnail mb-2";
-        url.href = jobInfo.url;
+        url.href = jobInfo.url.includes("craig") ? jobInfo.url : jobInfo.url.includes("?") ? jobInfo.url+"&ref=https://devjobs.cc" : jobInfo.url+"?ref=https://devjobs.cc";
         url.target = "_blank";
         url.rel = "noopener follow";
         url.className = "url";
@@ -128,7 +128,7 @@ function renderJobs(jobsArray) {
 }
 
 function createDatalist(data) {
-    const form = document.querySelector("#search-input");
+    const form = document.getElementById("search-input");
     const d1 = document.createElement("datalist");
     
     d1.id = "titles";
@@ -144,8 +144,6 @@ function createDatalist(data) {
 
     form.after(d1);
 }
-
-// datalist()
 
 
 // Handles infinite scroll
@@ -174,36 +172,34 @@ const searchBtn = document.getElementById("search-button");
 searchBtn.addEventListener("click", event => {
     event.preventDefault();
 
-    const word = document.getElementById("search-input")[0].value;
-    const place = document.getElementById("search-input")[1].value;
+    const searchInput = document.getElementById("search-input");
+    const word = searchInput[0].value;
+    const place = searchInput[1].value;
 
     if (word.length || place.length) {
         postings.innerHTML = "";
         results.removeAttribute("class");
         currentPage = 1;
 
-        const filtered = [];
-        let i = 0;
-
-        while (i < data.length) {
-            let title = data[i].title.toLowerCase();
+        function getData(value) {
+            let title = value.title.toLowerCase();
             // If company exists, use company. Else use empty string.
-            let company = data[i].company ? data[i].company.toLowerCase() : "";
+            let company = value.company ? value.company.toLowerCase() : "";
             // If location exists, use the location. Else location is an empty string.
-            let location = data[i].location ? data[i].location.toLowerCase() : "";
+            let location = value.location ? value.location.toLowerCase() : "";
 
             if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
-                filtered.push(data[i]);
+                return value;
             }
             // Looks for "remote" in title and location fields
             else if (place.toLowerCase() === "remote") {
                 if (title.includes(word.toLowerCase()) && (title.includes(place.toLowerCase()) || location.includes(place.toLowerCase()))) {
-                    filtered.push(data[i]);
+                    return value;
                 }
             }
-
-            i++;
         }
+
+        const filtered = data.filter(getData);
         
         // filteredData is used for infinite scroll event listener
         filteredData = filtered;
@@ -229,7 +225,6 @@ searchBtn.addEventListener("click", event => {
 
 // Reloads page
 // resetBtn.addEventListener("click", () => location.reload());
-
 
 // const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
 // console.log(tz);
