@@ -20,19 +20,24 @@ let currentPage = 1;
 
 request.open("GET", endpoint);
 request.onload = () => {
-    const response = JSON.parse(request.responseText);
-
-    // Displays loading text when loading
-    const loading = document.getElementById("loading");
-    results.innerText ? loading.style.display = "block" : loading.style.display = "none";
-    // Clears loading cards animation
-    if (loading.style.display = "none") postings.textContent = "";
-
-    data = response;
-    results.textContent = `Total jobs: ${response.length}`;
+    try {
+        const response = JSON.parse(request.responseText);
     
-    renderLimit(response, jobsPerPage, currentPage);
-    createDatalist(response);
+        // Displays loading text when loading
+        const loading = document.getElementById("loading");
+        results.innerText ? loading.style.display = "block" : loading.style.display = "none";
+        // Clears loading cards animation
+        if (loading.style.display = "none") postings.textContent = "";
+    
+        data = response;
+        results.textContent = `Total jobs: ${response.length}`;
+        
+        renderLimit(response, jobsPerPage, currentPage);
+        createDatalist(response);
+    }
+    catch(err) {
+        console.error(err);
+    }
 }
 request.send(null);
 
