@@ -49,7 +49,7 @@ function renderLimit(jobsArray, jobsPerPage, currPage) {
 
 // Renders job postings
 function renderJobs(jobsArray) {
-    jobsArray.map((jobInfo) => {
+    jobsArray.map(jobInfo => {
         const jobCard = document.createElement("article");
         const job = document.createElement("div");
         const date = document.createElement("time");
@@ -203,7 +203,7 @@ searchBtn.addEventListener("click", event => {
         
         // filteredData is used for infinite scroll event listener
         filteredData = filtered;
-
+        
         if (filtered.length) {
             if (word.length && place.length) results.textContent = `Results for ${word}, ${place}: ${filtered.length}`;
             else if (word.length && !place.length) results.textContent = `Results for ${word}: ${filtered.length}`;
