@@ -132,23 +132,23 @@ function renderJobs(jobsArray) {
     })
 }
 
-function createDatalist(data) {
-    const form = document.getElementById("search-input");
-    const d1 = document.createElement("datalist");
+// function createDatalist(data) {
+//     const form = document.getElementById("search-input");
+//     const d1 = document.createElement("datalist");
     
-    d1.id = "titles";
+//     d1.id = "titles";
 
-    const positions = new Set();
-    data.forEach(e => positions.add(e.title.toLowerCase().trim()));
+//     const positions = new Set();
+//     data.forEach(e => positions.add(e.title.toLowerCase().trim()));
 
-    for (let p of positions) {
-        const option = document.createElement("option");
-        option.value = p;
-        d1.appendChild(option);
-    }
+//     for (let p of positions) {
+//         const option = document.createElement("option");
+//         option.value = p;
+//         d1.appendChild(option);
+//     }
 
-    form.after(d1);
-}
+//     form.after(d1);
+// }
 
 
 // Handles infinite scroll
@@ -223,8 +223,9 @@ searchBtn.addEventListener("click", event => {
         renderLimit(filtered, jobsPerPage, currentPage);
     }
     else {
-        results.textContent = "Please enter a keyword.";
-        results.setAttribute("class", "search-warning");
+        // results.textContent = "Please enter a keyword.";
+        // results.setAttribute("class", "search-warning");
+        console.log("hey")
     }
 });
 
