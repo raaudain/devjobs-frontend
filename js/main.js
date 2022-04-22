@@ -33,7 +33,6 @@ request.onload = () => {
         results.textContent = `Total jobs: ${response.length}`;
         
         renderLimit(response, jobsPerPage, currentPage);
-        createDatalist(response);
     }
     catch(err) {
         console.error(err);
@@ -131,25 +130,6 @@ function renderJobs(jobsArray) {
         job.appendChild(url);
     })
 }
-
-// function createDatalist(data) {
-//     const form = document.getElementById("search-input");
-//     const d1 = document.createElement("datalist");
-    
-//     d1.id = "titles";
-
-//     const positions = new Set();
-//     data.forEach(e => positions.add(e.title.toLowerCase().trim()));
-
-//     for (let p of positions) {
-//         const option = document.createElement("option");
-//         option.value = p;
-//         d1.appendChild(option);
-//     }
-
-//     form.after(d1);
-// }
-
 
 // Handles infinite scroll
 window.addEventListener("scroll", () => {
