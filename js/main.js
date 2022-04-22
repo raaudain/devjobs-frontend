@@ -163,7 +163,6 @@ searchBtn.addEventListener("click", event => {
 
     if (word.length || place.length) {
         postings.innerHTML = "";
-        results.removeAttribute("class");
         currentPage = 1;
 
         function getData(value) {
@@ -208,7 +207,12 @@ searchBtn.addEventListener("click", event => {
     }
 });
 
-
+/* results.removeAttribute("class"); - Place this in 
+    if (word.length || place.length) {
+        postings.innerHTML = "";
+        currentPage = 1;
+    }
+*/
 // results.textContent = "Please enter a keyword.";
 // results.setAttribute("class", "search-warning");
 
