@@ -225,7 +225,9 @@ searchBtn.addEventListener("click", event => {
     else {
         // results.textContent = "Please enter a keyword.";
         // results.setAttribute("class", "search-warning");
-        console.log("hey")
+
+        // Reloads page
+        location.reload();
     }
 });
 
