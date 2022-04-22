@@ -223,13 +223,15 @@ searchBtn.addEventListener("click", event => {
         renderLimit(filtered, jobsPerPage, currentPage);
     }
     else {
-        // results.textContent = "Please enter a keyword.";
-        // results.setAttribute("class", "search-warning");
-
         // Reloads page
         location.reload();
     }
 });
+
+
+// results.textContent = "Please enter a keyword.";
+// results.setAttribute("class", "search-warning");
+
 
 // Reloads page
 // resetBtn.addEventListener("click", () => location.reload());
