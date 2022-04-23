@@ -12,7 +12,7 @@ for (let i = 0; i < jobsPerPage; i++) {
 const endpoint = "../json/data.json";
 const request = new XMLHttpRequest();
 const postings = document.getElementById("jobs");
-const pagination = document.getElementById("pages");
+// const pagination = document.getElementById("pages");
 
 let data = [];
 let filteredData = [];
@@ -32,7 +32,8 @@ request.onload = () => {
         data = response;
         results.textContent = `Total jobs: ${response.length}`;
         
-        renderLimit(response, jobsPerPage, currentPage);
+        renderLimit(data, jobsPerPage, currentPage);
+        // pageNumber(data, jobsPerPage, currentPage)
     }
     catch(err) {
         console.error(err);
@@ -40,14 +41,41 @@ request.onload = () => {
 }
 request.send(null);
 
+function pageNumbers(total, max, current) {
+    const half = Math.round(max / 2);
+    let to = max;
+
+    // If current page is at the end
+    if (current + half >= total) {
+        to = total;
+    } 
+    // If current page is greater than half
+    else if (current > half) {
+        to = current + half;
+    }
+
+    let from = to - max;
+
+    return Array.from({length: max}, (_, i) => (i + 1) + from);
+}
+
+
+function PaginationButtons(totalPages, maxPageVisible = 10, currentPage = 1) {
+    let pages = pageNumbers(totalPages, maxPageVisible, currentPage);
+    let currentPageBtn = null;
+}
+
+const paginationButtons = new PaginationButtons(100);
+
+
 // Sets a limit on the number of job postings rendered
 function renderLimit(jobsArray, jobsPerPage, currPage) {
     currPage--;
-
+    
     let start = jobsPerPage * currPage;
     let end = start + jobsPerPage;
     let paginated = jobsArray.slice(start, end);
-
+    
     renderJobs(paginated);
 }
 
@@ -198,27 +226,10 @@ searchBtn.addEventListener("click", event => {
             else if (word.length && !place.length) results.textContent = `No results for ${word}`;
             else results.textContent = `No results for ${place}`;
         }
-
         renderLimit(filtered, jobsPerPage, currentPage);
     }
     else {
-        // Reloads page
-        location.reload();
+        // Resets page only if page has been filtered
+        if (filteredData.length !== 0) location.reload();
     }
 });
-
-/* results.removeAttribute("class"); - Place this in 
-    if (word.length || place.length) {
-        postings.innerHTML = "";
-        currentPage = 1;
-    }
-*/
-// results.textContent = "Please enter a keyword.";
-// results.setAttribute("class", "search-warning");
-
-
-// Reloads page
-// resetBtn.addEventListener("click", () => location.reload());
-
-// const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-// console.log(tz);
