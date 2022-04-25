@@ -307,9 +307,8 @@ searchBtn.addEventListener("click", event => {
             removeButtons();   
         }
         else {
-
             const totalFilteredPages = Math.floor(filtered.length/jobsPerPage);
-            const paginationButtons = new PaginationButtons(totalFilteredPages);
+            const paginationButtons = totalFilteredPages < 10 ? new PaginationButtons(totalFilteredPages, totalFilteredPages) : new PaginationButtons(totalFilteredPages);
     
             paginationButtons.render();
     
