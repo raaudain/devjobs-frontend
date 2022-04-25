@@ -73,9 +73,9 @@ h2 {
 }
 
 .logo {
-   width: 60px;
-   min-height: 60px;
-   object-fit: contain;
+    width: 60px;
+    min-height: 60px;
+    object-fit: contain;
 }
 
 .card-title, .card-subtitle {
@@ -135,7 +135,6 @@ h2 {
     animation: fadeIn linear 1.5s;
 }
 
-
 button {
     background: none;
     appearance: none;
@@ -144,11 +143,11 @@ button {
     -moz-appearance: none;
     border: none;
     cursor: pointer;
-  }
-  
-  .page-btn {
+}
+
+.page-btn {
     background: #ddd;
-    color: #2c303a;
+    color: #212529;
     height: 35px;
     border-radius: 2px;
     padding: 0 10px;
@@ -156,45 +155,30 @@ button {
     letter-spacing: 0.1em;
     transition: background 0.3s ease;
     margin: 0 2px
-  }
-  
-  /* .page-btn:first-of-type {
-    margin-left: 0;
-  }
-  
-  .page-btn:last-of-type {
-    margin-right: 0;
-  }
-  
-  .page-btn:not([class$="-page"]) {
-    width: 35px;
-  } */
-  
+}
+
 .pagination-buttons {
-    /* border: 1px red solid; */
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 20px 0 100px;
 }
   
-  .page-btn[class*="-page"] {
+.page-btn[class*="-page"] {
     background: #ccc;
     font-size: 0.6em;
     font-weight: 700;
-  }
+}
   
-  .page-btn.active {
+.page-btn.active {
     background: #0d6efd;
     color: #fff;
-  }
+}
   
-  .page-btn[disabled] {
-    /* opacity: 0.3; */
+.page-btn[disabled] {
     cursor: not-allowed;
     background: #f7f7f7;
     color: #bebfc2;
-  }
+}
 
 @keyframes fadeIn {
     0% {
