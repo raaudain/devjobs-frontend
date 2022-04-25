@@ -12,7 +12,8 @@ for (let i = 0; i < jobsPerPage; i++) {
 const endpoint = "../json/data.json";
 const request = new XMLHttpRequest();
 const postings = document.getElementById("jobs");
-// const pagination = document.getElementById("pages");
+const pagination = document.getElementsByClassName("pagination-buttons");
+// console.log(pagination)
 
 let data = [];
 let filteredData = [];
@@ -33,7 +34,16 @@ request.onload = () => {
         results.textContent = `Total jobs: ${response.length}`;
         
         renderLimit(data, jobsPerPage, currentPage);
-        // pageNumber(data, jobsPerPage, currentPage)
+
+        const totalPages = Math.floor(data.length/jobsPerPage);
+        const paginationButtons = new PaginationButtons(totalPages);
+        
+        paginationButtons.render();
+        
+        paginationButtons.onChange(event => {
+            currentPage = event.target.value * jobsPerPage;
+            renderLimit(data, jobsPerPage, currentPage);
+        });
     }
     catch(err) {
         console.error(err);
@@ -46,13 +56,9 @@ function pageNumbers(total, max, current) {
     let to = max;
 
     // If current page is at the end
-    if (current + half >= total) {
-        to = total;
-    } 
+    if (current + half >= total) to = total;
     // If current page is greater than half
-    else if (current > half) {
-        to = current + half;
-    }
+    else if (current > half) to = current + half;
 
     let from = to - max;
 
@@ -63,16 +69,100 @@ function pageNumbers(total, max, current) {
 function PaginationButtons(totalPages, maxPageVisible = 10, currentPage = 1) {
     let pages = pageNumbers(totalPages, maxPageVisible, currentPage);
     let currentPageBtn = null;
-}
 
-const paginationButtons = new PaginationButtons(100);
+    const buttons = new Map();
+
+    const fragment = document.createDocumentFragment();
+
+    const paginationButtonsContainer = document.createElement("div");
+    paginationButtonsContainer.className = "pagination-buttons";
+
+    const disabled = {
+        start: () => pages[0] === 1,
+        prev: () => currentPage === 1,
+        end: () => pages.at(-1) === totalPages,
+        next: () => currentPage === totalPages
+    }
+
+    const createAndSetupButton = (label = "", cls = "", disabled = false, handleClick) => {
+        const button = document.createElement("button");
+        button.textContent = label;
+        button.className = `page-btn ${cls}`;
+        button.disabled = disabled;
+        button.addEventListener("click", event => {
+            window.scrollTo(0,0);
+            handleClick(event);
+            this.update();
+            paginationButtonsContainer.value = currentPage;
+            paginationButtonsContainer.dispatchEvent(new Event("change"));
+        });
+
+        return button;
+    }
+
+    const onPageButtonClick = event => currentPage = +event.currentTarget.textContent;
+    const onPageButtonUpdate = index => btn => {
+        btn.textContent = pages[index];
+
+        if (pages[index] === currentPage)  {
+            currentPageBtn.classList.remove("active");
+            btn.classList.add("active");
+            currentPageBtn = btn;
+            currentPageBtn.focus()
+        }
+    }
+
+    buttons.set(
+        createAndSetupButton("start", "start-page", disabled.start(), () => currentPage = 1),
+        (btn) => btn.disabled = disabled.start()
+    )
+
+    buttons.set(
+        createAndSetupButton("prev", "prev-page", disabled.prev(), () => currentPage--),
+        (btn) => btn.disabled = disabled.prev()
+    )
+
+    pages.forEach((pageNumber, index) => {
+        const isCurrentPage = pageNumber === currentPage;
+        const button = createAndSetupButton(pageNumber, isCurrentPage ? "active" : "", false, onPageButtonClick);
+        if (isCurrentPage) currentPageBtn = button;
+        buttons.set(button, onPageButtonUpdate(index))
+    })
+
+    buttons.set(
+        createAndSetupButton("next", "next-page", disabled.next(), () => currentPage++),
+        (btn) => btn.disabled = disabled.next()
+    )
+
+    buttons.set(
+        createAndSetupButton("end", "end-page", disabled.end(), () => currentPage = totalPages),
+        (btn) => btn.disabled = disabled.end()
+    )
+
+    buttons.forEach((_, btn) => fragment.appendChild(btn));
+
+    this.render = (container = document.querySelector(".container")) => {
+        removeButtons();
+        paginationButtonsContainer.appendChild(fragment);
+        container.appendChild(paginationButtonsContainer);
+    }
+
+    this.update = (newPageNumber = currentPage) => {
+        currentPage = newPageNumber;
+        pages = pageNumbers(totalPages, maxPageVisible, currentPage);
+        buttons.forEach((updateButton, button) => updateButton(button));
+    }
+
+    this.onChange = (handler) => paginationButtonsContainer.addEventListener("change", handler);
+}
 
 
 // Sets a limit on the number of job postings rendered
 function renderLimit(jobsArray, jobsPerPage, currPage) {
-    currPage--;
-    
-    let start = jobsPerPage * currPage;
+    currPage--; // index 
+    postings.innerHTML = ""; // clears job posts
+
+    let start = currPage;
     let end = start + jobsPerPage;
     let paginated = jobsArray.slice(start, end);
     
@@ -159,26 +249,10 @@ function renderJobs(jobsArray) {
     })
 }
 
-// Handles infinite scroll
-window.addEventListener("scroll", () => {
-    const {scrollHeight, scrollTop, clientHeight} = document.documentElement;
-
-    if (!filteredData.length) {
-        if (scrollTop + clientHeight > scrollHeight - 300) {
-            currentPage++;
-            setTimeout(renderLimit(data, jobsPerPage, currentPage), 2000);
-        }
-    }
-    else {
-        if (scrollTop + clientHeight > scrollHeight - 300) {
-            currentPage++;
-            setTimeout(renderLimit(filteredData, jobsPerPage, currentPage), 2000);
-        }
-    }
-});
 
 // Forces top of the page on load
 window.addEventListener("load", () => window.scrollTo(0, 0));
+
 
 // Handles search
 const searchBtn = document.getElementById("search-button");
@@ -190,7 +264,6 @@ searchBtn.addEventListener("click", event => {
     const place = searchInput[1].value;
 
     if (word.length || place.length) {
-        postings.innerHTML = "";
         currentPage = 1;
 
         function getData(value) {
@@ -227,9 +300,32 @@ searchBtn.addEventListener("click", event => {
             else results.textContent = `No results for ${place}`;
         }
         renderLimit(filtered, jobsPerPage, currentPage);
+
+        if (filtered.length <= jobsPerPage) {
+            removeButtons();   
+        }
+        else {
+
+            const totalFilteredPages = Math.floor(filtered.length/jobsPerPage);
+            const paginationButtons = new PaginationButtons(totalFilteredPages);
+    
+            paginationButtons.render();
+    
+            paginationButtons.onChange(event => {
+                currentPage = event.target.value * jobsPerPage
+                renderLimit(filtered, jobsPerPage, currentPage);
+            });
+        }
     }
     else {
         // Resets page only if page has been filtered
-        if (filteredData.length !== 0) location.reload();
+        if (filteredData.length) location.reload();
     }
 });
+
+
+// Removes buttons so new ones can render
+function removeButtons() {
+    let list = [...document.getElementsByClassName("pagination-buttons")]
+    if (list.length) list[0].remove();    
+}
