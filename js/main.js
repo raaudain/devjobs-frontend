@@ -66,7 +66,7 @@ function pageNumbers(total, max, current) {
 }
 
 // Changes number of pages listed
-const maxPages = window.innerWidth > 600 ? 10 : 5;
+const maxPages = window.innerWidth > 600 ? 10 : 3;
 
 function PaginationButtons(totalPages, maxPageVisible = maxPages, currentPage = 1) {
     let pages = pageNumbers(totalPages, maxPageVisible, currentPage);
