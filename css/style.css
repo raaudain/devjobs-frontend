@@ -80,6 +80,7 @@ h2 {
 
 .card {
     width: 17rem;
+    height: 21rem;
 }
 
 .card-header {
@@ -153,6 +154,12 @@ button {
     cursor: pointer;
 }
 
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 100px;
+}
+
 .page-btn {
     background: #ddd;
     color: #212529;
@@ -165,12 +172,6 @@ button {
     margin: 0 2px
 }
 
-.pagination-buttons {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 100px;
-}
-  
 .page-btn[class*="-page"] {
     background: #ccc;
     font-size: 0.6em;

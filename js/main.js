@@ -39,7 +39,7 @@ request.onload = () => {
         paginationButtons.render();
         
         paginationButtons.onChange(event => {
-            currentPage = event.target.value * jobsPerPage;
+            currentPage = event.target.value * jobsPerPage - (jobsPerPage - 1);
             renderLimit(data, jobsPerPage, currentPage);
         });
     }
@@ -195,14 +195,14 @@ function renderJobs(jobsArray) {
         company.className = "card-subtitle mb-2 text-muted";
         location.className = "card-subtitle mb-2 text-muted";
         source.className = "fw-light text-muted";
-        sourceURL.href = jobInfo.source_url+"?ref=https://devjobs.cc";
+        sourceURL.href = jobInfo.source_url;
         sourceURL.target = "_blank";
         sourceURL.rel = "noopener follow";
         sourceURL.className = "source-url";
         logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
         logo.alt = `${jobInfo.company} logo`;
         logo.className = "logo img-thumbnail mb-2";
-        url.href = jobInfo.url.includes("craig") ? jobInfo.url : jobInfo.url.includes("?") ? jobInfo.url+"&ref=https://devjobs.cc" : jobInfo.url+"?ref=https://devjobs.cc";
+        url.href = jobInfo.url;
         url.target = "_blank";
         url.rel = "noopener follow";
         url.className = "url";
@@ -227,9 +227,9 @@ function renderJobs(jobsArray) {
         date.textContent = `${days[d]}, ${months[month]} ${day}, ${year}`;
         date.dateTime = `${year}-${month+1}-${day}`;
         posted.textContent = "Posted: ";
-        title.textContent = jobInfo.title;
-        company.textContent = jobInfo.company;
-        location.textContent = jobInfo.location;
+        title.textContent = limitString(jobInfo.title);
+        company.textContent = limitString(jobInfo.company);
+        location.textContent = limitString(jobInfo.location);
         source.textContent = `Source: ${jobInfo.source}`;
         button.textContent = "Apply"
         
@@ -310,7 +310,7 @@ searchBtn.addEventListener("click", event => {
             paginationButtons.render();
     
             paginationButtons.onChange(event => {
-                currentPage = event.target.value * jobsPerPage
+                currentPage = event.target.value * jobsPerPage;
                 renderLimit(filtered, jobsPerPage, currentPage);
             });
         }
@@ -327,3 +327,12 @@ function removeButtons() {
     let list = [...document.getElementsByClassName("pagination-buttons")]
     if (list.length) list[0].remove();    
 }
+
+
+function limitString(str) {
+    const limit = 40;
+    const { length: len } = str;
+    if (limit < len) return str.slice(0, limit) + "...";
+    else return str;
+}
+
