@@ -228,8 +228,8 @@ function renderJobs(jobsArray) {
         date.dateTime = `${year}-${month+1}-${day}`;
         posted.textContent = "Posted: ";
         title.textContent = limitString(jobInfo.title);
-        company.textContent = limitString(jobInfo.company);
-        location.textContent = limitString(jobInfo.location);
+        company.textContent = jobInfo.company ? limitString(jobInfo.company) : null;
+        location.textContent =  jobInfo.location ? limitString(jobInfo.location) : null;
         source.textContent = `Source: ${jobInfo.source}`;
         button.textContent = "Apply"
         
@@ -310,7 +310,7 @@ searchBtn.addEventListener("click", event => {
             paginationButtons.render();
     
             paginationButtons.onChange(event => {
-                currentPage = event.target.value * jobsPerPage;
+                currentPage = event.target.value * jobsPerPage - (jobsPerPage - 1);
                 renderLimit(filtered, jobsPerPage, currentPage);
             });
         }
