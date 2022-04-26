@@ -1,19 +1,17 @@
 const results = document.getElementById("results");
-const jobsPerPage = 30;
+const jobsPerPage = 8;
 
 // For loading animation
-for (let i = 0; i < jobsPerPage; i++) {
-    const card = document.createElement("div");
-    card.className = "card border-0 loading-card mb-5";
-    card.style = "height: 14.5rem; width: 25rem;";
-    jobs.appendChild(card);
-}
+// for (let i = 0; i < jobsPerPage; i++) {
+//     const card = document.createElement("div");
+//     card.className = "card border-0 loading-card mb-5";
+//     card.style = "height: 14.5rem; width: 17rem;";
+//     jobs.appendChild(card);
+// }
 
 const endpoint = "../json/data.json";
 const request = new XMLHttpRequest();
 const postings = document.getElementById("jobs");
-const pagination = document.getElementsByClassName("pagination-buttons");
-// console.log(pagination)
 
 let data = [];
 let filteredData = [];
@@ -92,7 +90,7 @@ function PaginationButtons(totalPages, maxPageVisible = maxPages, currentPage = 
         button.className = `page-btn ${cls}`;
         button.disabled = disabled;
         button.addEventListener("click", event => {
-            window.scrollTo(0,0);
+            // window.scrollTo(0,0);
             handleClick(event);
             this.update();
             paginationButtonsContainer.value = currentPage;
@@ -188,9 +186,8 @@ function renderJobs(jobsArray) {
         const button = document.createElement("button");
 
         jobCard.className = "card border border-1 mb-5 shadow zoom fade-in-card";
-        jobCard.style = "width: 25rem;";
         job.className = "card-body d-flex flex-column justify-content-between";
-        job.style = "height: 100%;";
+        // job.style = "height: 100%;";
         posted.className = "card-header";
         title.className = "card-title";
         button.className = "btn btn-primary btn-md";

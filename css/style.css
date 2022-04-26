@@ -78,12 +78,20 @@ h2 {
     object-fit: contain;
 }
 
+.card {
+    width: 17rem;
+}
+
+.card-header {
+    font-size: .82rem;
+}
+
 .card-title, .card-subtitle {
     font-weight: 500;
 }
 
 .card-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     line-height: 1.2;
 }
 
@@ -199,6 +207,14 @@ button {
     #jobs {
         display: flex;
         justify-content: space-around;
+    }
+
+    .card {
+        width: 25rem;
+    }
+    
+    .card-header {
+        font-size: .95rem;
     }
 
     .card:hover {
