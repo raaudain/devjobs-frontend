@@ -229,30 +229,30 @@ function renderJobs(jobsArray) {
     }
 
     const jobCards = jobsArray.map(jobInfo => 
-        `<article class="card border border-1 mb-5 shadow zoom fade-in-card">
-            <span class="card-header">
+        `<article class="card border border-1 mb-5 shadow zoom ">
+            <span class="card-header fade-in-card">
                 Posted: 
                 <time datetime="${getDateTime(jobInfo)}">
                     ${getDate(jobInfo)}
                 </time>
             </span>
-            <div class="card-body d-flex flex-column justify-content-between">
+            <div class="card-body d-flex flex-column justify-content-between fade-in-card">
                 <img class="logo img-thumbnail mb-2" src="${jobInfo.company_logo && jobInfo.company_logo !== '/img/v1.1/logos/jazzhr-logo.png' ? jobInfo.company_logo : '../img/logoipsum-logo-35.svg'}" alt="${jobInfo.company} logo" />
                 <div class="card-title">
                     <span title="${jobInfo.title.length !== limitString(jobInfo.title).length ? jobInfo.title : ''}">
                         ${limitString(jobInfo.title)}
                     </span>
                 </div>
-                <div class="card-subtitle mb-2 text-muted">
+                <div class="card-subtitle mb-2 text-muted" title="${jobInfo.company && jobInfo.company.length !== limitString(jobInfo.company).length ? jobInfo.company : ''}">
                     ${jobInfo.company ? limitString(jobInfo.company) : ""}
                 </div>
                 <div class="card-subtitle mb-2 text-muted">
-                    <span title="${jobInfo.location.length !== limitString(jobInfo.location).length ? jobInfo.location : ''}">
+                    <span title="${jobInfo.location && jobInfo.location.length !== limitString(jobInfo.location).length ? jobInfo.location : ''}">
                         ${jobInfo.location ? limitString(jobInfo.location) : ""}
                     </span>
                 </div>
-                <a class="source-url" href="${jobInfo.source_url}" target="_blank" rel="noopener follow">
-                    <p class="fw-light text-muted">Source: ${jobInfo.source}</p>
+                <a class="source-url" href="${jobInfo.source_url}" target="_blank" rel="noopener follow" title="${jobInfo.source.length !== limitString(jobInfo.source).length ? jobInfo.source : ''}">
+                    <p class="fw-light text-muted">Source: ${limitString(jobInfo.source)}</p>
                 </a>
                 <a class="url" href="${jobInfo.url}" target="_blank" rel="noopener follow" title="${generateTitle(jobInfo)}">
                     <button class="btn btn-primary btn-md" style="width: 100%">Apply</button>
