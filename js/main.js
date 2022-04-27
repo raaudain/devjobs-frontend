@@ -1,12 +1,12 @@
 const results = document.getElementById("results");
-const postings = document.getElementById("jobs");
+const jobs = document.getElementById("jobs");
 const jobsPerPage = 8;
 
 // For loading animation
 for (let i = 0; i < jobsPerPage; i++) {
     const card = document.createElement("div");
     card.className = "card border-0 loading-card mb-5";
-    postings.appendChild(card);
+    jobs.appendChild(card);
 }
 
 const endpoint = "../json/data.json";
@@ -25,7 +25,7 @@ request.onload = () => {
         const loading = document.getElementById("loading");
         results.innerText ? loading.style.display = "block" : loading.style.display = "none";
         // Clears loading cards animation
-        if (loading.style.display = "none") postings.textContent = "";
+        if (loading.style.display = "none") jobs.textContent = "";
     
         data = response;
         results.textContent = `Total jobs: ${response.length}`;
@@ -191,7 +191,7 @@ function PaginationButtons(totalPages, maxPageVisible = maxPages, currentPage = 
 // Sets a limit on the number of job postings rendered
 function renderLimit(jobsArray, jobsPerPage, currPage) {
     currPage--; // index 
-    postings.innerHTML = ""; // clears job posts
+    jobs.innerHTML = ""; // clears job posts
 
     let start = currPage;
     let end = start + jobsPerPage;
@@ -239,15 +239,15 @@ function renderJobs(jobsArray) {
             <div class="card-body d-flex flex-column justify-content-between fade-in-card">
                 <img class="logo img-thumbnail mb-2" src="${jobInfo.company_logo && jobInfo.company_logo !== '/img/v1.1/logos/jazzhr-logo.png' ? jobInfo.company_logo : '../img/logoipsum-logo-35.svg'}" alt="${jobInfo.company} logo" />
                 <div class="card-title">
-                    <span title="${jobInfo.title.length !== limitString(jobInfo.title).length ? jobInfo.title : ''}">
+                    <span title="${limitString(jobInfo.title).includes("...") ? jobInfo.title : ''}">
                         ${limitString(jobInfo.title)}
                     </span>
                 </div>
-                <div class="card-subtitle mb-2 text-muted" title="${jobInfo.company && jobInfo.company.length !== limitString(jobInfo.company).length ? jobInfo.company : ''}">
+                <div class="card-subtitle mb-2 text-muted" title="${jobInfo.company && limitString(jobInfo.company).includes("...") ? jobInfo.company : ''}">
                     ${jobInfo.company ? limitString(jobInfo.company) : ""}
                 </div>
                 <div class="card-subtitle mb-2 text-muted">
-                    <span title="${jobInfo.location && jobInfo.location.length !== limitString(jobInfo.location).length ? jobInfo.location : ''}">
+                    <span title="${jobInfo.location && limitString(jobInfo.location).includes("...") ? jobInfo.location : ''}">
                         ${jobInfo.location ? limitString(jobInfo.location) : ""}
                     </span>
                 </div>
@@ -261,7 +261,7 @@ function renderJobs(jobsArray) {
         </article>`
     ).join("");
 
-    postings.innerHTML = jobCards;
+    jobs.innerHTML = jobCards;
 }
 
 // Forces top of the page on load
