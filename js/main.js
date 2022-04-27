@@ -2,12 +2,11 @@ const results = document.getElementById("results");
 const jobsPerPage = 8;
 
 // For loading animation
-// for (let i = 0; i < jobsPerPage; i++) {
-//     const card = document.createElement("div");
-//     card.className = "card border-0 loading-card mb-5";
-//     card.style = "height: 14.5rem; width: 17rem;";
-//     jobs.appendChild(card);
-// }
+for (let i = 0; i < jobsPerPage; i++) {
+    const card = document.createElement("div");
+    card.className = "card border-0 loading-card mb-5";
+    jobs.appendChild(card);
+}
 
 const endpoint = "../json/data.json";
 const request = new XMLHttpRequest();
@@ -48,6 +47,34 @@ request.onload = () => {
     }
 }
 request.send(null);
+
+const input = document.querySelector("input")
+
+const updateText = debounce(text => {
+    const matches = data.filter(v => {
+        const regex = new RegExp(`${text}`, "gi");
+        if (text.length > 2) return v.title.match(regex);
+    });
+
+    console.log(matches)
+
+    return matches;
+})
+
+input.addEventListener("input", event => updateText(event.target.value));
+
+
+function debounce(cb, delay = 1000) {
+    let timeout;
+    return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            cb(...args)
+        }, delay)
+    }
+}
+
+
 
 function pageNumbers(total, max, current) {
     const half = Math.round(max / 2);
@@ -171,81 +198,58 @@ function renderLimit(jobsArray, jobsPerPage, currPage) {
 
 // Renders job postings
 function renderJobs(jobsArray) {
-    jobsArray.map(jobInfo => {
-        const jobCard = document.createElement("article");
-        const job = document.createElement("div");
-        const date = document.createElement("time");
-        const posted = document.createElement("span");
-        const title = document.createElement("div");
-        const company = document.createElement("div");
-        const logo = document.createElement("img");
-        const location = document.createElement("div");
-        const url = document.createElement("a");
-        const source = document.createElement("p");
-        const sourceURL = document.createElement("a");
-        const button = document.createElement("button");
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-        jobCard.className = "card border border-1 mb-5 shadow zoom fade-in-card";
-        job.className = "card-body d-flex flex-column justify-content-between";
-        // job.style = "height: 100%;";
-        posted.className = "card-header";
-        title.className = "card-title";
-        button.className = "btn btn-primary btn-md";
-        button.style = "width: 100%;";
-        company.className = "card-subtitle mb-2 text-muted";
-        location.className = "card-subtitle mb-2 text-muted";
-        source.className = "fw-light text-muted";
-        sourceURL.href = jobInfo.source_url;
-        sourceURL.target = "_blank";
-        sourceURL.rel = "noopener follow";
-        sourceURL.className = "source-url";
-        logo.src = jobInfo.company_logo ? jobInfo.company_logo : "../img/logoipsum-logo-35.svg";
-        logo.alt = `${jobInfo.company} logo`;
-        logo.className = "logo img-thumbnail mb-2";
-        url.href = jobInfo.url;
-        url.target = "_blank";
-        url.rel = "noopener follow";
-        url.className = "url";
-        const isLocationTrue = jobInfo.location ? ` in ${jobInfo.location}.` : ".";
-        const notRemote = `Apply for ${jobInfo.title} job` + isLocationTrue;
-        url.title = jobInfo.location && jobInfo.location.toLowerCase() == "remote" ? `Apply for remote ${jobInfo.title} job.` : notRemote;
+    
+    function getDateTime() {
+        
+    }
+    
+    function getDate() {
+        
+    }
+    
+    function generateTitle(item) {
+        const isLocationTrue = item.location ? ` in ${item.location}.` : ".";
+        const notRemote = `Apply for ${item.title} job` + isLocationTrue;
+        return item.location && item.location.toLowerCase() == "remote" ? `Apply for remote ${item.title} job.` : notRemote;
+    }
+    
+    const jobCards = jobsArray.map(jobInfo => 
+        `<article class="card border border-1 mb-5 shadow zoom fade-in-card">
+            <span class="card-header">
+                Posted: 
+                <time datetime="${new Date(jobInfo.timestamp * 1e3).getFullYear()}-${new Date(jobInfo.timestamp * 1e3).getMonth()+1}-${new Date(jobInfo.timestamp * 1e3).getDate()}">
+                    ${days[new Date(jobInfo.timestamp * 1e3).getDay()]}, ${months[new Date(jobInfo.timestamp * 1e3).getMonth()]} ${new Date(jobInfo.timestamp * 1e3).getDate()}, ${new Date(jobInfo.timestamp * 1e3).getFullYear()}
+                </time>
+            </span>
+            <div class="card-body d-flex flex-column justify-content-between">
+                <img class="logo img-thumbnail mb-2" src="${jobInfo.company_logo ? jobInfo.company_logo : '../img/logoipsum-logo-35.svg'}" alt="${jobInfo.company} logo" />
+                <div class="card-title">
+                    ${limitString(jobInfo.title)}
+                </div>
+                <div class="card-subtitle mb-2 text-muted">
+                    ${jobInfo.company ? limitString(jobInfo.company) : ""}
+                </div>
+                <div class="card-subtitle mb-2 text-muted">
+                    ${jobInfo.location ? limitString(jobInfo.location) : ""}
+                </div>
+                <a class="source-url" href="${jobInfo.source_url}" target="_blank" rel="noopener follow">
+                    <p class="fw-light text-muted">Source: ${jobInfo.source}</p>
+                </a>
+                <a class="url" href="${jobInfo.url}" target="_blank" rel="noopener follow" title="${generateTitle(jobInfo)}">
+                    <button class="btn btn-primary btn-md" style="width: 100%">Apply</button>
+                </a>
+            </div>
+        </article>`
+        // const isLocationTrue = jobInfo.location ? ` in ${jobInfo.location}.` : ".";
+        // const notRemote = `Apply for ${jobInfo.title} job` + isLocationTrue;
+        // url.title = jobInfo.location && jobInfo.location.toLowerCase() == "remote" ? `Apply for remote ${jobInfo.title} job.` : notRemote;
+    ).join("");
 
-        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        
-        // 1e3 is equal to 1000.  It's supposed to use less resources
-        const dt = new Date(jobInfo.timestamp * 1e3);
-        const month = dt.getMonth();
-        const day = dt.getDate();
-        const d = dt.getDay();
-        const year = dt.getFullYear();
-        const hour = dt.getHours() === 0 ? "12" : dt.getHours();
-        const min = `${dt.getMinutes()}`.length < 2 ? "0"+`${dt.getMinutes()}` : dt.getMinutes();
-        const sec = `${dt.getSeconds()}`.length < 2 ? "0"+`${dt.getSeconds()}` : dt.getSeconds();
-        const t = hour > 12 ? `${hour-12}:${min}:${sec} PM` : `${hour}:${min}:${sec} AM`;
-        
-        date.textContent = `${days[d]}, ${months[month]} ${day}, ${year}`;
-        date.dateTime = `${year}-${month+1}-${day}`;
-        posted.textContent = "Posted: ";
-        title.textContent = limitString(jobInfo.title);
-        company.textContent = jobInfo.company ? limitString(jobInfo.company) : null;
-        location.textContent =  jobInfo.location ? limitString(jobInfo.location) : null;
-        source.textContent = `Source: ${jobInfo.source}`;
-        button.textContent = "Apply"
-        
-        jobs.appendChild(jobCard);
-        jobCard.appendChild(posted);
-        posted.appendChild(date);
-        jobCard.appendChild(job);
-        job.appendChild(logo);
-        job.appendChild(title);
-        if (company) job.appendChild(company);
-        if (location) job.appendChild(location);
-        job.appendChild(sourceURL);
-        url.appendChild(button);
-        sourceURL.appendChild(source);
-        job.appendChild(url);
-    })
+    jobs.innerHTML = jobCards;
+
 }
 
 
@@ -324,7 +328,7 @@ searchBtn.addEventListener("click", event => {
 
 // Removes buttons so new ones can render
 function removeButtons() {
-    let list = [...document.getElementsByClassName("pagination-buttons")]
+    let list = [...document.getElementsByClassName("pagination-buttons")];
     if (list.length) list[0].remove();    
 }
 
