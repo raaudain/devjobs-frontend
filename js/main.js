@@ -1,16 +1,16 @@
 const results = document.getElementById("results");
+const postings = document.getElementById("jobs");
 const jobsPerPage = 8;
 
 // For loading animation
 for (let i = 0; i < jobsPerPage; i++) {
     const card = document.createElement("div");
     card.className = "card border-0 loading-card mb-5";
-    jobs.appendChild(card);
+    postings.appendChild(card);
 }
 
 const endpoint = "../json/data.json";
 const request = new XMLHttpRequest();
-const postings = document.getElementById("jobs");
 
 let data = [];
 let filteredData = [];
@@ -48,23 +48,30 @@ request.onload = () => {
 }
 request.send(null);
 
-const input = document.querySelector("input")
+const input = document.querySelector("input");
+const matchList = document.getElementById("autocomplete")
 
 const updateText = debounce(text => {
     const matches = data.filter(v => {
         const regex = new RegExp(`${text}`, "gi");
         if (text.length > 2) return v.title.match(regex);
     });
+    outputHTML(matches);
+});
 
-    console.log(matches)
+function outputHTML(html) {
+    const output = html.map(match => 
+        `<option value="${match.title}">
+            ${match.title}
+        </option>`
+    ).join("")
 
-    return matches;
-})
+    // matchList.innerHTML = output;
+}
 
 input.addEventListener("input", event => updateText(event.target.value));
 
-
-function debounce(cb, delay = 1000) {
+function debounce(cb, delay = 500) {
     let timeout;
     return (...args) => {
         clearTimeout(timeout);
@@ -73,8 +80,6 @@ function debounce(cb, delay = 1000) {
         }, delay)
     }
 }
-
-
 
 function pageNumbers(total, max, current) {
     const half = Math.round(max / 2);
@@ -89,6 +94,7 @@ function pageNumbers(total, max, current) {
 
     return Array.from({length: max}, (_, i) => (i + 1) + from);
 }
+
 
 // Changes number of pages listed
 const maxPages = window.innerWidth > 600 ? 10 : 3;
@@ -117,7 +123,6 @@ function PaginationButtons(totalPages, maxPageVisible = maxPages, currentPage = 
         button.className = `page-btn ${cls}`;
         button.disabled = disabled;
         button.addEventListener("click", event => {
-            // window.scrollTo(0,0);
             handleClick(event);
             this.update();
             paginationButtonsContainer.value = currentPage;
@@ -183,7 +188,6 @@ function PaginationButtons(totalPages, maxPageVisible = maxPages, currentPage = 
     this.onChange = (handler) => paginationButtonsContainer.addEventListener("change", handler);
 }
 
-
 // Sets a limit on the number of job postings rendered
 function renderLimit(jobsArray, jobsPerPage, currPage) {
     currPage--; // index 
@@ -201,13 +205,21 @@ function renderJobs(jobsArray) {
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    
-    function getDateTime() {
-        
+    function getDateTime(item) {
+        const dt = new Date(item.timestamp * 1e3);
+        const month = dt.getMonth();
+        const day = dt.getDate();
+        const year = dt.getFullYear();
+        return `${year}-${month+1}-${day}`;
     }
     
-    function getDate() {
-        
+    function getDate(item) {
+        const dt = new Date(item.timestamp * 1e3);
+        const month = dt.getMonth();
+        const day = dt.getDate();
+        const d = dt.getDay();
+        const year = dt.getFullYear();
+        return `${days[d]}, ${months[month]} ${day}, ${year}`;
     }
     
     function generateTitle(item) {
@@ -215,25 +227,29 @@ function renderJobs(jobsArray) {
         const notRemote = `Apply for ${item.title} job` + isLocationTrue;
         return item.location && item.location.toLowerCase() == "remote" ? `Apply for remote ${item.title} job.` : notRemote;
     }
-    
+
     const jobCards = jobsArray.map(jobInfo => 
         `<article class="card border border-1 mb-5 shadow zoom fade-in-card">
             <span class="card-header">
                 Posted: 
-                <time datetime="${new Date(jobInfo.timestamp * 1e3).getFullYear()}-${new Date(jobInfo.timestamp * 1e3).getMonth()+1}-${new Date(jobInfo.timestamp * 1e3).getDate()}">
-                    ${days[new Date(jobInfo.timestamp * 1e3).getDay()]}, ${months[new Date(jobInfo.timestamp * 1e3).getMonth()]} ${new Date(jobInfo.timestamp * 1e3).getDate()}, ${new Date(jobInfo.timestamp * 1e3).getFullYear()}
+                <time datetime="${getDateTime(jobInfo)}">
+                    ${getDate(jobInfo)}
                 </time>
             </span>
             <div class="card-body d-flex flex-column justify-content-between">
-                <img class="logo img-thumbnail mb-2" src="${jobInfo.company_logo ? jobInfo.company_logo : '../img/logoipsum-logo-35.svg'}" alt="${jobInfo.company} logo" />
+                <img class="logo img-thumbnail mb-2" src="${jobInfo.company_logo && jobInfo.company_logo !== '/img/v1.1/logos/jazzhr-logo.png' ? jobInfo.company_logo : '../img/logoipsum-logo-35.svg'}" alt="${jobInfo.company} logo" />
                 <div class="card-title">
-                    ${limitString(jobInfo.title)}
+                    <span title="${jobInfo.title.length !== limitString(jobInfo.title).length ? jobInfo.title : ''}">
+                        ${limitString(jobInfo.title)}
+                    </span>
                 </div>
                 <div class="card-subtitle mb-2 text-muted">
                     ${jobInfo.company ? limitString(jobInfo.company) : ""}
                 </div>
                 <div class="card-subtitle mb-2 text-muted">
-                    ${jobInfo.location ? limitString(jobInfo.location) : ""}
+                    <span title="${jobInfo.location.length !== limitString(jobInfo.location).length ? jobInfo.location : ''}">
+                        ${jobInfo.location ? limitString(jobInfo.location) : ""}
+                    </span>
                 </div>
                 <a class="source-url" href="${jobInfo.source_url}" target="_blank" rel="noopener follow">
                     <p class="fw-light text-muted">Source: ${jobInfo.source}</p>
@@ -243,19 +259,13 @@ function renderJobs(jobsArray) {
                 </a>
             </div>
         </article>`
-        // const isLocationTrue = jobInfo.location ? ` in ${jobInfo.location}.` : ".";
-        // const notRemote = `Apply for ${jobInfo.title} job` + isLocationTrue;
-        // url.title = jobInfo.location && jobInfo.location.toLowerCase() == "remote" ? `Apply for remote ${jobInfo.title} job.` : notRemote;
     ).join("");
 
-    jobs.innerHTML = jobCards;
-
+    postings.innerHTML = jobCards;
 }
-
 
 // Forces top of the page on load
 window.addEventListener("load", () => window.scrollTo(0, 0));
-
 
 // Handles search
 const searchBtn = document.getElementById("search-button");
@@ -325,18 +335,16 @@ searchBtn.addEventListener("click", event => {
     }
 });
 
-
 // Removes buttons so new ones can render
 function removeButtons() {
     let list = [...document.getElementsByClassName("pagination-buttons")];
     if (list.length) list[0].remove();    
 }
 
-
+// Limit characters
 function limitString(str) {
     const limit = 40;
     const { length: len } = str;
     if (limit < len) return str.slice(0, limit) + "...";
     else return str;
 }
-
