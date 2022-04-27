@@ -49,7 +49,7 @@ request.onload = () => {
 request.send(null);
 
 const input = document.querySelector("input");
-const matchList = document.getElementById("autocomplete")
+const matchList = document.getElementById("autocomplete");
 
 const updateText = debounce(text => {
     const matches = data.filter(v => {
@@ -71,7 +71,7 @@ function outputHTML(html) {
 
 input.addEventListener("input", event => updateText(event.target.value));
 
-function debounce(cb, delay = 500) {
+function debounce(cb, delay = 1000) {
     let timeout;
     return (...args) => {
         clearTimeout(timeout);
