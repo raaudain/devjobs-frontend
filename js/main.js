@@ -47,32 +47,9 @@ request.onload = () => {
 }
 request.send(null);
 
-const input = document.querySelector("input");
-const matchList = document.getElementById("autocomplete");
-
-// const updateText = debounce(text => {
-//     const matches = data.filter(v => {
-//         const regex = new RegExp(`${text}`, "gi");
-//         return v.title.match(regex);
-//     });
-//     console.log(text, matches)
-//     outputHTML(matches);
-// });
-
-function outputHTML(html) {
-    const output = html.map(match => 
-        `<option value="${match.title}">
-            ${match.title}
-        </option>`
-    ).join("")
-
-    // matchList.innerHTML = output;
-}
-
-// input.addEventListener("input", event => updateText(event.target.value));
 
 function pageNumbers(total, max, current) {
-    const half = Math.round(max / 2);
+    const half = Math.ceil(max / 2);
     let to = max;
 
     // If current page is at the end
@@ -284,7 +261,7 @@ const filterJobs = (debounce(event => {
     }
 
     const filtered = data.filter(getData);
-    
+    console.log(filtered)
     if (filtered.length) {
         if (word.length && place.length) results.textContent = `Results for ${word}, ${place}: ${filtered.length}`;
         else if (word.length && !place.length) results.textContent = `Results for ${word}: ${filtered.length}`;
@@ -301,7 +278,7 @@ const filterJobs = (debounce(event => {
         removeButtons();   
     }
     else {
-        const totalFilteredPages = Math.floor(filtered.length/jobsPerPage);
+        const totalFilteredPages = Math.ceil(filtered.length/jobsPerPage);
         const paginationButtons = totalFilteredPages < 10 ? new PaginationButtons(totalFilteredPages, totalFilteredPages) : new PaginationButtons(totalFilteredPages);
 
         paginationButtons.render();
