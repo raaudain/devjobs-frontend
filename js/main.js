@@ -248,8 +248,9 @@ const filterJobs = (debounce(event => {
         let company = value.company ? value.company.toLowerCase() : "";
         // If location exists, use the location. Else location is an empty string.
         let location = value.location ? value.location.toLowerCase() : "";
+        let source = value.source ? value.source.toLowerCase() : "";
 
-        if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
+        if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase()) || source.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
             return value;
         }
         // Looks for "remote" in title and location fields
