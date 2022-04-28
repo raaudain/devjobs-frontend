@@ -13,7 +13,6 @@ const endpoint = "../json/data.json";
 const request = new XMLHttpRequest();
 
 let data = [];
-let filteredData = [];
 let currentPage = 1;
 
 request.open("GET", endpoint);
@@ -51,13 +50,14 @@ request.send(null);
 const input = document.querySelector("input");
 const matchList = document.getElementById("autocomplete");
 
-const updateText = debounce(text => {
-    const matches = data.filter(v => {
-        const regex = new RegExp(`${text}`, "gi");
-        if (text.length > 2) return v.title.match(regex);
-    });
-    outputHTML(matches);
-});
+// const updateText = debounce(text => {
+//     const matches = data.filter(v => {
+//         const regex = new RegExp(`${text}`, "gi");
+//         return v.title.match(regex);
+//     });
+//     console.log(text, matches)
+//     outputHTML(matches);
+// });
 
 function outputHTML(html) {
     const output = html.map(match => 
@@ -69,17 +69,7 @@ function outputHTML(html) {
     // matchList.innerHTML = output;
 }
 
-input.addEventListener("input", event => updateText(event.target.value));
-
-function debounce(cb, delay = 1000) {
-    let timeout;
-    return (...args) => {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => {
-            cb(...args)
-        }, delay)
-    }
-}
+// input.addEventListener("input", event => updateText(event.target.value));
 
 function pageNumbers(total, max, current) {
     const half = Math.round(max / 2);
@@ -267,73 +257,75 @@ function renderJobs(jobsArray) {
 // Forces top of the page on load
 window.addEventListener("load", () => window.scrollTo(0, 0));
 
-// Handles search
-const searchBtn = document.getElementById("search-button");
-searchBtn.addEventListener("click", event => {
-    event.preventDefault();
-
+// Handles filter
+const filterJobs = (debounce(event => {
     const searchInput = document.getElementById("search-input");
     const word = searchInput[0].value;
     const place = searchInput[1].value;
 
-    if (word.length || place.length) {
-        currentPage = 1;
+    currentPage = 1;
 
-        function getData(value) {
-            let title = value.title.toLowerCase();
-            // If company exists, use company. Else use empty string.
-            let company = value.company ? value.company.toLowerCase() : "";
-            // If location exists, use the location. Else location is an empty string.
-            let location = value.location ? value.location.toLowerCase() : "";
+    function getData(value) {
+        let title = value.title.toLowerCase();
+        // If company exists, use company. Else use empty string.
+        let company = value.company ? value.company.toLowerCase() : "";
+        // If location exists, use the location. Else location is an empty string.
+        let location = value.location ? value.location.toLowerCase() : "";
 
-            if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
+        if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
+            return value;
+        }
+        // Looks for "remote" in title and location fields
+        else if (place.toLowerCase() === "remote") {
+            if (title.includes(word.toLowerCase()) && (title.includes(place.toLowerCase()) || location.includes(place.toLowerCase()))) {
                 return value;
             }
-            // Looks for "remote" in title and location fields
-            else if (place.toLowerCase() === "remote") {
-                if (title.includes(word.toLowerCase()) && (title.includes(place.toLowerCase()) || location.includes(place.toLowerCase()))) {
-                    return value;
-                }
-            }
         }
+    }
 
-        const filtered = data.filter(getData);
-        
-        // filteredData is used for infinite scroll event listener
-        filteredData = filtered;
-        
-        if (filtered.length) {
-            if (word.length && place.length) results.textContent = `Results for ${word}, ${place}: ${filtered.length}`;
-            else if (word.length && !place.length) results.textContent = `Results for ${word}: ${filtered.length}`;
-            else results.textContent = `Results for ${place}: ${filtered.length}`;
-        }
-        else {
-            if (word.length && place.length) results.textContent = `No results for ${word}, ${place}`;
-            else if (word.length && !place.length) results.textContent = `No results for ${word}`;
-            else results.textContent = `No results for ${place}`;
-        }
-        renderLimit(filtered, jobsPerPage, currentPage);
-
-        if (filtered.length <= jobsPerPage) {
-            removeButtons();   
-        }
-        else {
-            const totalFilteredPages = Math.floor(filtered.length/jobsPerPage);
-            const paginationButtons = totalFilteredPages < 10 ? new PaginationButtons(totalFilteredPages, totalFilteredPages) : new PaginationButtons(totalFilteredPages);
+    const filtered = data.filter(getData);
     
-            paginationButtons.render();
-    
-            paginationButtons.onChange(event => {
-                currentPage = event.target.value * jobsPerPage - (jobsPerPage - 1);
-                renderLimit(filtered, jobsPerPage, currentPage);
-            });
-        }
+    if (filtered.length) {
+        if (word.length && place.length) results.textContent = `Results for ${word}, ${place}: ${filtered.length}`;
+        else if (word.length && !place.length) results.textContent = `Results for ${word}: ${filtered.length}`;
+        else results.textContent = `Results for ${place}: ${filtered.length}`;
     }
     else {
-        // Resets page only if page has been filtered
-        if (filteredData.length) location.reload();
+        if (word.length && place.length) results.textContent = `No results for ${word}, ${place}`;
+        else if (word.length && !place.length) results.textContent = `No results for ${word}`;
+        else results.textContent = `No results for ${place}`;
     }
-});
+    renderLimit(filtered, jobsPerPage, currentPage);
+
+    if (filtered.length <= jobsPerPage) {
+        removeButtons();   
+    }
+    else {
+        const totalFilteredPages = Math.floor(filtered.length/jobsPerPage);
+        const paginationButtons = totalFilteredPages < 10 ? new PaginationButtons(totalFilteredPages, totalFilteredPages) : new PaginationButtons(totalFilteredPages);
+
+        paginationButtons.render();
+
+        paginationButtons.onChange(event => {
+            currentPage = event.target.value * jobsPerPage - (jobsPerPage - 1);
+            renderLimit(filtered, jobsPerPage, currentPage);
+        });
+    }
+}));
+
+input1.addEventListener("input", event => filterJobs(event.target.value));
+input2.addEventListener("input", event => filterJobs(event.target.value));
+
+
+function debounce(cb, delay = 600) {
+    let timeout;
+    return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            cb(...args)
+        }, delay)
+    }
+}
 
 // Removes buttons so new ones can render
 function removeButtons() {

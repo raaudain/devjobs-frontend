@@ -198,6 +198,23 @@ button {
     }
 }
 
+#search-button {
+    display: none;
+}
+
+.form-control {
+    height: 2.75rem !important;
+}
+
+.form-control:focus {
+    border-color: #6c757d !important;
+    box-shadow: none !important;
+}
+
+.form-control[placeholder="Enter location"] {
+    border-radius: 0 .25rem .25rem 0 !important;
+}
+
 @media (min-width: 1200px) {
     h2 {
         font-size: 2rem !important;
@@ -229,4 +246,11 @@ button {
     #search-button {
         display: none;
     }
+}
+
+
+/* Dark Mode */
+
+.dark {
+    background-color: #202634;
 }
