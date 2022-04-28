@@ -31,7 +31,7 @@ request.onload = () => {
         
         renderLimit(data, jobsPerPage, currentPage);
 
-        const totalPages = Math.floor(data.length/jobsPerPage);
+        const totalPages = Math.ceil(data.length/jobsPerPage);
         const paginationButtons = new PaginationButtons(totalPages);
         
         paginationButtons.render();
@@ -261,7 +261,7 @@ const filterJobs = (debounce(event => {
     }
 
     const filtered = data.filter(getData);
-    console.log(filtered)
+
     if (filtered.length) {
         if (word.length && place.length) results.textContent = `Results for ${word}, ${place}: ${filtered.length}`;
         else if (word.length && !place.length) results.textContent = `Results for ${word}: ${filtered.length}`;
