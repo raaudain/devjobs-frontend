@@ -43,10 +43,29 @@ table {
 	border-spacing: 0;
 }
 
+:root {
+    --general-text-color-light: #212529;
+    --page-btn-bg-color-light: #ddd;
+    --white: #fff;
+    --page-btn-bg-color-active-light: #0d6efd;
+
+    --bg-color-dark: #202634;
+    --general-text-color-dark: #fff;
+    --card-bg-dark: #303643;
+    --text-color-dark: #bbc4c4;
+}
+
+html {
+    color: var(--general-text-color-light);
+    background-color: var(--white);
+}
+
+
 body {
     background-repeat: repeat;
     background-image: url("../img/dot.webp");
 }
+
 
 .header {
     text-decoration: none;
@@ -54,7 +73,7 @@ body {
 }
 
 h1 {
-    color: #212529;
+    color: var(--general-text-color-light);
 }
 
 h2 {
@@ -162,7 +181,7 @@ button {
 
 .page-btn {
     background: #ddd;
-    color: #212529;
+    /* color: #212529; */
     height: 35px;
     border-radius: 2px;
     padding: 0 10px;
@@ -180,7 +199,7 @@ button {
   
 .page-btn.active {
     background: #0d6efd;
-    color: #fff;
+    color: var(--white);
 }
   
 .page-btn[disabled] {
@@ -250,7 +269,70 @@ button {
 
 
 /* Dark Mode */
+/* @media (prefers-color-scheme: dark) {
+    html {
+        background-color: var(--bg-color-dark);
+    }
 
-.dark {
-    background-color: #202634;
-}
+    html body {
+        background-color: var(--bg-color-dark);
+        background-repeat: repeat;
+        background-image: url("../img/dot-dark.png");
+    }
+
+    h1, .fs-2 {
+        color: var(--general-text-color-dark);
+    }
+
+    #results {
+        color: var(--general-text-color-dark);
+    }
+
+    .card-body {
+        background-color: var(--card-bg-dark);
+        color: var(--text-color-dark) !important;
+    }
+
+    .card-title {
+        color: var(--general-text-color-dark)
+    }
+
+    .card-subtitle, .source-url {
+        color: var(--text-color-dark) !important;
+    }
+
+    .form-control:focus {
+        border-color: var(--general-text-color-dark) !important;
+        border: 2px solid var(--general-text-color-dark);
+        box-shadow: none !important;
+    }
+
+    .form-control {
+        background-color: var(--bg-color-dark) !important;
+        
+    }
+
+    input {
+        color: var(--general-text-color-dark) !important;
+    }
+
+    .fade-in-card {
+        animation: fadeIn 1.5s;
+    }
+    
+    .fade-in-text {
+        animation: fadeIn linear 1.5s;
+    }
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    #input1::placeholder, #input2::placeholder { 
+        color: var(--text-color-dark);
+    }
+    /* Internet Explorer 10-11 */
+    #input1:-ms-input-placeholder, #input2:-ms-input-placeholder { 
+        color: red;
+    }
+    /* Microsoft Edge */
+    #input1::-ms-input-placeholder, #input2::-ms-input-placeholder { 
+        color: red;
+    }
+} */

@@ -318,3 +318,7 @@ function limitString(str) {
     if (limit < len) return str.slice(0, limit) + "...";
     else return str;
 }
+
+// if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+//     document.documentElement.setAttribute("dark", true);
+// }
