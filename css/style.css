@@ -55,11 +55,6 @@ table {
     --text-color-dark: #bbc4c4;
 }
 
-html {
-    color: var(--general-text-color-light);
-    background-color: var(--white);
-}
-
 
 body {
     background-repeat: repeat;
@@ -324,15 +319,15 @@ button {
         animation: fadeIn linear 1.5s;
     }
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    #input1::placeholder, #input2::placeholder { 
+    /* #input1::placeholder, #input2::placeholder { 
         color: var(--text-color-dark);
-    }
+    } */
     /* Internet Explorer 10-11 */
-    #input1:-ms-input-placeholder, #input2:-ms-input-placeholder { 
+    /* #input1:-ms-input-placeholder, #input2:-ms-input-placeholder { 
         color: red;
-    }
+    } */
     /* Microsoft Edge */
-    #input1::-ms-input-placeholder, #input2::-ms-input-placeholder { 
+    /* #input1::-ms-input-placeholder, #input2::-ms-input-placeholder { 
         color: red;
-    }
-} */
+    } */
+/* } */
