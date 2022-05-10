@@ -324,7 +324,7 @@ button {
     }
 
     html[dark-mode="true"] .fade-in-card {
-        animation: fadeIn 2.5s;
+        animation: none;
     }
     
     /* html[dark-mode="true"] .fade-in-text {
