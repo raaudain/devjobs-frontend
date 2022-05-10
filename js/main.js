@@ -346,7 +346,7 @@ icon.addEventListener("click", event =>  {
     
     if (icon.className == "ri-sun-fill") {
         icon.classList = "ri-moon-fill";
-        document.documentElement.removeAttribute("dark-mode")
+        document.documentElement.removeAttribute("dark-mode");
     }
     else if (icon.className == "ri-moon-fill") {
         icon.classList = "ri-sun-fill";
@@ -354,10 +354,10 @@ icon.addEventListener("click", event =>  {
     }
 
     if (document.documentElement.hasAttribute("dark-mode")) {
-        localStorage.setItem("dark-mode", true)
+        localStorage.setItem("dark-mode", true);
     }
     else {
-        localStorage.setItem("dark-mode", false)
+        localStorage.setItem("dark-mode", false);
     }
 })
 

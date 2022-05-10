@@ -196,7 +196,6 @@ button {
 
 .page-btn {
     background: #ddd;
-    /* color: #212529; */
     height: 35px;
     border-radius: 2px;
     padding: 0 10px;
@@ -283,7 +282,7 @@ button {
         background-image: url("../img/dot-dark.png");
     }
 
-    html[dark-mode="true"] h1, html[dark-mode="true"] .fs-2 {
+    html[dark-mode="true"] h1, html[dark-mode="true"] .fs-2, html[dark-mode="true"] #loading {
         color: var(--general-text-color-dark);
     }
 
