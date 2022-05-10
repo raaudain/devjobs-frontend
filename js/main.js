@@ -319,6 +319,45 @@ function limitString(str) {
     else return str;
 }
 
-// if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-//     document.documentElement.setAttribute("dark", true);
-// }
+
+
+const icon = document.querySelector("i");
+
+
+// Checks if localStorage contains "dark-mode". If not, go with system preference.
+if (localStorage.getItem("dark-mode") === null) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.setAttribute("dark-mode", true);
+        icon.classList = "ri-sun-line";
+    }
+}
+else if (localStorage.getItem("dark-mode") == "true") {
+    document.documentElement.setAttribute("dark-mode", true);
+    icon.classList = "ri-sun-line";
+}
+else {
+    icon.classList = "ri-moon-line";
+    document.documentElement.removeAttribute("dark-mode");
+}
+
+
+icon.addEventListener("click", event =>  {
+    event.preventDefault()
+    
+    if (icon.className == "ri-sun-line") {
+        icon.classList = "ri-moon-line";
+        document.documentElement.removeAttribute("dark-mode")
+    }
+    else if (icon.className == "ri-moon-line") {
+        icon.classList = "ri-sun-line";
+        document.documentElement.setAttribute("dark-mode", true)
+    }
+
+    if (document.documentElement.hasAttribute("dark-mode")) {
+        localStorage.setItem("dark-mode", true)
+    }
+    else {
+        localStorage.setItem("dark-mode", false)
+    }
+})
+

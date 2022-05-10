@@ -62,12 +62,23 @@ body {
 }
 
 
-.header {
+.site-title {
     text-decoration: none;
-    display: inline-block;
 }
 
-h1 {
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    font-size: calc(1.1rem + .9vw);
+    cursor: pointer;
+    color: #21325E;
+}
+
+h1, .fs-2 {
     color: var(--general-text-color-light);
 }
 
@@ -158,6 +169,15 @@ h2 {
     animation: fadeIn linear 1.5s;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 button {
     background: none;
     appearance: none;
@@ -203,14 +223,6 @@ button {
     color: #bebfc2;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0.3;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 #search-button {
     display: none;
@@ -264,70 +276,71 @@ button {
 
 
 /* Dark Mode */
-/* @media (prefers-color-scheme: dark) {
-    html {
-        background-color: var(--bg-color-dark);
-    }
-
-    html body {
+@media (prefers-color-scheme: dark) {
+    html[dark-mode="true"] body {
         background-color: var(--bg-color-dark);
         background-repeat: repeat;
         background-image: url("../img/dot-dark.png");
     }
 
-    h1, .fs-2 {
+    html[dark-mode="true"] h1, html[dark-mode="true"] .fs-2 {
         color: var(--general-text-color-dark);
     }
 
-    #results {
+    html[dark-mode="true"] i {
+        color: #FFD700;
+    }
+
+    html[dark-mode="true"] #results {
         color: var(--general-text-color-dark);
     }
 
-    .card-body {
+    html[dark-mode="true"] .card-body {
         background-color: var(--card-bg-dark);
         color: var(--text-color-dark) !important;
     }
 
-    .card-title {
+    html[dark-mode="true"] .card-title {
         color: var(--general-text-color-dark)
     }
 
-    .card-subtitle, .source-url {
+    html[dark-mode="true"] .card-subtitle, html[dark-mode="true"] .source-url {
         color: var(--text-color-dark) !important;
     }
 
-    .form-control:focus {
+    html[dark-mode="true"] .form-control:focus {
         border-color: var(--general-text-color-dark) !important;
         border: 2px solid var(--general-text-color-dark);
         box-shadow: none !important;
     }
 
-    .form-control {
+    html[dark-mode="true"] .form-control {
         background-color: var(--bg-color-dark) !important;
         
     }
 
-    input {
+    html[dark-mode="true"] input {
         color: var(--general-text-color-dark) !important;
     }
 
-    .fade-in-card {
-        animation: fadeIn 1.5s;
+    html[dark-mode="true"] .fade-in-card {
+        animation: fadeIn 2.5s;
     }
     
-    .fade-in-text {
+    /* html[dark-mode="true"] .fade-in-text {
         animation: fadeIn linear 1.5s;
-    }
+    } */
+
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    /* #input1::placeholder, #input2::placeholder { 
+    html[dark-mode="true"]  #input1::placeholder, html[dark-mode="true"] #input2::placeholder { 
         color: var(--text-color-dark);
-    } */
+    }
     /* Internet Explorer 10-11 */
-    /* #input1:-ms-input-placeholder, #input2:-ms-input-placeholder { 
-        color: red;
-    } */
+    html[dark-mode="true"] #input1:-ms-input-placeholder, html[dark-mode="true"] #input2:-ms-input-placeholder { 
+        color: var(--text-color-dark);
+    }
     /* Microsoft Edge */
-    /* #input1::-ms-input-placeholder, #input2::-ms-input-placeholder { 
-        color: red;
-    } */
-/* } */
+    html[dark-mode="true"] #input1::-ms-input-placeholder, html[dark-mode="true"] #input2::-ms-input-placeholder { 
+        color: var(--text-color-dark);
+    }
+}

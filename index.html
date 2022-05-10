@@ -19,6 +19,7 @@
       <!-- Styling -->
       <link rel="stylesheet" href="./css/style.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
       <!-- For Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1E0DPPSMM"></script>
       <script>
@@ -33,9 +34,14 @@
   <body>
     <div class="container">
       <header>
-        <a class="header" href="/">
-          <h1 class="display-1 fw-bold">DevJobs</h1>
-        </a>
+        <div>
+          <a class="site-title" href="/">
+            <h1 class="display-1 fw-bold">DevJobs</h1>
+          </a>
+          <button type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Toggle dark mode">
+            <i class="ri-moon-line" ></i>
+          </button>
+        </div>
         <p class="fs-2">A job board aggregator for tech people.</p>
       </header>
       <main>
