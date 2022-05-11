@@ -318,3 +318,48 @@ function limitString(str) {
     if (limit < len) return str.slice(0, limit) + "...";
     else return str;
 }
+
+
+
+const icon = document.querySelector("i");
+
+
+// Checks if localStorage contains "dark-mode". If not, go with system preference.
+if (localStorage.getItem("dark-mode") === null) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.setAttribute("dark-mode", true);
+        icon.classList = "ri-sun-fill";
+    }
+    else {
+        icon.classList = "ri-moon-fill";
+    }
+}
+else if (localStorage.getItem("dark-mode") == "true") {
+    document.documentElement.setAttribute("dark-mode", true);
+    icon.classList = "ri-sun-fill";
+}
+else {
+    icon.classList = "ri-moon-fill";
+}
+
+
+icon.addEventListener("click", event =>  {
+    event.preventDefault()
+    
+    if (icon.className == "ri-sun-fill") {
+        icon.classList = "ri-moon-fill";
+        document.documentElement.removeAttribute("dark-mode");
+    }
+    else if (icon.className == "ri-moon-fill") {
+        icon.classList = "ri-sun-fill";
+        document.documentElement.setAttribute("dark-mode", true)
+    }
+
+    if (document.documentElement.hasAttribute("dark-mode")) {
+        localStorage.setItem("dark-mode", true);
+    }
+    else {
+        localStorage.setItem("dark-mode", false);
+    }
+})
+
