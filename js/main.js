@@ -333,10 +333,13 @@ else if (localStorage.getItem("dark-mode") == "true") {
     document.documentElement.setAttribute("dark-mode", true);
     icon.classList = "ri-sun-fill";
 }
+else {
+    icon.classList = "ri-moon-fill";
+}
 
 
 icon.addEventListener("click", event =>  {
-    event.preventDefault()
+    event.preventDefault();
     
     if (icon.className == "ri-sun-fill") {
         icon.classList = "ri-moon-fill";
