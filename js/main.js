@@ -294,7 +294,7 @@ const filterJobs = (debounce(event => {
 input1.addEventListener("input", event => filterJobs(event.target.value));
 input2.addEventListener("input", event => filterJobs(event.target.value));
 
-
+// Delays filtering
 function debounce(cb, delay = 600) {
     let timeout;
     return (...args) => {
@@ -311,7 +311,7 @@ function removeButtons() {
     if (list.length) list[0].remove();    
 }
 
-// Limit characters
+// Limits characters
 function limitString(str) {
     const limit = 40;
     const { length: len } = str;
@@ -320,9 +320,7 @@ function limitString(str) {
 }
 
 
-
 const icon = document.querySelector("i");
-
 
 // Checks if localStorage contains "dark-mode". If not, go with system preference.
 if (localStorage.getItem("dark-mode") === null) {
@@ -330,16 +328,10 @@ if (localStorage.getItem("dark-mode") === null) {
         document.documentElement.setAttribute("dark-mode", true);
         icon.classList = "ri-sun-fill";
     }
-    else {
-        icon.classList = "ri-moon-fill";
-    }
 }
 else if (localStorage.getItem("dark-mode") == "true") {
     document.documentElement.setAttribute("dark-mode", true);
     icon.classList = "ri-sun-fill";
-}
-else {
-    icon.classList = "ri-moon-fill";
 }
 
 
@@ -352,7 +344,7 @@ icon.addEventListener("click", event =>  {
     }
     else if (icon.className == "ri-moon-fill") {
         icon.classList = "ri-sun-fill";
-        document.documentElement.setAttribute("dark-mode", true)
+        document.documentElement.setAttribute("dark-mode", true);
     }
 
     if (document.documentElement.hasAttribute("dark-mode")) {
