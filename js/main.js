@@ -330,6 +330,9 @@ if (localStorage.getItem("dark-mode") === null) {
         document.documentElement.setAttribute("dark-mode", true);
         icon.classList = "ri-sun-fill";
     }
+    else {
+        icon.classList = "ri-moon-fill";
+    }
 }
 else if (localStorage.getItem("dark-mode") == "true") {
     document.documentElement.setAttribute("dark-mode", true);
@@ -337,7 +340,6 @@ else if (localStorage.getItem("dark-mode") == "true") {
 }
 else {
     icon.classList = "ri-moon-fill";
-    document.documentElement.removeAttribute("dark-mode");
 }
 
 
