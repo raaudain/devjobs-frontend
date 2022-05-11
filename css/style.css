@@ -275,71 +275,72 @@ button {
 
 
 /* Dark Mode */
-@media (prefers-color-scheme: dark) {
-    html[dark-mode="true"] body {
-        background-color: var(--bg-color-dark);
-        background-repeat: repeat;
-        background-image: url("../img/dot-dark.png");
-    }
-
-    html[dark-mode="true"] h1, html[dark-mode="true"] .fs-2, html[dark-mode="true"] #loading {
-        color: var(--general-text-color-dark);
-    }
-
-    html[dark-mode="true"] i {
-        color: #FFD700;
-    }
-
-    html[dark-mode="true"] #results {
-        color: var(--general-text-color-dark);
-    }
-
-    html[dark-mode="true"] .card-body {
-        background-color: var(--card-bg-dark);
-        color: var(--text-color-dark) !important;
-    }
-
-    html[dark-mode="true"] .card-title {
-        color: var(--general-text-color-dark)
-    }
-
-    html[dark-mode="true"] .card-subtitle, html[dark-mode="true"] .source-url {
-        color: var(--text-color-dark) !important;
-    }
-
-    html[dark-mode="true"] .form-control:focus {
-        border-color: var(--general-text-color-dark) !important;
-        border: 2px solid var(--general-text-color-dark);
-        box-shadow: none !important;
-    }
-
-    html[dark-mode="true"] .form-control {
-        background-color: var(--bg-color-dark) !important;
-        
-    }
-
-    html[dark-mode="true"] input {
-        color: var(--general-text-color-dark) !important;
-    }
-
-    html[dark-mode="true"] .fade-in-card {
-        animation: none;
-    }
+/* @media (prefers-color-scheme: dark) {
     
-    /* html[dark-mode="true"] .fade-in-text {
-        animation: fadeIn linear 1.5s;
-    } */
+} */
+html[dark-mode="true"] body {
+    background-color: var(--bg-color-dark);
+    background-repeat: repeat;
+    background-image: url("../img/dot-dark.png");
+}
 
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    html[dark-mode="true"]  #input1::placeholder, html[dark-mode="true"] #input2::placeholder { 
-        color: var(--text-color-dark);
-    }
-    /* Internet Explorer 10-11 */
-    html[dark-mode="true"] #input1:-ms-input-placeholder, html[dark-mode="true"] #input2:-ms-input-placeholder { 
-        color: var(--text-color-dark);
-    }
-    /* Microsoft Edge */
-    html[dark-mode="true"] #input1::-ms-input-placeholder, html[dark-mode="true"] #input2::-ms-input-placeholder { 
-        color: var(--text-color-dark);
-    }
+html[dark-mode="true"] h1, html[dark-mode="true"] .fs-2, html[dark-mode="true"] #loading {
+    color: var(--general-text-color-dark);
+}
+
+html[dark-mode="true"] i {
+    color: #FFD700;
+}
+
+html[dark-mode="true"] #results {
+    color: var(--general-text-color-dark);
+}
+
+html[dark-mode="true"] .card-body {
+    background-color: var(--card-bg-dark);
+    color: var(--text-color-dark) !important;
+}
+
+html[dark-mode="true"] .card-title {
+    color: var(--general-text-color-dark)
+}
+
+html[dark-mode="true"] .card-subtitle, html[dark-mode="true"] .source-url {
+    color: var(--text-color-dark) !important;
+}
+
+html[dark-mode="true"] .form-control:focus {
+    border-color: var(--general-text-color-dark) !important;
+    border: 2px solid var(--general-text-color-dark);
+    box-shadow: none !important;
+}
+
+html[dark-mode="true"] .form-control {
+    background-color: var(--bg-color-dark) !important;
+    
+}
+
+html[dark-mode="true"] input {
+    color: var(--general-text-color-dark) !important;
+}
+
+html[dark-mode="true"] .fade-in-card {
+    animation: none;
+}
+
+/* html[dark-mode="true"] .fade-in-text {
+    animation: fadeIn linear 1.5s;
+} */
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+html[dark-mode="true"]  #input1::placeholder, html[dark-mode="true"] #input2::placeholder { 
+    color: var(--text-color-dark);
+}
+/* Internet Explorer 10-11 */
+html[dark-mode="true"] #input1:-ms-input-placeholder, html[dark-mode="true"] #input2:-ms-input-placeholder { 
+    color: var(--text-color-dark);
+}
+/* Microsoft Edge */
+html[dark-mode="true"] #input1::-ms-input-placeholder, html[dark-mode="true"] #input2::-ms-input-placeholder { 
+    color: var(--text-color-dark);
 }
