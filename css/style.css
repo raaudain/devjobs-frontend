@@ -275,9 +275,6 @@ button {
 
 
 /* Dark Mode */
-/* @media (prefers-color-scheme: dark) {
-    
-} */
 html[dark-mode="true"] body {
     background-color: var(--bg-color-dark);
     background-repeat: repeat;
