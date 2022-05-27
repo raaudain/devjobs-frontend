@@ -188,6 +188,10 @@ button {
     cursor: pointer;
 }
 
+.btn {
+    width: 100%;
+}
+
 .pagination-buttons {
     display: flex;
     justify-content: center;

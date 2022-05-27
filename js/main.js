@@ -195,6 +195,14 @@ function renderJobs(jobsArray) {
         return item.location && item.location.toLowerCase() == "remote" ? `Apply for remote ${item.title} job.` : notRemote;
     }
 
+    // Limits characters
+    function limitString(str) {
+        const limit = 40;
+        const { length: len } = str;
+        if (limit < len) return str.slice(0, limit) + "...";
+        else return str;
+    }
+
     const jobCards = jobsArray.map(jobInfo => 
         `<article class="card border border-1 mb-5 shadow zoom ">
             <span class="card-header fade-in-card">
@@ -222,7 +230,7 @@ function renderJobs(jobsArray) {
                     <p class="fw-light text-muted">Source: ${limitString(jobInfo.source)}</p>
                 </a>
                 <a class="url" href="${jobInfo.url}" target="_blank" rel="noopener follow" title="${generateTitle(jobInfo)}">
-                    <button class="btn btn-primary btn-md" style="width: 100%">Apply</button>
+                    <button class="btn btn-primary btn-md">Apply</button>
                 </a>
             </div>
         </article>`
@@ -310,15 +318,6 @@ function removeButtons() {
     let list = [...document.getElementsByClassName("pagination-buttons")];
     if (list.length) list[0].remove();    
 }
-
-// Limits characters
-function limitString(str) {
-    const limit = 40;
-    const { length: len } = str;
-    if (limit < len) return str.slice(0, limit) + "...";
-    else return str;
-}
-
 
 const icon = document.querySelector("i");
 
