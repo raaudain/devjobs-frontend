@@ -250,6 +250,11 @@ const filterJobs = (debounce(event => {
 
     currentPage = 1;
 
+    function queryString(query, value) {
+        query = query.split(" ").some(keyword => value.includes(keyword.toLowerCase()));
+        return query;
+    }
+
     function getData(value) {
         let title = value.title.toLowerCase();
         // If company exists, use company. Else use empty string.
@@ -257,8 +262,11 @@ const filterJobs = (debounce(event => {
         // If location exists, use the location. Else location is an empty string.
         let location = value.location ? value.location.toLowerCase() : "";
         let source = value.source ? value.source.toLowerCase() : "";
+        
+        const titleQuery = queryString(word, title);
 
-        if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase()) || source.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
+
+        if ((titleQuery || company.includes(word.toLowerCase()) || source.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
             return value;
         }
         // Looks for "remote" in title and location fields
