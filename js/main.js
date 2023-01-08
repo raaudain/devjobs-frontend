@@ -195,6 +195,14 @@ function renderJobs(jobsArray) {
         return item.location && item.location.toLowerCase() == "remote" ? `Apply for remote ${item.title} job.` : notRemote;
     }
 
+    // Limits characters
+    function limitString(str) {
+        const limit = 40;
+        const { length: len } = str;
+        if (limit < len) return str.slice(0, limit) + "...";
+        else return str;
+    }
+
     const jobCards = jobsArray.map(jobInfo => 
         `<article class="card border border-1 mb-5 shadow zoom ">
             <span class="card-header fade-in-card">
@@ -222,7 +230,7 @@ function renderJobs(jobsArray) {
                     <p class="fw-light text-muted">Source: ${limitString(jobInfo.source)}</p>
                 </a>
                 <a class="url" href="${jobInfo.url}" target="_blank" rel="noopener follow" title="${generateTitle(jobInfo)}">
-                    <button class="btn btn-primary btn-md" style="width: 100%">Apply</button>
+                    <button class="btn btn-primary btn-md">Apply</button>
                 </a>
             </div>
         </article>`
@@ -235,30 +243,30 @@ function renderJobs(jobsArray) {
 window.addEventListener("load", () => window.scrollTo(0, 0));
 
 // Handles filter
-const filterJobs = (debounce(event => {
+const filterJobs = (debounce(() => {
     const searchInput = document.getElementById("search-input");
     const word = searchInput[0].value;
     const place = searchInput[1].value;
 
     currentPage = 1;
 
+    function parseQuery(query, value) {
+        return query.split(" ").every(keyword => value.includes(keyword.toLowerCase()));
+    }
+
     function getData(value) {
         let title = value.title.toLowerCase();
-        // If company exists, use company. Else use empty string.
+        // If company, source, or location exists, use input. Else use empty string.
         let company = value.company ? value.company.toLowerCase() : "";
-        // If location exists, use the location. Else location is an empty string.
-        let location = value.location ? value.location.toLowerCase() : "";
         let source = value.source ? value.source.toLowerCase() : "";
+        let location = value.location ? value.location.toLowerCase() : "";
+        
+        const titleQuery = parseQuery(word, title);
+        const companyQuery = parseQuery(word, company);
+        const sourceQuery = parseQuery(word, source);
+        const locationQuery = parseQuery(place, location);
 
-        if ((title.includes(word.toLowerCase()) || company.includes(word.toLowerCase()) || source.includes(word.toLowerCase())) && location.includes(place.toLowerCase())) {
-            return value;
-        }
-        // Looks for "remote" in title and location fields
-        else if (place.toLowerCase() === "remote") {
-            if (title.includes(word.toLowerCase()) && (title.includes(place.toLowerCase()) || location.includes(place.toLowerCase()))) {
-                return value;
-            }
-        }
+        if ((titleQuery || companyQuery || sourceQuery) && locationQuery) return value;
     }
 
     const filtered = data.filter(getData);
@@ -310,15 +318,6 @@ function removeButtons() {
     let list = [...document.getElementsByClassName("pagination-buttons")];
     if (list.length) list[0].remove();    
 }
-
-// Limits characters
-function limitString(str) {
-    const limit = 40;
-    const { length: len } = str;
-    if (limit < len) return str.slice(0, limit) + "...";
-    else return str;
-}
-
 
 const icon = document.querySelector("i");
 
