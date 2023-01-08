@@ -250,9 +250,8 @@ const filterJobs = (debounce(() => {
 
     currentPage = 1;
 
-    function parseString(query, value) {
-        query = query.split(" ").every(keyword => value.includes(keyword.toLowerCase()));
-        return query;
+    function parseQuery(query, value) {
+        return query.split(" ").every(keyword => value.includes(keyword.toLowerCase()));
     }
 
     function getData(value) {
@@ -262,10 +261,10 @@ const filterJobs = (debounce(() => {
         let source = value.source ? value.source.toLowerCase() : "";
         let location = value.location ? value.location.toLowerCase() : "";
         
-        const titleQuery = parseString(word, title);
-        const companyQuery = parseString(word, company);
-        const sourceQuery = parseString(word, source);
-        const locationQuery = parseString(place, location);
+        const titleQuery = parseQuery(word, title);
+        const companyQuery = parseQuery(word, company);
+        const sourceQuery = parseQuery(word, source);
+        const locationQuery = parseQuery(place, location);
 
         if ((titleQuery || companyQuery || sourceQuery) && locationQuery) return value;
     }
