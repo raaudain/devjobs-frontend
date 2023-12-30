@@ -9,7 +9,7 @@ for (let i = 0; i < jobsPerPage; i++) {
     jobs.appendChild(card);
 }
 
-const endpoint = "../json/data.json";
+const endpoint = "../src/data/postings.json";
 const request = new XMLHttpRequest();
 
 let data = [];
@@ -250,10 +250,6 @@ const filterJobs = (debounce(() => {
 
     currentPage = 1;
 
-    function parseTitleQuery(query, value) {
-        return query.split(" ").every(keyword => value.includes(keyword + " ".toLowerCase()));
-    }
-
     function parseQuery(query, value) {
         return query.split(" ").every(keyword => value.includes(keyword.toLowerCase()));
     }
@@ -265,7 +261,7 @@ const filterJobs = (debounce(() => {
         let source = value.source ? value.source.toLowerCase() : "";
         let location = value.location ? value.location.toLowerCase() : "";
         
-        const titleQuery = parseTitleQuery(word, title);
+        const titleQuery = parseQuery(word, title);
         const companyQuery = parseQuery(word, company);
         const sourceQuery = parseQuery(word, source);
         const locationQuery = parseQuery(place, location);
