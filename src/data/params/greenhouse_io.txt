@@ -9,7 +9,6 @@ singlestore
 gitlab
 changeorg58
 qualia
-fullstory
 pachyderm
 launchdarkly
 metropolis
@@ -67,7 +66,6 @@ coinlist
 commercehub
 contentful
 craftjack
-cybergrx
 datadog
 dealpath
 demandbase
@@ -316,7 +314,6 @@ ixlayercareers
 movableink
 weedmaps77
 gravitypayments
-specialized
 goprocareers
 ideo
 landor
@@ -525,7 +522,6 @@ known
 ardentmc
 tecovas
 libertasfunding
-zava
 slicareers
 earlycareerprograms
 hopin
@@ -605,7 +601,6 @@ tekion
 coindesk
 enterpret
 onapsis
-nationalresearchgroup
 pager
 arootahllc
 westmonroe2
@@ -659,7 +654,6 @@ innovaccer
 centriahealthcare
 vixxo
 zenjob
-criticalideas
 galaxydigitalservices
 internaljobsatlush
 agero
@@ -1137,7 +1131,6 @@ awardco
 truelayer
 psiquantum
 numeradecareers
-cashmoney
 vitrolabsinc
 thoughtworks
 chief
@@ -1260,7 +1253,6 @@ sporttrade
 science37
 interest
 ssreferrals
-invision
 medarrive
 securityscorecard
 cityblockhealth
@@ -1281,11 +1273,9 @@ ouihelp
 cloverhealth
 workshopdigital
 pagoda
-swiftnavigation
 vorihealth
 jasper23
 samsungresearchamericainternship
-thearenagroup
 jusbrasil
 securly13
 vacasa
@@ -1753,3 +1743,14 @@ zscaler
 auviknetworks
 arcoeducacao
 iconcareers
+geckorobotics
+steadily
+prenuvo
+selffinancial
+terakeet
+ovoenergy
+shadow
+workera
+digicert
+noredink
+jackpot

@@ -2107,3 +2107,14 @@ ursamajor`Ursa Major`None
 villagemd`VillageMD`None
 auviknetworks`Auvik Networks`None
 iconcareers`ICON`None
+steadily`Steadily`None
+prenuvo`Prenuvo`None
+terakeet`Terakeet`None
+shadow`SHADOW`None
+digicert`DigiCert`None
+jackpot`Jackpot`None
+geckorobotics`Gecko Robotics`None
+selffinancial`Self Financial`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/594/700/resized/Self_Financial__Inc_Logo_job_board.jpeg
+ovoenergy`OVO Energy`None
+workera`Workera AI`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/068/200/resized/workera.ai_logo.png
+noredink`NoRedInk`None

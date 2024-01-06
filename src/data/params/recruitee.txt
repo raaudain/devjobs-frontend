@@ -386,7 +386,6 @@ finecobancaprivadakutxabank
 manhattanspecialtycare
 unwatch
 blueprintautomation
-syone2
 kiwusconsultinggmbh
 osterhausconsultinggmbh
 socialdeal
@@ -851,7 +850,6 @@ exp1consulting
 hofmannmetallgmbh
 spletnik
 heydayfm
-schneiderindustries
 vandervalkamsterdam
 tunymedia
 skytree
@@ -1278,3 +1276,12 @@ missionmitglieder
 stateofart
 nussbaumer
 skfberlin
+lichtblickemobility
+luminussolutions
+causalens
+isostech
+imbema
+fluxpartners
+thenewhumanitarian
+sunroom
+ecolecentraledelyon

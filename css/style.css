@@ -70,6 +70,11 @@ header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+}
+
+header a {
+    display: flex;
 }
 
 i {
@@ -80,6 +85,11 @@ i {
 
 h1, .fs-2 {
     color: var(--general-text-color-light);
+}
+
+h1 {
+    font-family: "Rubik Doodle Shadow";
+    letter-spacing: 10px;
 }
 
 h2 {
@@ -95,6 +105,11 @@ h2 {
 .search-warning {
     color: #dc3545; 
     font-weight: 500;
+}
+
+.fetchi-logo  {
+    height: 82px;
+    margin-left: 15px;
 }
 
 .logo {
@@ -195,7 +210,7 @@ button {
 .pagination-buttons {
     display: flex;
     justify-content: center;
-    margin: 20px 0 100px;
+    margin: 20px 0 80px;
 }
 
 .page-btn {

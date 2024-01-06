@@ -212,7 +212,7 @@ function renderJobs(jobsArray) {
                 </time>
             </span>
             <div class="card-body d-flex flex-column justify-content-between fade-in-card">
-                <img class="logo img-thumbnail mb-2" src="${jobInfo.company_logo && jobInfo.company_logo !== '/img/v1.1/logos/jazzhr-logo.png' ? jobInfo.company_logo : '../img/logoipsum-logo-35.svg'}" alt="" />
+                <img class="logo img-thumbnail mb-2" src="${jobInfo.company_logo && jobInfo.company_logo !== '/img/v1.1/logos/jazzhr-logo.png' ? jobInfo.company_logo : '../img/22214-dog-face-icon.png'}" alt="" />
                 <div class="card-title">
                     <span title="${limitString(jobInfo.title).includes("...") ? jobInfo.title : ''}">
                         ${limitString(jobInfo.title)}
