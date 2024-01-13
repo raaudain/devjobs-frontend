@@ -16,7 +16,6 @@ level
 monzo
 airtamejobs
 commercetools
-adhocteam
 updater
 reddit
 jwplayer
@@ -472,7 +471,6 @@ agoda
 warbyparker
 thesciongroupllc
 freshbooks
-adhocexternal
 khealth
 careem
 clear
@@ -579,7 +577,6 @@ tangocard
 humaninterest
 lattice
 subsplash
-trayio
 mythicalgames
 heliogen
 stream
@@ -844,7 +841,6 @@ opensesame
 dustyrobotics
 agilityrobotics
 ihiterrasun
-loveseat
 bluestatedigital
 mako
 halodotscience
@@ -1156,7 +1152,6 @@ greynoiseintelligence
 fibersense
 headinghealth
 manticoregames
-tensureconsulting
 weavegrid
 aquahydrex
 uniswaplabs
@@ -1306,7 +1301,6 @@ merchantsfleetmanagement
 icapitalnetwork
 firaxis
 titelmedia
-fullbeaker
 10pearls
 shopltk
 rdccareers
@@ -1591,7 +1585,6 @@ raintherapeutics
 arascorporation
 webershandwick
 republicschools
-celtx
 katmaitech
 generatebiomedicines
 edgedelta
@@ -1754,3 +1747,7 @@ workera
 digicert
 noredink
 jackpot
+doximity
+placerlabs
+connecteam
+morty

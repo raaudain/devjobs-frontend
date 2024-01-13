@@ -220,3 +220,4 @@ pudgy-penguins`n/a`https://inflow-public.s3.amazonaws.com/company-logos/4jqi34q4
 ultron`n/a`https://inflow-public.s3.amazonaws.com/company-logos/uuh7d5nvdrf1m80yywnfxpx1mo7x.jpeg
 interlace`n/a`https://inflow-public.s3.amazonaws.com/company-logos/gnauasnrs6oyh568gxooes1gdeiu.png
 frontkom`n/a`https://inflow-public.s3.amazonaws.com/company-logos/hfgnkz959p4odyilkw2ycw79f35w.png
+resleeve`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rlvvo1pwah8i876egtot257pfj9e.svg

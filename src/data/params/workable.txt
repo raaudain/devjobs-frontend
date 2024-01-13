@@ -896,7 +896,6 @@ outstandingfoods
 kindredcareers
 sightfull
 trexquant
-lollipopai
 trafi
 termly-io
 pineapple-staffing
@@ -1161,7 +1160,6 @@ titanbay
 milanote
 ojahq
 accellor
-simplemills
 mightyrhino
 northpass
 sidekicker
@@ -1813,3 +1811,14 @@ birdeye
 1915-south-ashley
 wintech
 joy-wallet
+quickhireva
+troop-1
+cloudhire1
+grapevinegr
+meyersarchitects
+low-carbon
+ackerherz
+commonapp
+apothekary
+space-ape-games
+cledara

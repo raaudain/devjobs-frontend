@@ -2118,3 +2118,7 @@ selffinancial`Self Financial`https://s4-recruiting.cdn.greenhouse.io/external_gr
 ovoenergy`OVO Energy`None
 workera`Workera AI`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/068/200/resized/workera.ai_logo.png
 noredink`NoRedInk`None
+doximity`Doximity`None
+connecteam`Connecteam`None
+morty`Morty`None
+placerlabs`Placer.ai`None
