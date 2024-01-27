@@ -25,7 +25,6 @@ firehydrant
 ultramobile
 northstar
 pulumicorporation
-chronosphere
 paige
 skilljar
 housecall
@@ -103,7 +102,6 @@ invoca
 kayak
 klaviyo
 lacework
-legalist
 litify
 logicmonitor
 lookout
@@ -694,7 +692,6 @@ runelabs
 cdbabyjobs
 OKX
 modernanimal
-squire
 salsify
 voltaiq
 employeenavigator
@@ -723,7 +720,6 @@ fourkites
 aclu
 dailypayinc
 seveneightcapital
-spinskinnylabsincfleetoperations
 indexexchange
 mikebloomberg2020
 presidentssummit
@@ -1060,7 +1056,6 @@ obamafoundation
 umojabiopharma
 stackexchange
 thoughtworksreferral
-amwell
 bioptimizers
 juullabs
 airbase
@@ -1551,7 +1546,6 @@ meritamerica
 formatservices
 wingspan
 wheelhouse
-KorroBio
 oafkenya
 braintrustcore
 czero
@@ -1751,3 +1745,7 @@ doximity
 placerlabs
 connecteam
 morty
+teamsense
+bitso
+makersights
+kidango

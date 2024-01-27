@@ -2122,3 +2122,7 @@ doximity`Doximity`None
 connecteam`Connecteam`None
 morty`Morty`None
 placerlabs`Placer.ai`None
+teamsense`TeamSense`None
+bitso`Bitso`None
+makersights`MakerSights`None
+kidango`Kidango`None
