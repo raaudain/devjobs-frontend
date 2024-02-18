@@ -232,7 +232,6 @@ lift
 xapo61
 educators
 myntra
-rhino
 signifyhealth
 coherehealth
 hollywoodparksofistadium
@@ -351,7 +350,6 @@ desktopmetal
 sonicwall
 beacon67
 greenpeace
-citizengo
 blockchain
 carerev
 freewill
@@ -440,7 +438,6 @@ alarmcom
 konux
 cannondesign
 anark
-aquilagroup
 deliveryherokoreatech
 connatix
 dnli
@@ -502,7 +499,6 @@ nextroll
 guideline
 focalsystems
 supplementalhealthcare
-jdcom
 telnyx54
 berlinbrands
 rsinternboard
@@ -551,7 +547,6 @@ bluecoreinc
 whogivesacrap
 pax8
 twinhealth
-clutter
 mackweldon
 8thlightrebuild
 chaossearch
@@ -561,7 +556,6 @@ philo
 codeclimate
 bubble
 superhuman
-vidmob
 limeade
 motional
 okcoin
@@ -586,7 +580,6 @@ acadiapharmaceuticals
 enfusion
 bigosmanagement
 baublebar
-creatoriq
 fischerhomes
 westmonroe1
 humane
@@ -657,7 +650,6 @@ joinsharenow
 nuvalent
 collectiveinc
 grandofprospect
-brighthealthgroup
 flatironhealth
 forethought
 nintex
@@ -762,7 +754,6 @@ alexispointe
 paireyewear
 freshrealm
 brunswickgroup
-cdr
 niantic8thwall
 branchmetrics
 maestroqa
@@ -811,7 +802,6 @@ aura798
 rev
 survata
 recruitics
-freeassociation
 singulargenomics
 aalphabio
 dominodatalab
@@ -1253,7 +1243,6 @@ ultragenyxpharmaceutical
 tulip
 pelacase
 dataai
-lightforgegames
 edxbootcamps
 housinganywhere
 redsixaerospace
@@ -1325,7 +1314,6 @@ runzero
 zenvia
 goalzimbabwe
 ideoorg
-engieenergyaccess
 remergegmbh
 casetify
 innovecs
@@ -1361,7 +1349,6 @@ preciselyinternationaljobs
 weee
 baystatephysicaltherapy
 rplanetearth
-complyant
 byheart
 sproutsocial
 accruenthq
@@ -1375,7 +1362,6 @@ tradeledger
 confiant
 elevatek12
 shapr3d
-datometry
 builder
 mizzenandmain
 tatari
@@ -1749,3 +1735,16 @@ teamsense
 bitso
 makersights
 kidango
+purposemed
+dental365
+storyblok
+billie
+everstreamanalytics
+landit
+otterai
+kalshi
+globalrelay
+benevity
+liquibase
+payit
+lokalise

@@ -2126,3 +2126,17 @@ teamsense`TeamSense`None
 bitso`Bitso`None
 makersights`MakerSights`None
 kidango`Kidango`None
+purposemed`PurposeMed`None
+storyblok`Storyblok`None
+landit`Landit`None
+kalshi`Kalshi`None
+benevity`Benevity`None
+payit`PayIt`None
+simpsongumpertzheger`Simpson Gumpertz & Heger`None
+dental365`Dental365`None
+billie`Billie`None
+everstreamanalytics`Everstream Analytics`None
+otterai`Otter.ai`None
+globalrelay`Global Relay`None
+liquibase`Liquibase`None
+lokalise`Lokalise`None

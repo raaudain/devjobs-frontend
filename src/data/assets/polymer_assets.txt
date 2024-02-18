@@ -222,3 +222,8 @@ interlace`n/a`https://inflow-public.s3.amazonaws.com/company-logos/gnauasnrs6oyh
 frontkom`n/a`https://inflow-public.s3.amazonaws.com/company-logos/hfgnkz959p4odyilkw2ycw79f35w.png
 resleeve`n/a`https://inflow-public.s3.amazonaws.com/company-logos/rlvvo1pwah8i876egtot257pfj9e.svg
 wpai`n/a`https://inflow-public.s3.amazonaws.com/company-logos/s98tk2cr7fuw9fbx2iux02qdmvoe.png
+infrared`n/a`https://inflow-public.s3.amazonaws.com/company-logos/n7e2gpxgbok2kdl7k0z8vzu2ucbc.png
+renjoy`n/a`https://inflow-public.s3.amazonaws.com/company-logos/kw5q4zabuy4dt37xsjis0p1jf8pa.png
+bagospherecareers`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ym6jquyf18mmfgke3rpgb7tok3rr.png
+eli`n/a`https://inflow-public.s3.amazonaws.com/company-logos/zcvpfvu4nt0mag0kj7wnfzdrzytw.svg
+whalesync`n/a`https://inflow-public.s3.amazonaws.com/company-logos/y84vnj2s1c3e0zhcini77hz19hb0.png
