@@ -60,7 +60,6 @@ chargepoint
 circleci
 classy
 clearcover
-coinlist
 commercehub
 contentful
 craftjack
@@ -239,7 +238,6 @@ khanacademy
 valorainc
 deliveroo
 tcgcapital
-cazoo
 bottomlinetechnologies
 archrival
 revel
@@ -293,7 +291,6 @@ creditkarma
 project44
 fabfitfun
 collibra
-smartersorting
 cloudflare
 codeacademy
 carecom
@@ -306,7 +303,6 @@ cruisecontract
 calicolabs
 m1finance
 forwardfinancing
-ixlayercareers
 movableink
 weedmaps77
 gravitypayments
@@ -418,7 +414,6 @@ axiom
 synack
 samlabs
 winreality
-smileidentity
 dalbergdesign
 nichecom
 zylo
@@ -442,7 +437,6 @@ deliveryherokoreatech
 connatix
 dnli
 glassdoor
-wizardsofthecoast
 hugeinc
 shieldshealthsolutions
 roivantsciences
@@ -535,7 +529,6 @@ rhombuspower
 clickup
 goodnotes
 openai
-tempo
 afresh
 stellar
 madhive
@@ -659,7 +652,6 @@ nerdery
 u410
 artsy
 axios
-influxdb
 sourcegraph91
 webflow
 upstatement
@@ -765,7 +757,6 @@ convoso
 liveperson
 adyen
 therealreal
-whispir
 via
 monograph
 propel
@@ -912,7 +903,6 @@ missionassetfund
 2uedx
 freshprints
 lilium
-golinks
 nirrin
 dspconcepts
 girleffect
@@ -978,7 +968,6 @@ pathrobotics
 sonic
 laika
 flyzipline
-alphalabcapital
 spins
 linx
 pebblepost
@@ -1064,7 +1053,6 @@ mcpeakvisionpartners
 samsungsemiconductor
 adjust
 sigmacomputing
-atompower
 kaiahealth
 life360
 beautycounter
@@ -1260,7 +1248,6 @@ securly13
 vacasa
 ustwo
 keyme
-firstlookmedia
 extend
 easyship
 accelbyte
@@ -1542,7 +1529,6 @@ higherlogic
 memorahealth
 huddle01
 casetext
-readyset
 zelusanalytics
 shunnarahcareers
 testendouble
@@ -1654,7 +1640,6 @@ onefederalsolutioncorp
 hibu
 kao
 stitchfix
-veesearch
 chclarendon
 traderepublicbank
 biofire
@@ -1748,3 +1733,8 @@ benevity
 liquibase
 payit
 lokalise
+boardable
+cariq
+andurilindustries
+boomilp
+irhythm

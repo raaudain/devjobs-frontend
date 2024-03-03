@@ -878,3 +878,13 @@ oak
 magic.dev
 Kojo
 prompt
+tldr.tech
+certn
+airwallex
+youdotcom
+workmatelabs
+ModeFair
+VidMob
+ethglobal
+atmos-financial
+ev.energy

@@ -1242,3 +1242,9 @@ pandg
 clearstream
 elitetournaments
 rentcars
+bitvoodoo
+solow
+aguaviss
+milliken
+iahcp
+esskay

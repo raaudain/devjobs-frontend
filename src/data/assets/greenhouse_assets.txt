@@ -2140,3 +2140,8 @@ otterai`Otter.ai`None
 globalrelay`Global Relay`None
 liquibase`Liquibase`None
 lokalise`Lokalise`None
+boardable`Boardable`None
+andurilindustries`Anduril Industries`None
+cariq`Car IQ Inc.`None
+boomilp`Boomi Careers Page`None
+irhythm`iRhythm Technologies`None
