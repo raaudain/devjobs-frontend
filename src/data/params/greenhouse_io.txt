@@ -1,5 +1,4 @@
 intersystems
-wrapbook
 10xgenomics
 postscript
 bensonhillinc
@@ -81,7 +80,6 @@ forgerock
 formlabs
 fubotv
 gemini
-getepic
 glossier
 gofundme
 goldbelly
@@ -125,12 +123,10 @@ peloton
 policygenius
 poshmark
 pushpay
-remind
 roblox
 roku
 safegraph
 sentry
-skupos
 skydio
 smartasset
 smartsheet
@@ -149,7 +145,6 @@ tempus
 thumbtack
 timescale
 tractable
-transferwise
 triplelift
 twitch
 unqork
@@ -185,7 +180,6 @@ joinhandshake
 grammarly
 crunchyroll
 pagerduty
-signaladvisors
 gohealth
 workrise
 axon
@@ -423,12 +417,10 @@ eviationaircraft
 scalesec
 paralleljobs
 acorns
-buck
 fandom
 stord13
 plume
 udacity
-purestorage
 alarmcom
 konux
 cannondesign
@@ -446,7 +438,6 @@ boxinc
 kinaxis
 towerresearchcapital
 mixmax
-foodpandamalaysia
 atomiccartoons
 canonicaljobs
 slice
@@ -460,10 +451,8 @@ agoda
 warbyparker
 thesciongroupllc
 freshbooks
-khealth
 careem
 clear
-faradayfuture
 creditas
 hudl
 c3iot
@@ -524,11 +513,9 @@ nuro
 seldon
 bandwidth
 digitalocean98
-hypercube
 rhombuspower
 clickup
 goodnotes
-openai
 afresh
 stellar
 madhive
@@ -612,7 +599,6 @@ themarketingarm
 centriaautism
 surveymonkey
 mediamonks
-foodpandathailand
 2k
 decibio
 doma
@@ -630,7 +616,6 @@ vaco
 torcrobotics
 cabify
 greenthumbindustries
-changeis
 innovaccer
 centriahealthcare
 vixxo
@@ -723,7 +708,6 @@ podium81
 nucleus
 vonage
 sonyinteractiveentertainmentglobal
-multiplylabs
 singularity6
 fortune
 dxacirca
@@ -783,7 +767,6 @@ arcana
 thymecare
 annexushealth
 a3c41b8b71eff8c4
-betterworks
 decodable
 tubitv
 oddball
@@ -829,7 +812,6 @@ taittowers
 complyadvantage
 givelify
 archer56
-stonecomercial
 sunnyside
 cobblestoneenergy2
 simplepractice55
@@ -865,7 +847,6 @@ bucknerinternational
 highmetric
 chanzuckerberginitiative
 ccah
-xosinc
 teampicnic
 riskified
 carrotinc
@@ -1022,7 +1003,6 @@ tailorbirdinc
 veriff
 midtowne
 sendbird
-cybrary
 myriad360
 flumehealth
 ivalua
@@ -1217,7 +1197,6 @@ wheely
 drata
 vytalizehealth
 upbound
-sporttrade
 science37
 interest
 ssreferrals
@@ -1281,7 +1260,6 @@ affinidi
 gurussolutions
 stackcommerce
 viessmanninternational
-pecanai
 tremorvideodsp
 viessmann
 upgrade
@@ -1369,7 +1347,6 @@ inovalon
 braintrust
 maymobility
 quiknodeinc
-portworx
 transcarent
 modernmeadow
 covetool
@@ -1446,7 +1423,6 @@ gomotive
 leveltenenergy
 leafguard
 baystateptjobs
-pawp
 pfl
 atomwise
 glance
@@ -1483,7 +1459,6 @@ faire
 alertmedia
 smartwarehousing
 kellyscottmadison
-disco36
 mountanvil
 isn
 headoutcareers
@@ -1547,7 +1522,6 @@ recordedfuture
 theroom
 athenaeducation
 truehold
-raintherapeutics
 arascorporation
 webershandwick
 republicschools
@@ -1580,7 +1554,6 @@ vultr
 headoutlinkedin
 wellsaidlabs
 hexagonbio
-foodpandaphilippines
 simpsongumpertzheger
 codeforsciencesociety
 vegaamericas
@@ -1642,7 +1615,6 @@ kao
 stitchfix
 chclarendon
 traderepublicbank
-biofire
 telixus
 ninjatrader
 bobsledinc
@@ -1738,3 +1710,7 @@ cariq
 andurilindustries
 boomilp
 irhythm
+pinterest
+itrek
+feedzai
+spire

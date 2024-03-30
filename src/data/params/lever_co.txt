@@ -1616,3 +1616,5 @@ silvustechnologies
 fieldnation
 secondfrontsystems
 ClinicalHealthNetworkForTransformation
+bumbleinc
+shippo

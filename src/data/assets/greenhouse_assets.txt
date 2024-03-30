@@ -2145,3 +2145,7 @@ andurilindustries`Anduril Industries`None
 cariq`Car IQ Inc.`None
 boomilp`Boomi Careers Page`None
 irhythm`iRhythm Technologies`None
+pinterest`Pinterest`None
+feedzai`Feedzai`None
+itrek`itrek`None
+spire`Spire`None

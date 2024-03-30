@@ -227,3 +227,7 @@ renjoy`n/a`https://inflow-public.s3.amazonaws.com/company-logos/kw5q4zabuy4dt37x
 bagospherecareers`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ym6jquyf18mmfgke3rpgb7tok3rr.png
 eli`n/a`https://inflow-public.s3.amazonaws.com/company-logos/zcvpfvu4nt0mag0kj7wnfzdrzytw.svg
 whalesync`n/a`https://inflow-public.s3.amazonaws.com/company-logos/y84vnj2s1c3e0zhcini77hz19hb0.png
+citizenx`n/a`https://inflow-public.s3.amazonaws.com/company-logos/bh3zjwbo2vgw71cfl3nhcf7buche.svg
+opensend`n/a`https://inflow-public.s3.amazonaws.com/company-logos/qka8e13s5x4terqazcniw7lmpdfa.png
+naroiq`n/a`https://inflow-public.s3.amazonaws.com/company-logos/9rey8uel0kunurzhte8s44ok58k8.png
+checkmate`n/a`https://inflow-public.s3.amazonaws.com/company-logos/5bdmlq9ioqjg0os4pcbvygh52l2z.jpeg
