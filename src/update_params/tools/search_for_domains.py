@@ -19,10 +19,9 @@ def query_google(query):
     count = 1
     urls = set()
 
-    for url in search(query, tld="com", num=100, start=0, stop=500, pause=90, country="US"):
+    for url in search(query, num=100, start=0, stop=500, pause=90):
         if not url in urls:
             print(count, url)
             urls.add(url)
             count+=1
-
     return urls

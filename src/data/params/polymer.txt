@@ -299,3 +299,5 @@ neurobionics
 citizenx
 naroiq
 goody
+remark
+knowt-inc

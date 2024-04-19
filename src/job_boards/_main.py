@@ -1,9 +1,8 @@
-import random
-import sys
+import random, sys
 from datetime import datetime
 sys.path.insert(0, ".")
 from src.job_boards.tools import CreateJson
-from src.job_boards import amazon, ashbyhq, bamboohr, breezyhr, builtin, clearcompany, comeet, crew, dailyremote, diversifytech, eightfold, fullstackjob, greenhouse_io, hireart, jazzhr, jobvite, key_values, lever_co, nbc,nintendo, nocsok, polymer, recruitee, recruiterbox, remote_co, remoteok, smartrecruiters, twitter, upstack, usajobs, weworkremotely, workable, workwithindies, craigslist, target
+from src.job_boards import amazon, ashbyhq, builtin, dailyremote, diversifytech, eightfold, fullstackjob, greenhouse_io, hireart, jobvite, lever_co, nbc, nintendo, polymer, remote_co, remoteok, smartrecruiters, usajobs, weworkremotely, workable, workwithindies, craigslist
 
 
 def main():
@@ -32,42 +31,27 @@ def main():
     print("=> Scanning job boards")
     start = datetime.now()
     lever_co.main()
-    # bloomberg.main()
-    crew.main()
     usajobs.main()
     workable.get_url(work[::5])
     diversifytech.main()
     polymer.main()
-    # indeed.main()
-    # tiktok.main()
-    recruitee.main()
-    # target.main()
     nbc.main()
-    # nocsok.main()
     workable.get_url(work[1::5])
     smartrecruiters.main()
-    breezyhr.main()
     greenhouse_io.get_url(green[::2])
     craigslist.get_url(locations)
     jobvite.main()
-    # bamboohr.main()
     eightfold.main()
-    # jazzhr.main()
-    # clearcompany.main()
     workable.get_url(work[2::5])
-    # comeet.main()
     craigslist.get_url_it(locations)
     greenhouse_io.get_url(green[1::2])
     ashbyhq.main()
-    recruiterbox.main()
     nintendo.main()
-    # vuejobs.main()
     hireart.main()
     amazon.main()
     craigslist.get_url_web(locations)
     workable.get_url(work[3::5])
-    # twitter.main()
-    key_values.main()
+    # key_values.main()
     workwithindies.main()
     weworkremotely.main()
     fullstackjob.main()
@@ -81,7 +65,7 @@ def main():
     create_json.create_file()
 
     print("=> Done")
-    print("=> Total time: " + str(datetime.now() - start))
+    print(f"=> Total time: {datetime.now() - start}")
 
 
 if __name__ == "__main__":

@@ -995,3 +995,5 @@ DeloitteNordic`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/63
 CaliforniaClosets`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/633afd544caa4302d4172373/150px?r=s3-eu-central-1
 Tattarang`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/61b6df6a5ed2611f8eeff7d8/huge?r=s3-eu-central-1
 wildbrain`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc11/65779783c2b1325773c381f6/47458af3-1b5f-4d13-ab40-beeb75ea4d9d?r=s3-us-east-2
+Continental`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/61711815ada8a04e3608a8c0/huge?r=s3-eu-central-1
+B6`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63463cb52edbb523b6d09998/a9ce8d78-ca01-4427-8767-9786192d21a4?r=s3-eu-central-1

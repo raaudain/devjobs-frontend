@@ -34,26 +34,26 @@ ats = [
         "params": "src/data/params/smartrecruiters.txt",
         "uri": r"https://careers.smartrecruiters.com/(.*?)/"
     },
-    {
-        "host": ".applytojob.com/",
-        "params": "src/data/params/jazzhr.txt",
-        "uri": r"https://(.*?).applytojob.com/"
-    },
-    {
-        "host": ".breezy.hr/",
-        "params": "src/data/params/breezyhr.txt",
-        "uri": r"https://(.*?).breezy.hr/"
-    },
-    {
-        "host": ".recruiterbox.com/jobs",
-        "params": "src/data/params/recruiterbox.txt",
-        "uri": r"https://(.*?).recruiterbox.com/jobs"
-    },
-    {
-        "host": ".bamboohr.com/jobs",
-        "params": "src/data/params/bamboohr.txt",
-        "uri": r"https://(.*?).bamboohr.com/jobs"
-    },
+    # {
+    #     "host": ".applytojob.com/",
+    #     "params": "src/data/params/jazzhr.txt",
+    #     "uri": r"https://(.*?).applytojob.com/"
+    # },
+    # {
+    #     "host": ".breezy.hr/",
+    #     "params": "src/data/params/breezyhr.txt",
+    #     "uri": r"https://(.*?).breezy.hr/"
+    # },
+    # {
+    #     "host": ".recruiterbox.com/jobs",
+    #     "params": "src/data/params/recruiterbox.txt",
+    #     "uri": r"https://(.*?).recruiterbox.com/jobs"
+    # },
+    # {
+    #     "host": ".bamboohr.com/jobs",
+    #     "params": "src/data/params/bamboohr.txt",
+    #     "uri": r"https://(.*?).bamboohr.com/jobs"
+    # },
     # {
     #     "host": "https://www.comeet.com/jobs/",
     #     "params": "src/data/params/comeet.txt",
@@ -69,14 +69,14 @@ ats = [
     #     "params": "src/data/params/clearcompany.txt",
     #     "uri": r"http://(.*?).hrmdirect.com/"
     # },
-    {
-        "host": ".recruitee.com/",
-        "params": "src/data/params/recruitee.txt",
-        "uri": r"https://(.*?).recruitee.com/"
-    },
-    {
-        "host": ".crew.work/jobs",
-        "params": "src/data/params/crew.txt",
-        "uri": r"https://(.*?).crew.work/"
-    },
+    # {
+    #     "host": ".recruitee.com/",
+    #     "params": "src/data/params/recruitee.txt",
+    #     "uri": r"https://(.*?).recruitee.com/"
+    # },
+    # {
+    #     "host": ".crew.work/jobs",
+    #     "params": "src/data/params/crew.txt",
+    #     "uri": r"https://(.*?).crew.work/"
+    # },
 ]

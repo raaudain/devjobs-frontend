@@ -231,3 +231,4 @@ citizenx`n/a`https://inflow-public.s3.amazonaws.com/company-logos/bh3zjwbo2vgw71
 opensend`n/a`https://inflow-public.s3.amazonaws.com/company-logos/qka8e13s5x4terqazcniw7lmpdfa.png
 naroiq`n/a`https://inflow-public.s3.amazonaws.com/company-logos/9rey8uel0kunurzhte8s44ok58k8.png
 checkmate`n/a`https://inflow-public.s3.amazonaws.com/company-logos/5bdmlq9ioqjg0os4pcbvygh52l2z.jpeg
+knowt-inc`n/a`https://inflow-public.s3.amazonaws.com/company-logos/iuqylbhws00qr9m8iaxc07hzmbit.png

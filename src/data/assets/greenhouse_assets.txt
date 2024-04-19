@@ -2149,3 +2149,11 @@ pinterest`Pinterest`None
 feedzai`Feedzai`None
 itrek`itrek`None
 spire`Spire`None
+travelperk`TravelPerk`None
+urbancompass`Compass`None
+bendhealth`Bend Health`None
+pleo`Pleo`None
+esri`Esri`None
+medicalinformatics`Medical Informatics Corp.`None
+fairmarkit`Fairmarkit`None
+guild`Guild`None
