@@ -1700,3 +1700,6 @@ fairmarkit
 bendhealth
 guild
 pleo
+sambanovasystems
+supermetricsoy
+oncai

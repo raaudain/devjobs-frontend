@@ -924,3 +924,7 @@ prepared911
 alembic
 quilter
 Speakeasy
+stealthventurecapitalfirm
+monarchmoney
+stride
+chronospherejobs
