@@ -57,7 +57,7 @@ class ProcessCompanyJobData:
         wanted = ["Engineer", "Data", "IT ",  "Tech ", "QA", "Programmer", "Developer", "ML", "SDET", "DevOps", "AWS", "Cloud", "Software", "Help", "Web ", "Front End", "Agile", "Cyber", "OSINT"]
         wanted = "(%s)" % "|".join(wanted)
         
-        unwanted = ["Elect", "HVAC", "Mechanical", "Manufactur", "Data Entry", "Nurse", "Maintenance", "Civil", "Environmental", "Hardware", "Front Desk", "Helper", "Peer Support", "Bridge", "Water", "Dispatch", "Saw", "Facilities", "AML", "Sheet Metal", "Metallurgical", "Materials", "Expeditor", "Job Developer"]
+        unwanted = ["Elect", "HVAC", "Mechanical", "Manufactur", "Data Entry", "Nurse", "Maintenance", "Civil", "Environmental", "Hardware", "Front Desk", "Helper", "Peer Support", "Bridge ", "Water", "Dispatch", "Saw", "Facilities", "AML", "Sheet Metal", "Metallurgical", "Materials", "Expeditor", "Job Developer", "Fire ", "Plumbing", "Heat Pump"]
         unwanted = "(%s)" % "|".join(unwanted)
 
         if re.search(wanted, title) is not None and re.search(unwanted, title) is None:
