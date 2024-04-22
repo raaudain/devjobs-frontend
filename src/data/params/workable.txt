@@ -1999,3 +1999,6 @@ lvcollective
 isg
 canoa
 gridware
+ventrata
+ratehawk
+defend
