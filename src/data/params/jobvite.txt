@@ -1030,3 +1030,5 @@ sel
 triagepartners
 amda
 reveal
+x-energy
+cjlogisticsamerica

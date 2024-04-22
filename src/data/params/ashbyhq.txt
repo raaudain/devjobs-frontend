@@ -932,3 +932,5 @@ stride
 RISCZero
 stride
 chronospherejobs
+frameai
+avid4
