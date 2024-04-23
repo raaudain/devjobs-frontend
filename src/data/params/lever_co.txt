@@ -1652,3 +1652,4 @@ elevatelabs
 elfbeauty
 gordian-bio
 artera
+logixboard
