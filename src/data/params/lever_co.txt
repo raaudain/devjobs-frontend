@@ -1650,3 +1650,5 @@ provi
 firmex
 elevatelabs
 elfbeauty
+gordian-bio
+artera
