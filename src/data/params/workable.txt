@@ -2043,3 +2043,6 @@ gridcog
 nipponshokkenusa
 spate
 revvgrowth-1
+wati-dot-i-o
+evd-global
+nogigiddy
