@@ -1701,3 +1701,4 @@ lucidmotors
 octave
 nava
 clever
+vannevarlabs
