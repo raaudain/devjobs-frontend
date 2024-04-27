@@ -1663,3 +1663,6 @@ syntax
 seven-starling
 blackgirls-code
 trunkio
+pryon
+cellares
+getmetronome

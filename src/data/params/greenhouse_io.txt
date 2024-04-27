@@ -1711,3 +1711,4 @@ embed
 lucidmotors
 octave
 nava
+clever
