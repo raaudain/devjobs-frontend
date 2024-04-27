@@ -44,7 +44,7 @@ def get_url(companies):
             page.goto(f"https://jobs.lever.co/{company}")
             content = page.content()
             get_results(content, company)
-            browser.close()
+            # browser.close()
 
 def main():
     companies = process_data.read_list_of_companies(FILE_PATH)
