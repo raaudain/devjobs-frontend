@@ -2,7 +2,7 @@ import random, sys
 from datetime import datetime
 sys.path.insert(0, ".")
 from src.job_boards.tools import CreateJson
-from src.job_boards import amazon, ashbyhq, builtin, dailyremote, diversifytech, eightfold, fullstackjob, greenhouse_io, hireart, jobvite, lever_co, nbc, nintendo, polymer, remote_co, remoteok, smartrecruiters, usajobs, weworkremotely, workable, workwithindies, craigslist
+from src.job_boards import amazon, ashbyhq, builtin, dailyremote, diversifytech, eightfold, fullstackjob, greenhouse_io, hireart, jobvite, lever_co, nbc, nintendo, polymer, remote_co, remoteok, smartrecruiters, usajobs, weworkremotely, workable, workwithindies, craigslist, breezyhr, bamboohr
 
 
 def main():
@@ -30,6 +30,8 @@ def main():
     # m.close()
     print("=> Scanning job boards")
     start = datetime.now()
+    bamboohr.main()
+    breezyhr.main()
     lever_co.main()
     usajobs.main()
     workable.get_url(work[::5])
