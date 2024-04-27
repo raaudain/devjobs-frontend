@@ -39,12 +39,12 @@ def get_results(page, param):
 def get_url(companies):
     for company in companies:
         with sync_playwright() as p:
-            browser = p.chromium.launch()
+            browser = p.chromium.launch(headless=True)
             page = browser.new_page(user_agent=f"{random.choice(user_agents)}")
             page.goto(f"https://jobs.lever.co/{company}")
             content = page.content()
             get_results(content, company)
-            # browser.close()
+            browser.close()
 
 def main():
     companies = process_data.read_list_of_companies(FILE_PATH)

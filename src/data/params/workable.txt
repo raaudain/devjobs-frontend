@@ -709,7 +709,6 @@ rushable
 elevar
 ekar
 zemanta
-moladin
 healthdaq
 fancy
 norhart
@@ -1993,7 +1992,6 @@ ananinja
 owl-dot-co
 skidmore-studio
 arquivei
-smartrr
 amazehealth
 lvcollective
 isg
@@ -2026,7 +2024,6 @@ landytech
 homes
 sparkplug
 ridehealth
-bergsen
 insidersecurity
 pushblack
 tickpick

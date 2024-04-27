@@ -2157,3 +2157,13 @@ esri`Esri`None
 medicalinformatics`Medical Informatics Corp.`None
 fairmarkit`Fairmarkit`None
 guild`Guild`None
+unanet`Unanet`None
+candex`Candex`None
+supermetricsoy`Supermetrics`None
+sunriseaba`Sunrise ABA`None
+lucidmotors`Lucid Motors`https://s7-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/342/700/resized/Lucid_Logo_Black_RGB-64x64.png
+nava`Nava`None
+sambanovasystems`SambaNova Systems`None
+oncai`Onc.AI`None
+octave`Octave`None
+clever`Clever`None
