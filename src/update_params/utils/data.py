@@ -39,21 +39,21 @@ ats = [
     #     "params": "src/data/params/jazzhr.txt",
     #     "uri": r"https://(.*?).applytojob.com/"
     # },
-    # {
-    #     "host": ".breezy.hr/",
-    #     "params": "src/data/params/breezyhr.txt",
-    #     "uri": r"https://(.*?).breezy.hr/"
-    # },
+    {
+        "host": ".breezy.hr/",
+        "params": "src/data/params/breezyhr.txt",
+        "uri": r"https://(.*?).breezy.hr/"
+    },
     # {
     #     "host": ".recruiterbox.com/jobs",
     #     "params": "src/data/params/recruiterbox.txt",
     #     "uri": r"https://(.*?).recruiterbox.com/jobs"
     # },
-    # {
-    #     "host": ".bamboohr.com/jobs",
-    #     "params": "src/data/params/bamboohr.txt",
-    #     "uri": r"https://(.*?).bamboohr.com/jobs"
-    # },
+    {
+        "host": ".bamboohr.com/jobs",
+        "params": "src/data/params/bamboohr.txt",
+        "uri": r"https://(.*?).bamboohr.com/jobs"
+    },
     # {
     #     "host": "https://www.comeet.com/jobs/",
     #     "params": "src/data/params/comeet.txt",

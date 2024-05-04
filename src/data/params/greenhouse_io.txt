@@ -234,7 +234,6 @@ archrival
 revel
 mojangab
 papaya
-securitybankbettercareers
 ecobee
 reformation
 carvana
@@ -298,7 +297,6 @@ weedmaps77
 goprocareers
 ideo
 landor
-flipboard
 meetupjobs
 godaddy
 cybereason
@@ -422,7 +420,6 @@ cannondesign
 anark
 deliveryherokoreatech
 connatix
-dnli
 glassdoor
 hugeinc
 shieldshealthsolutions
@@ -752,7 +749,6 @@ yotpo
 datacamp
 plex9
 onemedical
-arcana
 thymecare
 annexushealth
 a3c41b8b71eff8c4
@@ -1096,7 +1092,6 @@ aquahydrex
 uniswaplabs
 productboard
 vestahealthcare
-rubyreceptionists
 shift5
 uchicagoepic
 brightinsight
@@ -1291,7 +1286,6 @@ wargamingen
 oneacrefund
 moloco
 breezeairways
-fyllo
 thatsnomoonentertainment
 tripwireinteractive
 sweetgreen
@@ -1485,7 +1479,6 @@ bigleafnetworks
 higherlogic
 memorahealth
 huddle01
-casetext
 zelusanalytics
 shunnarahcareers
 testendouble
@@ -1537,7 +1530,6 @@ hexagonbio
 simpsongumpertzheger
 codeforsciencesociety
 vegaamericas
-cascadedatalabs
 mainstreethealth
 zepzgroup
 kindsnacks
@@ -1551,7 +1543,6 @@ snappy
 ogilvyuk
 citizen
 seed
-vyro
 drweng
 flamboyanfoundation
 guayaki
@@ -1586,7 +1577,6 @@ philzcoffeecareers
 feastables
 chime
 spotonproduct
-hopscotchhealth
 papa
 adasiaholdings
 hibu
@@ -1707,7 +1697,6 @@ sambanovasystems
 supermetricsoy
 oncai
 sunriseaba
-embed
 lucidmotors
 octave
 nava
@@ -1716,3 +1705,6 @@ biofire
 modularai
 altruist
 hubspotjobs
+vannevarlabs
+sanityio
+
