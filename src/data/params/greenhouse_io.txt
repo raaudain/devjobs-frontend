@@ -1712,3 +1712,7 @@ lucidmotors
 octave
 nava
 clever
+biofire
+modularai
+altruist
+hubspotjobs
