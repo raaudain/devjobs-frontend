@@ -11,6 +11,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 __pycache__
+/update_parms/tools/__pycache__
 
 # C extensions
 *.so
