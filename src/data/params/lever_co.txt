@@ -1674,3 +1674,5 @@ better
 hellobestow
 e-core
 goeverbright
+SimpliRoute
+crosslaketech

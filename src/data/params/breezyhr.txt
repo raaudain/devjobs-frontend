@@ -1717,3 +1717,8 @@ dovesilo
 democracy-summer
 savas-labs
 adbro
+grill-hero
+cresst2
+quanticate
+mdcalc
+sentral
