@@ -1050,3 +1050,5 @@ superevilmegacorp
 xyplanning
 azoffmusiccompany
 omniabio
+veson
+qtc
