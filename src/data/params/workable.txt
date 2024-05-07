@@ -2099,3 +2099,6 @@ commify
 deblock
 inbox-business-technologies
 touchdown-ventures
+impactlifetoday
+itsacheckmate-dot-c-om
+progressoft
