@@ -1717,3 +1717,4 @@ cybrary
 kaseya
 starmind
 hypr
+kargo22

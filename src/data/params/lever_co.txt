@@ -1687,3 +1687,5 @@ owner
 colibrigroup
 Flossy
 indivisible
+cyara
+sunnova
