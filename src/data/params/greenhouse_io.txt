@@ -1718,3 +1718,4 @@ kaseya
 starmind
 hypr
 kargo22
+pivotbio
