@@ -778,7 +778,6 @@ nugget
 remotetcx
 johnkenyoneyecenter
 gv
-mediamath
 galileo
 barrysbootcamp
 touchbistro
@@ -960,7 +959,6 @@ yieldmo
 jumo
 freenow
 mixpanel
-linkfire
 precisionmedicinegroup
 mrbeastyoutube
 forbes
@@ -1701,10 +1699,8 @@ lucidmotors
 octave
 nava
 clever
-biofire
 modularai
 altruist
 hubspotjobs
 vannevarlabs
 sanityio
-
