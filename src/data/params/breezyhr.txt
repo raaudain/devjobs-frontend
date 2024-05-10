@@ -1766,3 +1766,6 @@ matrix-technologies-inc
 momentum
 huddex
 tie-bar
+recursive
+beta-bionics-inc
+coc-consulting
