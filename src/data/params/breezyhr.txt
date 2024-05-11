@@ -1769,3 +1769,6 @@ tie-bar
 recursive
 beta-bionics-inc
 coc-consulting
+jumpseat
+uptech
+qooper
