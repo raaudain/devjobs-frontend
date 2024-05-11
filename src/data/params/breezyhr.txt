@@ -1772,3 +1772,4 @@ coc-consulting
 jumpseat
 uptech
 qooper
+vinli
