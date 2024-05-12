@@ -1462,7 +1462,6 @@ qcentrix
 tia
 memphismeats
 dialpad
-sorcero
 carbonrobotics
 meritamerica
 formatservices
@@ -1707,10 +1706,10 @@ sanityio
 mendel
 bigcommerce
 integraladscience
-embed
 datavant
 cybrary
 kaseya
 starmind
 hypr
 kargo22
+pivotbio

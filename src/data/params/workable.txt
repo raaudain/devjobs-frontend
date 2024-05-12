@@ -642,7 +642,6 @@ perceptyx
 iosh
 coinmetro
 factory14
-tryzens
 dcthomson
 lula
 signalwire
@@ -1370,7 +1369,6 @@ wildlife-works
 hire-resolve
 psychology-today
 99x-careers
-logical-media-group
 martin-automotive-group
 bitquery
 lofty
@@ -1557,7 +1555,6 @@ flight-story-1
 okto
 ndreams
 angkas
-measurabl
 primait
 getellipsis
 carreraskiewitmx
@@ -2079,11 +2076,8 @@ womendonorsnetwork
 valgenesis-1
 tahzoo
 xops
-bergsen
-moladin
 webhotelier
 qomodo
-smartrr
 twocircles
 centralapp
 zirtual-llc
@@ -2131,3 +2125,16 @@ jeffreym-consulting
 globl-contact
 boundlesshq
 withings
+careers-sixflags-and-aqauarabia
+abtrace
+bbgc
+howso
+kubapay
+righttobe
+offline
+neowork
+cambiaredu
+almedia
+ravelin
+antarcticaglobal
+movement-labs
