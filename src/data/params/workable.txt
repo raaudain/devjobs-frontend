@@ -2138,3 +2138,7 @@ almedia
 ravelin
 antarcticaglobal
 movement-labs
+wmpcompanies
+appliedlabs
+appvia
+vivid-money
