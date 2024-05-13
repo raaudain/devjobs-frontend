@@ -1781,3 +1781,7 @@ staffworthy-inc
 voteamerica
 rodal-technologies
 temuu
+magmatech
+snowball
+nativemsg
+userhub
