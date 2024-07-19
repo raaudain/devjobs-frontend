@@ -75,7 +75,6 @@ plaisio-careers
 slashdata
 deeproute-dot-a-i
 go1careers
-fibraconsultores
 equip
 cobs-bread-2
 phocassoftware
@@ -127,7 +126,6 @@ huboo
 urban
 icorp
 bigtincan
-zencargo
 qualco
 techfirefly
 dable
@@ -711,7 +709,6 @@ zemanta
 healthdaq
 fancy
 norhart
-hinghamsavings
 touchdownpr
 bumper
 cartegraph
@@ -1144,7 +1141,6 @@ foundersforum
 inspectorio
 zoneandco
 divestudiosmindset
-storonsky
 houst
 teknique
 aldrin
@@ -1562,7 +1558,6 @@ bcw-emea
 kriya
 vouched
 convertedin-1
-shepherdcareers
 watson-institute
 yakoa
 islacare
@@ -1578,7 +1573,6 @@ brilliantplanet
 hextrust
 conjointly
 cybersmart
-qontigo
 cvnl
 theoceanac
 xandr
@@ -1684,7 +1678,6 @@ beond
 betterview
 r3i-capital
 growthcave
-anonos
 acensblue
 matteladventurepark
 mygbi
@@ -1824,7 +1817,6 @@ skinandme
 trustmi
 jagex-limited
 vitally
-ameritel-bpo
 codurance
 giant-animation
 zealgroup
@@ -1885,7 +1877,6 @@ mediaradar
 sequel
 avantialaw
 toloka-ai
-catena
 pxo
 dcadvisory
 nobox-hr-outsourcing-solutions
@@ -2093,7 +2084,6 @@ deblock
 inbox-business-technologies
 touchdown-ventures
 impactlifetoday
-itsacheckmate-dot-c-om
 progressoft
 wecloneyou
 clearbank
@@ -2115,7 +2105,6 @@ billingplatform-1
 povio
 prox-works
 reveal-health-tech
-apexraceparts
 inivos
 associacanada
 qodeworld
@@ -2125,7 +2114,6 @@ jeffreym-consulting
 globl-contact
 boundlesshq
 withings
-careers-sixflags-and-aqauarabia
 abtrace
 bbgc
 howso
@@ -2142,3 +2130,26 @@ wmpcompanies
 appliedlabs
 appvia
 vivid-money
+ampcontrol
+brxperformance
+codete
+act1federal
+autovitals
+nhfca
+aks-protalent
+creditstar
+buildersnetwork
+friends-from-the-city
+botrista
+goreel
+pearltalent
+tradinghub
+clearstory
+arondite
+bizee
+berryvirtual
+apexwheels
+hbi
+wrisk
+simbian
+jobssomewhere

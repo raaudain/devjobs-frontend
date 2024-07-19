@@ -93,3 +93,7 @@ postmates
 stmicroelectronics
 arcadis
 puertoricogov
+oxxo
+fortive
+dolby
+fcx

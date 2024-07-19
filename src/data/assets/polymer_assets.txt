@@ -233,3 +233,9 @@ naroiq`n/a`https://inflow-public.s3.amazonaws.com/company-logos/9rey8uel0kunurzh
 checkmate`n/a`https://inflow-public.s3.amazonaws.com/company-logos/5bdmlq9ioqjg0os4pcbvygh52l2z.jpeg
 knowt-inc`n/a`https://inflow-public.s3.amazonaws.com/company-logos/iuqylbhws00qr9m8iaxc07hzmbit.png
 futurematters`n/a`https://inflow-public.s3.amazonaws.com/company-logos/2qnp3wtpvd8f4lh8yrz5myh7ssjt.jpeg
+coverdash`n/a`https://inflow-public.s3.amazonaws.com/company-logos/on2ocbjid5j6kpou6yqpehyztuqg.png
+mia-share`n/a`https://inflow-public.s3.amazonaws.com/company-logos/0td8wkv16kpbymzdl529id5b49oa.png
+remark`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ty5nyckq3yvq6iiso8pylbndzrez.png
+springtail`n/a`https://inflow-public.s3.amazonaws.com/company-logos/4kqx4itbj8di3pkyscxj766p9a54.svg
+farfill`n/a`https://inflow-public.s3.amazonaws.com/company-logos/6r41b6ws1qssvgvq13siuugnmcw9.png
+teamheyo`n/a`https://inflow-public.s3.amazonaws.com/company-logos/brjpsr2hwh04ckn0n8m87ncr1l0q.png

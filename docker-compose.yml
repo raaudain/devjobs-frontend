@@ -1,0 +1,8 @@
+---
+services:
+  scraper:
+    container_name: scraper
+    build:
+      context: .
+      dockerfile: Dockerfile
+

@@ -2182,3 +2182,18 @@ hypr`HYPR`None
 pivotbio`Pivot Bio`None
 bigcommerce`BigCommerce`None
 starmind`Starmind`None
+magnetmediafilms`Magnet Media, Inc.`None
+fireblocks`Fireblocks`None
+toriihq`Torii`None
+druva`Druva`None
+praetorian`Praetorian`None
+moneylion`MoneyLion`None
+helsing`Helsing`None
+mudflap`Mudflap`None
+cured`Cured`None
+watchmakergenomics`Watchmaker Genomics`None
+studycareers`Study.com`None
+flix`Flix`None
+partumhealth`Partum Health`None
+ayahealthcare`Aya Healthcare`None
+energyhub`EnergyHub`None
