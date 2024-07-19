@@ -1705,3 +1705,9 @@ pattern
 certifyos
 startengine
 valence
+boxhub
+Nomagic
+perrknight
+VISOTrust
+teikametrics
+Black-White-Zebra

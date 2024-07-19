@@ -1824,3 +1824,7 @@ menuaid
 toffeeam
 national-art-strategies-inc
 swipeby
+magmatech
+nativemsg
+userhub
+viridios
