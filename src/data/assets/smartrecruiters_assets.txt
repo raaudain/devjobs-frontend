@@ -999,3 +999,5 @@ Continental`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/61711
 B6`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-dc5/63463cb52edbb523b6d09998/a9ce8d78-ca01-4427-8767-9786192d21a4?r=s3-eu-central-1
 AbanoHealthcare`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc9/6678dae60722a21bfade1b3f/3535499e-65c0-43f5-a1fd-ba7826ae9b80?r=s3-ap-southeast-2
 TheSRGroup1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/61fa82f935020f63331e8082/huge?r=s3-eu-central-1
+AbbVie`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc11/656747cf2911de6f78b5aa2b/150px?r=s3-us-east-2
+ReBuyReCommerceServicesGmbHCoKG`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c3c780752faff0007064a09/150px?r=s3-eu-central-1

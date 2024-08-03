@@ -1,9 +1,7 @@
-granular
 aexp
 akamai
 micron
 bnymellon
-nationwide
 app
 netapp
 nutanix
@@ -97,3 +95,4 @@ oxxo
 fortive
 dolby
 fcx
+vialto

@@ -77,7 +77,6 @@ gemini
 glossier
 gofundme
 goldbelly
-heap
 hellofresh
 himshers
 homelight
@@ -186,7 +185,6 @@ alto
 digit
 cameo
 gusto
-nacelle
 enigmaio
 aptible
 checkr
@@ -261,7 +259,6 @@ akqa
 3playmediacontractor
 blab
 goalsyria
-marsdiscoverydistrict
 foursquare26
 bungie
 livescore9
@@ -409,7 +406,6 @@ alarmcom
 konux
 cannondesign
 anark
-deliveryherokoreatech
 connatix
 glassdoor
 hugeinc
@@ -838,14 +834,12 @@ eleanorhealth
 thefork
 drivewealth
 joor
-wesang
 abnormalsecurity
 missionassetfund
 2uedx
 freshprints
 lilium
 nirrin
-dspconcepts
 girleffect
 waymo
 mintel
@@ -1024,7 +1018,6 @@ nylas
 dataiku
 hightouch
 substack
-zapier
 broadsign
 raft
 prefect
@@ -1456,7 +1449,6 @@ webershandwick
 republicschools
 katmaitech
 generatebiomedicines
-edgedelta
 gooddog
 fountain
 genies
@@ -1501,7 +1493,6 @@ seed
 drweng
 flamboyanfoundation
 guayaki
-betterhealth
 runwayml
 lionsntigers
 linushealth
@@ -1683,3 +1674,10 @@ ayahealthcare
 helsing
 energyhub
 netradyne
+assetwatch
+freedomofthepressfoundation
+buzzfeed
+paypaycard
+bezosearthfund
+levelaccess
+abacusgroup

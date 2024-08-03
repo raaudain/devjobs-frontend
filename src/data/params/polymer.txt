@@ -307,3 +307,5 @@ springtail
 coverdash
 mia-share
 farfill
+alphafund
+pantomath

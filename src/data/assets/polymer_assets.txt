@@ -239,3 +239,5 @@ remark`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ty5nyckq3yvq6iis
 springtail`n/a`https://inflow-public.s3.amazonaws.com/company-logos/4kqx4itbj8di3pkyscxj766p9a54.svg
 farfill`n/a`https://inflow-public.s3.amazonaws.com/company-logos/6r41b6ws1qssvgvq13siuugnmcw9.png
 teamheyo`n/a`https://inflow-public.s3.amazonaws.com/company-logos/brjpsr2hwh04ckn0n8m87ncr1l0q.png
+alphafund`n/a`https://inflow-public.s3.amazonaws.com/company-logos/ndw8wm9grsu3yrrhsnzfzvg78lhp.png
+pantomath`n/a`https://inflow-public.s3.amazonaws.com/company-logos/e2yem1b73jtwkhpbjo8un6orv5aj.png

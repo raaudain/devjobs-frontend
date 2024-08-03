@@ -2197,3 +2197,10 @@ flix`Flix`None
 partumhealth`Partum Health`None
 ayahealthcare`Aya Healthcare`None
 energyhub`EnergyHub`None
+netradyne`Netradyne`https://s5-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/046/100/resized/Netradyne_Full-Logo_Black-Green_1x.png
+freedomofthepressfoundation`Freedom of the Press Foundation`None
+levelaccess`Level Access`None
+assetwatch`AssetWatch, Inc.`None
+paypaycard`PayPay Card`None
+bezosearthfund`Bezos Earth Fund`None
+abacusgroup`Abacus Group LLC`None
