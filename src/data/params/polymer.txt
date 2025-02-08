@@ -309,3 +309,11 @@ mia-share
 farfill
 alphafund
 pantomath
+carousel
+loopscale
+solidec
+lighten
+jump
+motive
+spatialise
+shola-akinlade

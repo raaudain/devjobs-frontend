@@ -4,7 +4,6 @@ micron
 bnymellon
 app
 netapp
-nutanix
 endevis
 prudential
 employee
@@ -14,7 +13,6 @@ lkqcorp
 vale
 creditsesame
 climate
-medtronic
 trinet
 stateauto
 airasia
@@ -96,3 +94,6 @@ fortive
 dolby
 fcx
 vialto
+netflix
+britishcouncil
+hsbc

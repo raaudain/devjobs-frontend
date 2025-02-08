@@ -2204,3 +2204,82 @@ assetwatch`AssetWatch, Inc.`None
 paypaycard`PayPay Card`None
 bezosearthfund`Bezos Earth Fund`None
 abacusgroup`Abacus Group LLC`None
+rightwayhealthcare`Rightway`None
+lakewoodanimalhospitalva`Lakewood Animal Hospital (VA)`None
+verily`Verily`None
+zoro`Zoro`None
+canto`Canto`None
+ignitereading`Ignite Reading`None
+loopearplugs`Loop Earplugs`None
+ionq`IonQ`None
+vast`Vast`None
+vizmedia`VIZ Media`None
+cordellcordell`Cordell & Cordell`None
+realpha`reAlpha`None
+textio`Textio`None
+linqia`Linqia`None
+careersday`Cloudflare Events`None
+shipwell`Shipwell`None
+bathfitterdistributinginc`Bath Fitter`None
+ossiumhealth`Ossium Health`None
+sitsgroup`SITS Group`None
+thedigitrustgroup`The DigiTrust Group`None
+meetelise`EliseAI`None
+sphereentertainment`Sphere Entertainment Group, LLC`None
+databento`Databento`https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/012/050/resized/logo-full.png
+artofproblemsolving`Art of Problem Solving`None
+whop`Whop`None
+wintwaterintelligence`WINT - Water Intelligence`None
+georgepjohnsonexperiencemarketing`George P. Johnson Experience Marketing`None
+slickdeals`Slickdeals`None
+rainretail`Rain Retail Software`None
+sharkninjaoperatingllc`SharkNinja`None
+paypaysec`PayPay Securities`None
+prizepicks`PrizePicks`None
+pmc`Penske Media Corp.`None
+lightricks`Lightricks`None
+bbyo`BBYO`None
+dropbox`Dropbox`None
+healthverity`HealthVerity`None
+block`Block`None
+performline`PerformLine`None
+basejobs`Base.org Careers Page`None
+place`PLACE Corporate Careers`None
+affinipay2`AffiniPay Careers 2`None
+daybreakgames`Daybreak Games`None
+auterion`Auterion`None
+shubhashrayhousingcareers`Shubhashray Housing India`None
+bridgeway`Bridgeway Benefit Technologies`None
+epicgames`Epic Games`None
+inariagriculture`Inari Agriculture`None
+helios`Helios`None
+cribl`Cribl`None
+tigera`Tigera`None
+thltestcareers`The Humane League`None
+careerspomelo`Pomelo`None
+ezinc`Join the e-Zinc team`None
+owllabs`Owl Labs`None
+bseglobal`BSE Global`None
+ghost`Ghost`None
+growthloop`GrowthLoop`None
+nucleusfinancial`Nucleus Financial`None
+seniorcaretherapy`Senior Care Therapy`None
+sandboxaq`SandboxAQ`None
+mercedesbenzofontario`Mercedes-Benz of Ontario`None
+nuharborsecurity`NuHarbor Security`None
+hogarthworldwide`Hogarth Worldwide`None
+monks`Monks`None
+fnsinc`FNS, INC`None
+scribex`Scribe-X`None
+veterinaryemergencygroupst`Veterinary Emergency Group (VEG)`None
+braincorporation`Brain Corp`None
+syskahennessy`Syska Hennessy Group`None
+novisto78`Novisto`None
+velocityglobal`Velocity Global`None
+parloa`Parloa`None
+totalbond`TotalBond Veterinary Hospitals`None
+sagesure`SageSure`None
+memglobal`Mem Global`None
+avetta`Avetta, LLC`None
+rysehealth`Ryse Health`None
+rstudio`Posit`None

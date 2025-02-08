@@ -1001,3 +1001,4 @@ AbanoHealthcare`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-d
 TheSRGroup1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/61fa82f935020f63331e8082/huge?r=s3-eu-central-1
 AbbVie`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc11/656747cf2911de6f78b5aa2b/150px?r=s3-us-east-2
 ReBuyReCommerceServicesGmbHCoKG`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c3c780752faff0007064a09/150px?r=s3-eu-central-1
+Entain`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/665d8444bba0b478843ea854/8ec89dd3-1082-4926-bc59-56ab03e84d72?r=s3-eu-central-1

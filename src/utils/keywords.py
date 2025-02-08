@@ -1,0 +1,20 @@
+keywords = [
+    "terraform",
+    "python",
+    "javascript",
+    "fastapi",
+    "aws",
+    "ec2",
+    "amazon web services",
+    "scrapy",
+    "scraping",
+    "scrape",
+    "devops",
+    "remote",
+    "java",
+    "rust",
+    "c++",
+    "c#",
+    "golang",
+    " c "
+]

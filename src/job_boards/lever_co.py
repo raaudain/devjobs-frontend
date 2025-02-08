@@ -1,4 +1,4 @@
-import sys
+import sys, requests
 from datetime import datetime
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
@@ -36,16 +36,15 @@ def get_results(page, param):
         })
 
 def get_url(companies):
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        
-        for company in companies:
-            page = browser.new_page(user_agent=use_random_agent())
-            page.goto(f"https://jobs.lever.co/{company}")
-            content = page.content()
+    for company in companies:
+        try:
+            response = requests.get(f"https://jobs.lever.co/{company}", headers={"User-Agent": use_random_agent()})
+            content = response.text
             get_results(content, company)
+        except Exception as e:
+            print(f"Lever:", e)
+            pass
 
-        browser.close()
 
 def main():
     companies = process_data.read_list_of_companies(FILE_PATH)

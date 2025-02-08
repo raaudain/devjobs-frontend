@@ -30,39 +30,52 @@ def main():
     # m.close()
     print("=> Scanning job boards")
     start = datetime.now()
-    # bamboohr.main()
-    # breezyhr.main()
-    # builtin.main()
-    lever_co.main()
-    usajobs.main()
-    workable.get_url(work[::5])
-    diversifytech.main()
-    polymer.main()
-    nbc.main()
-    workable.get_url(work[1::5])
-    smartrecruiters.main()
-    greenhouse_io.get_url(green[::2])
-    craigslist.get_url(locations)
-    jobvite.main()
-    eightfold.main()
-    workable.get_url(work[2::5])
-    craigslist.get_url_it(locations)
-    greenhouse_io.get_url(green[1::2])
-    ashbyhq.main()
-    # nintendo.main()
-    hireart.main()
-    amazon.main()
-    craigslist.get_url_web(locations)
-    workable.get_url(work[3::5])
-    # key_values.main()
-    workwithindies.main()
-    weworkremotely.main()
-    fullstackjob.main()
-    remote_co.main()
-    remoteok.main()
-    craigslist.get_url_network(locations)
-    workable.get_url(work[4::5])
-    # dailyremote.main()
+    
+    job_boards = [
+        lever_co.main(),
+        # bamboohr.main(),
+        # breezyhr.main(),
+        # builtin.main(),
+        usajobs.main(),
+        workable.get_url(work[::5]),
+        diversifytech.main(),
+        polymer.main(),
+        nbc.main(),
+        workable.get_url(work[1::5]),
+        smartrecruiters.main(),
+        greenhouse_io.get_url(green[::2]),
+        craigslist.get_url(locations),
+        jobvite.main(),
+        eightfold.main(),
+        workable.get_url(work[2::5]),
+        craigslist.get_url_it(locations),
+        greenhouse_io.get_url(green[1::2]),
+        ashbyhq.main(),
+        # nintendo.main(),
+        hireart.main(),
+        amazon.main(),
+        craigslist.get_url_web(locations),
+        workable.get_url(work[3::5]),
+        # key_values.main(),
+        workwithindies.main(),
+        weworkremotely.main(),
+        fullstackjob.main(),
+        remote_co.main(),
+        remoteok.main(),
+        craigslist.get_url_network(locations),
+        # dailyremote.main(),
+        workable.get_url(work[4::5]),
+    ]
+    
+    
+    for board in job_boards:
+        try:
+            print(board)
+            board
+        except Exception as e:
+            print(e)
+            pass
+
     create_json.create_temp_file()
     create_json.create_file()
 
