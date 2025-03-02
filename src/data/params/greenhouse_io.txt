@@ -22,7 +22,6 @@ paige
 housecall
 samsara
 angi
-fueled
 idme
 cobaltio
 alma
@@ -182,7 +181,6 @@ ethyca
 sponsorsforeducationalopportunity
 sharebite
 naughtydog
-dialexa
 lyft
 mbooth
 northone
@@ -197,7 +195,6 @@ outsetmedical
 talkspace
 lift
 xapo61
-educators
 myntra
 signifyhealth
 coherehealth
@@ -260,7 +257,6 @@ ethoslife
 allbirds
 everlane
 calicolabs
-forwardfinancing
 movableink
 weedmaps77
 goprocareers
@@ -293,7 +289,6 @@ gradle
 sonymusic
 blacklane
 ergeon
-desktopmetal
 sonicwall
 greenpeace
 blockchain
@@ -579,7 +574,6 @@ collectivehealth
 mixtiles
 bluerivertech
 schubergphilis
-karunatherapeutics
 veritone
 supplyhouse
 hypergiant
@@ -641,7 +635,6 @@ via
 monograph
 propel
 billcom
-loominc
 grindr
 singlesprout
 rackner
@@ -762,11 +755,9 @@ eleanorhealth
 thefork
 drivewealth
 abnormalsecurity
-missionassetfund
 2uedx
 freshprints
 lilium
-nirrin
 girleffect
 waymo
 mintel
@@ -871,7 +862,6 @@ myriad360
 flumehealth
 ivalua
 billtrust2
-kkr
 opentable
 abinbev
 obamafoundation
@@ -984,7 +974,6 @@ bgbgroup
 spothero
 aeyeinc
 bitwarden
-tshirtventures
 cloudops
 tifin
 charliehealth
@@ -1064,7 +1053,6 @@ mlbdataops
 nasstudios
 oscar
 virgo
-eon
 8451
 enstoa
 naked
@@ -1275,7 +1263,6 @@ meritamerica
 wingspan
 wheelhouse
 oafkenya
-czero
 octanelending
 bigleafnetworks
 higherlogic
@@ -1418,7 +1405,6 @@ affinipay1
 teachforall
 ursamajor
 axonius
-villagemd
 zscaler
 auviknetworks
 arcoeducacao
@@ -1474,7 +1460,6 @@ supermetricsoy
 candex
 sambanovasystems
 supermetricsoy
-oncai
 sunriseaba
 lucidmotors
 octave
@@ -1596,3 +1581,20 @@ rysehealth
 novisto78
 rstudio
 velocityglobal
+solutionsbytext
+ensono
+3playmedialivecontractor
+anthropic
+tenableinc
+propublica
+astropay
+liaisoninternational
+saltsecurity
+xai
+aottechnologies
+infuseukraine
+reach
+nycedc
+itcss
+ownbackup
+perscholashires

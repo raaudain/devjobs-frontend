@@ -2283,3 +2283,20 @@ memglobal`Mem Global`None
 avetta`Avetta, LLC`None
 rysehealth`Ryse Health`None
 rstudio`Posit`None
+solutionsbytext`Solutions by Text`None
+3playmedialivecontractor`3Play Media - Live Captioner`None
+tenableinc`Tenable, Inc.`https://s8-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/017/900/resized/tenablelogo.png
+astropay`AstroPay`None
+saltsecurity`Salt Security`None
+aottechnologies`AOT Technologies`None
+reach`Reach Financial`https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/292/700/resized/ReachFinancial-Primary-color_(5).jpg
+perscholashires`Per Scholas`https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/237/600/resized/We're_Hiring_Graphic_V1_(1).png
+ensono`Ensono`None
+anthropic`Anthropic`https://s8-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/040/300/resized/greenhouse-logo.png
+propublica`ProPublica`None
+liaisoninternational`Liaison International`None
+xai`xAI`https://s7-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/375/800/resized/inverse_xai_logo_5.png
+infuseukraine`INFUSE EMEA`None
+nycedc`New York City Economic Development Corporation`None
+itcss`Welcome to the Tarsanet Internal Career Center!`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/946/900/resized/Tarsus_Logo_stacked_color.png
+ownbackup`Own Company`None

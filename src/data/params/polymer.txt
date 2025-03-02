@@ -317,3 +317,6 @@ jump
 motive
 spatialise
 shola-akinlade
+voiceops
+shredder
+luxalgo
