@@ -712,7 +712,6 @@ onecause
 scopely
 hillholliday
 nybg
-nuscale-power
 andigital
 catalyze-jobs
 shorrpackaging
@@ -1099,3 +1098,5 @@ northwest-center
 methanexgeismar
 copehealthcareconsulting
 mini-circuits
+ccaandb
+methanexegypt

@@ -12,14 +12,37 @@ Return : Generator (iterator) that yields found URLs. If the stop parameter is N
 
 
 from googlesearch import search
+from duckduckgo_search import DDGS
 import time
 
 
+
 def query_google(query):
-    count = 1
     urls = set()
+    count = 1
 
     for url in search(query, num=100, start=0, stop=500, pause=90):
+        if not url in urls:
+            print(count, url)
+            urls.add(url)
+            count+=1
+    return urls
+
+def query_duckduckgo(query):
+    urls = set()
+    count = 1
+    loop = 1
+    results = []
+
+    while loop < 6:
+        results.append(DDGS().text(query, max_results=5, region="us-en"))
+        print(results)
+        time.sleep(10)
+        loop+=1
+
+    for result in results:
+        url = result["href"]
+
         if not url in urls:
             print(count, url)
             urls.add(url)

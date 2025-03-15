@@ -907,7 +907,6 @@ hackajob
 summusglobal
 sifted-1
 mono
-ptw-i
 urbanco
 veracross
 mmob
@@ -1498,7 +1497,6 @@ rassini
 nalamoney
 silverbird
 exigent
-f45training
 trocaire
 ampcap
 codi
@@ -2243,7 +2241,6 @@ relminsurance
 borrowmydoggy
 muchbetteradventures
 guestwise
-capitex
 tinqin
 audiostack
 stafi
@@ -2277,7 +2274,6 @@ outsource-access
 harvest
 careersactivatetalent
 antenna
-talent-works1
 isentia
 proppel
 hunt-st
@@ -2346,7 +2342,6 @@ r2net
 ezypay
 supertech-group
 garmin-cluj
-it-concepts
 practihealth
 load
 more-staffing-llc
@@ -2369,3 +2364,24 @@ jobgether
 zipliens
 captureone
 woolf
+octopushr
+pegasushomes
+cresilon
+masterworksco
+lovebonito
+trailofbits
+sokoni-africa-limited
+nationswell-1
+streetchildcareers
+rafarm
+communicatehealth-inc
+ayjsolicitors
+giz-kamerun
+work-in-progress-consulting
+hirefellows
+cadillacf1team
+coursestorm
+cloudtalk
+san-diego-county-regional-airport-authority
+graza
+flowdesk

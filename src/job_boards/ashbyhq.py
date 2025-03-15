@@ -42,31 +42,24 @@ def get_url(companies: list):
     for company in companies:
         try:
             headers = {"User-Agent": random.choice(user_agents)}
-            url = "https://jobs.ashbyhq.com/api/non-user-graphql"
+            url1 = "https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams"
+            url2 = "https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiOrganizationFromHostedJobsPageName"
             payload = {
-                "operationName":"ApiJobBoardWithTeams",
-                "variables": {
-                        "organizationHostedJobsPageName": company
-                    },
-                "query":"query ApiJobBoardWithTeams($organizationHostedJobsPageName: String!) {\n  jobBoard: jobBoardWithTeams(\n    organizationHostedJobsPageName: $organizationHostedJobsPageName\n  ) {\n    teams {\n      id\n      name\n      parentTeamId\n      __typename\n    }\n    jobPostings {\n      id\n      title\n      teamId\n      locationId\n      locationName\n      employmentType\n      secondaryLocations {\n        ...JobPostingSecondaryLocationParts\n        __typename\n      }\n      __typename\n    }\n    groupBySubDepartment\n    __typename\n  }\n}\n\nfragment JobPostingSecondaryLocationParts on JobPostingSecondaryLocation {\n  locationId\n  locationName\n  __typename\n}"
+                "operationName":"ApiJobBoardWithTeams","variables":{"organizationHostedJobsPageName":company},"query":"query ApiJobBoardWithTeams($organizationHostedJobsPageName: String!) {\n  jobBoard: jobBoardWithTeams(\n    organizationHostedJobsPageName: $organizationHostedJobsPageName\n  ) {\n    teams {\n      id\n      name\n      parentTeamId\n      __typename\n    }\n    jobPostings {\n      id\n      title\n      teamId\n      locationId\n      locationName\n      workplaceType\n      employmentType\n      secondaryLocations {\n        ...JobPostingSecondaryLocationParts\n        __typename\n      }\n      compensationTierSummary\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment JobPostingSecondaryLocationParts on JobPostingSecondaryLocation {\n  locationId\n  locationName\n  __typename\n}"
             }
             payload_2 = {
-                "operationName": "ApiOrganizationFromHostedJobsPageName",
-                "variables": {
-                    "organizationHostedJobsPageName": company
-                },
-                "query": "query ApiOrganizationFromHostedJobsPageName($organizationHostedJobsPageName: String!) {\n  organization: organizationFromHostedJobsPageName(organizationHostedJobsPageName: $organizationHostedJobsPageName) {\n    ...OrganizationParts\n    __typename\n  }\n}\n\nfragment OrganizationParts on Organization {\n  name\n  publicWebsite\n  customJobsPageUrl\n  theme {\n    colors\n    logoWordmarkImageUrl\n    logoSquareImageUrl\n    applicationSubmittedSuccessMessage\n    jobBoardTopDescriptionHtml\n    jobBoardBottomDescriptionHtml\n    __typename\n  }\n  appConfirmationTrackingPixelHtml\n  __typename\n}\n"
+                "operationName":"ApiOrganizationFromHostedJobsPageName","variables":{"organizationHostedJobsPageName":company,"searchContext":"JobBoard"},"query":"query ApiOrganizationFromHostedJobsPageName($organizationHostedJobsPageName: String!, $searchContext: OrganizationSearchContext) {\n  organization: organizationFromHostedJobsPageName(\n    organizationHostedJobsPageName: $organizationHostedJobsPageName\n    searchContext: $searchContext\n  ) {\n    ...OrganizationParts\n    __typename\n  }\n}\n\nfragment OrganizationParts on Organization {\n  name\n  publicWebsite\n  customJobsPageUrl\n  hostedJobsPageSlug\n  allowJobPostIndexing\n  theme {\n    colors\n    showJobFilters\n    showTeams\n    showAutofillApplicationsBox\n    logoWordmarkImageUrl\n    logoSquareImageUrl\n    applicationSubmittedSuccessMessage\n    jobBoardTopDescriptionHtml\n    jobBoardBottomDescriptionHtml\n    jobPostingBackUrl\n    __typename\n  }\n  appConfirmationTrackingPixelHtml\n  recruitingPrivacyPolicyUrl\n  activeFeatureFlags\n  timezone\n  __typename\n}"
             }
-            response = requests.post(url, json=payload, headers=headers)
-            res = requests.post(url, json=payload_2, headers=headers)
+            response = requests.post(url1, json=payload, headers=headers)
+            res = requests.post(url2, json=payload_2, headers=headers)
+
             if response.ok and res.ok:
                 data = json.loads(response.text)
                 name = None
                 logo = None
                 if "organization" in json.loads(res.text)["data"]:
                     name = json.loads(res.text)["data"]["organization"]["name"]
-                    logo = json.loads(res.text)["data"]["organization"]["theme"]["logoWordmarkImageUrl"] if json.loads(
-                        res.text)["data"]["organization"]["theme"] else None
+                    logo = json.loads(res.text)["data"]["organization"]["theme"]["logoWordmarkImageUrl"] if json.loads(res.text)["data"]["organization"]["theme"] else None
                 else:
                     process_data.remove_not_found(FILE_PATH, company)
                 get_results(data, company, name, logo)

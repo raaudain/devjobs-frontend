@@ -67,7 +67,6 @@ glossier
 gofundme
 goldbelly
 hellofresh
-himshers
 homelight
 hover
 iex
@@ -223,7 +222,6 @@ wildlifestudios
 picsart
 boltv2
 morganfranklinconsultingllc
-nerdwallet
 tucows
 unity3d
 sennder
@@ -310,7 +308,6 @@ airtable
 bandainamco
 tripactions
 evidation
-redislabs
 unisonhomeownershipinvestors
 pricespider
 stashinvest
@@ -423,7 +420,6 @@ digrestaurants
 crocscorporate
 gcmgrosvenor
 tridge
-snowflakecomputing
 rocketchat
 appnovation
 showpad
@@ -456,7 +452,6 @@ pax8
 twinhealth
 mackweldon
 8thlightrebuild
-chaossearch
 willowtree
 figs15
 philo
@@ -489,7 +484,6 @@ onapsis
 intrinsicrobotics
 toyotaconnected
 eyecarecenter
-clifbar15
 flockfreight
 englertinc
 ribbonhealth
@@ -541,7 +535,6 @@ forethought
 nintex
 stryber
 nerdery
-u410
 axios
 sourcegraph91
 webflow
@@ -549,7 +542,6 @@ upstatement
 amplitude
 guru
 pathai
-careersatwonder
 ixllearning
 motus
 carrotfertility
@@ -640,7 +632,6 @@ singlesprout
 rackner
 fictiv
 coursera
-theorg
 storable
 nansen
 dv01
@@ -675,7 +666,6 @@ shopmonkey
 nugget
 remotetcx
 johnkenyoneyecenter
-gv
 galileo
 touchbistro
 opensesame
@@ -686,7 +676,6 @@ bluestatedigital
 mako
 halodotscience
 aitherapeutics1
-aloft
 krafton
 complyadvantage
 givelify
@@ -779,7 +768,6 @@ celonis
 grafanalabs
 grenevisiongroup
 mirakl
-varsitytutors
 cohesity
 givedirectly
 welbehealth
@@ -841,7 +829,6 @@ precisionmedicinegroup
 mrbeastyoutube
 forbes
 stockx
-beyondidcareers
 applecart
 valerahealth
 kiavi
@@ -955,7 +942,6 @@ snackpasspt
 cobblestoneenergy
 clipboardhealth
 secondharvest
-emids
 springhealth66
 magnitudecapital
 avepoint
@@ -1042,7 +1028,6 @@ ustwo
 extend
 easyship
 accelbyte
-swirlds
 aiserajobs
 vuestorefront
 rvohealth
@@ -1050,7 +1035,6 @@ hillel
 oliverbrazil
 goguardian
 mlbdataops
-nasstudios
 oscar
 virgo
 8451
@@ -1208,7 +1192,6 @@ leafguard
 pfl
 atomwise
 glance
-rapidrobotics
 spotai
 farmersbusinessnetwork
 biofourmis
@@ -1297,7 +1280,6 @@ janestreet
 typeform
 eyecareassociates
 sbenergy
-capvision
 fluxfederation
 quantumvisioncenters
 couchbaseinc
@@ -1386,7 +1368,6 @@ centerforreproductiverights
 chalexandria
 chashburn
 gwkinvestmentmanagementllc
-ericbuckleygetupsidegreenhouseio
 konradgroup
 vividseatsllc
 konradgroup
@@ -1598,3 +1579,15 @@ nycedc
 itcss
 ownbackup
 perscholashires
+corbins
+captiveaire
+exiger
+happening
+fletcherjonesimports
+simpletechnologysolutions
+msgentertainmentholdingsllc
+ohsufoundation
+bruntworkwear
+five9
+optiverus
+proof

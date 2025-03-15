@@ -1002,3 +1002,6 @@ TheSRGroup1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/61fa8
 AbbVie`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc11/656747cf2911de6f78b5aa2b/150px?r=s3-us-east-2
 ReBuyReCommerceServicesGmbHCoKG`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-dc5/5c3c780752faff0007064a09/150px?r=s3-eu-central-1
 Entain`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/665d8444bba0b478843ea854/8ec89dd3-1082-4926-bc59-56ab03e84d72?r=s3-eu-central-1
+DeloitteNZ`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc9/677ea6efe9ba5678ffd03736/150px?r=s3-ap-southeast-2
+EDF-UK`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/66f159f5deb0b6792b14b70b/huge?r=s3-eu-central-1
+Ateeca`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/5a8aecb3e4b0b785bfebe449/huge?r=s3-eu-central-1

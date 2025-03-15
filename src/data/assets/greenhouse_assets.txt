@@ -2300,3 +2300,17 @@ infuseukraine`INFUSE EMEA`None
 nycedc`New York City Economic Development Corporation`None
 itcss`Welcome to the Tarsanet Internal Career Center!`https://s4-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/946/900/resized/Tarsus_Logo_stacked_color.png
 ownbackup`Own Company`None
+kargo22`KARGO`None
+admithub`Mainstay`None
+comet`Comet`None
+captiveaire`CaptiveAire`None
+happening`Happening`None
+fletcherjonesimports`Fletcher Jones Imports`None
+msgentertainmentholdingsllc`MSG Entertainment Holdings, LLC`None
+five9`Five9`None
+proof`Proof`None
+corbins`Corbins`None
+exiger`Exiger`None
+simpletechnologysolutions`Simple Technology Solutions`None
+ohsufoundation`Oregon Health & Science University Foundation`None
+optiverus`Optiver`None
