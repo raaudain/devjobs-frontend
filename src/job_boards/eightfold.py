@@ -61,7 +61,7 @@ def get_url(companies: list):
     for company in companies:
         try:
             headers = {"User-Agent": random.choice(user_agents)}
-            url = f"https://{company}.eightfold.ai/api/apply/v2/jobs?start=0&num=1000"
+            url = f"https://{company}.eightfold.ai/api/pcsx/search?domain={company}.com&query=&location=&start=0&sort_by=timestamp"
             response = requests.get(url, headers=headers)
             if response.ok:
                 data = json.loads(response.text)

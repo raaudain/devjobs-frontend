@@ -1005,3 +1005,6 @@ Entain`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/665d84
 DeloitteNZ`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc9/677ea6efe9ba5678ffd03736/150px?r=s3-ap-southeast-2
 EDF-UK`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/66f159f5deb0b6792b14b70b/huge?r=s3-eu-central-1
 Ateeca`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/5a8aecb3e4b0b785bfebe449/huge?r=s3-eu-central-1
+Boulanger`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/670525a98c73a772aa818975/5c17e1f5-6c0d-4c6f-bbfc-0f19fbe2a784?r=s3-eu-central-1
+Coface`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/6423ca7a2cbca347907adf84/8067ab36-3f1e-47fd-a991-da4776ffa637?r=s3-eu-central-1
+AECOM2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/62fac73f75346b44f7c93533/huge?r=s3-eu-central-1

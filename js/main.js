@@ -1,6 +1,6 @@
 const results = document.getElementById("results");
 const jobs = document.getElementById("jobs");
-const jobsPerPage = 8;
+const jobsPerPage = 24;
 
 // For loading animation
 for (let i = 0; i < jobsPerPage; i++) {

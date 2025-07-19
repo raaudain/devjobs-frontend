@@ -36,13 +36,16 @@ def get_results(item: str):
 
 
 def get_url():
-    headers = {"User-Agent": random.choice(user_agents)}
-    url = "https://www.workwithindies.com/?categories=business%7Cprogramming%7Cqa-cs"
-    response = requests.get(url, headers=headers)
-    if response.ok:
-        get_results(response.text)
-    else:
-        print("=> workwithindies: Error - Response status", response.status_code)
+    try:
+        headers = {"User-Agent": random.choice(user_agents)}
+        url = "https://www.workwithindies.com/?categories=business%7Cprogramming%7Cqa-cs"
+        response = requests.get(url, headers=headers)
+        if response.ok:
+            get_results(response.text)
+        else:
+            print("=> workwithindies: Error - Response status", response.status_code)
+    except Exception as e:
+        print("Error for workwithindies:", e)
 
 
 def main():

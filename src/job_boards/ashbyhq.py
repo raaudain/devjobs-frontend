@@ -53,7 +53,9 @@ def get_url(companies: list):
             response = requests.post(url1, json=payload, headers=headers)
             res = requests.post(url2, json=payload_2, headers=headers)
 
-            if response.ok and res.ok:
+            if '<meta name="description"' not in response.text:
+                process_data.remove_not_found(FILE_PATH, company)
+            elif response.ok and res.ok:
                 data = json.loads(response.text)
                 name = None
                 logo = None
@@ -69,7 +71,7 @@ def get_url(companies: list):
                     time.sleep(0.2)
                 page += 1
         except Exception as e:
-            print(f"=> ashbyhq: Failed to scrape {company}. Error: {e}.")
+            print(f"=> ashbyhq: Failed to scrape https://jobs.ashbyhq.com/{company}. Error: {e}.")
 
 def main():
     companies = process_data.read_list_of_companies(FILE_PATH)

@@ -7,7 +7,7 @@ from run_params_updater import main as params_updater
 
 
 def submit_to_gitlab():
-    cmd = "git add . && git commit -m '$(date)'"
+    cmd = 'git add . && git commit -m "$(date)" && git push'
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
     print(result.stdout)
 

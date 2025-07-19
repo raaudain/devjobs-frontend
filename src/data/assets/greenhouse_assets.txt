@@ -2314,3 +2314,42 @@ exiger`Exiger`None
 simpletechnologysolutions`Simple Technology Solutions`None
 ohsufoundation`Oregon Health & Science University Foundation`None
 optiverus`Optiver`None
+buildops`BuildOps`None
+zoominfo`ZoomInfo Technologies LLC`None
+hextechnologies`Hex Technologies`None
+cowbellcyber`Cowbell Cyber Inc.`None
+thegoodfoodinstitute80`The Good Food Institute`None
+silversky`SilverSky`None
+adicettherapeuticsinc`Adicet Bio`/themes/default/images/logo.svg
+veterinaryinnovativepartners`Veterinary Innovative Partners`None
+simply`Simply`None
+make`Make`None
+redbadger`Red Badger`None
+unitedveincenters`United Vein & Vascular Centers`None
+wavemm1`Wave`None
+aegworldwide`AEG Worldwide`None
+boku`Boku`None
+clara`Clara`None
+stage`Careers at KKR`None
+indiesemiconductor`indie`None
+decisions`Decisions`None
+projectaservicesgmbhcokg`Project A Services GmbH Co. KG`None
+allcreatures`All Creatures Veterinary Center`None
+wehrtyou`Hudson River Trading`None
+voxel51`Voxel51`None
+monroetractor`Monroe Tractor`None
+trustpilot`Trustpilot`None
+frazierdeeter`Frazier & Deeter`None
+circleslife`Circles.Life`None
+championnashhvac`Champion & Nash HVAC`None
+olaplexcareers`Olaplex`None
+sercante`Sercante`None
+peregrinehealth`Peregrine Health`None
+tosscareers`Toss`None
+aloyoga`Alo Yoga`None
+livecareer`BOLD`None
+wecommunications`We. Communications`None
+urpt`Upstream Rehabilitation`None
+genedx`GeneDx`None
+bozzuto`Bozzuto`None
+firstglobalmanagementservicesinc`First Global Management Services, Inc.`None
