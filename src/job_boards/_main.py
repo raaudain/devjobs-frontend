@@ -46,7 +46,7 @@ def main():
         greenhouse_io.get_url(green[::2]),
         craigslist.get_url(locations),
         jobvite.main(),
-        # eightfold.main(),
+        eightfold.main(),
         workable.get_url(work[2::5]),
         craigslist.get_url_it(locations),
         greenhouse_io.get_url(green[1::2]),

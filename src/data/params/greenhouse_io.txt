@@ -108,7 +108,6 @@ smartasset
 smartsheet
 soeffects
 spacex
-spinlaunch
 splice
 squarespace
 strava
@@ -152,7 +151,6 @@ workrise
 axon
 coupang
 affirm
-notion
 honor
 automatticcareers
 asana
@@ -216,7 +214,6 @@ coinbase
 crysler
 seekout
 databricks
-cleoai
 akqa
 3playmediacontractor
 blab
@@ -231,7 +228,6 @@ elationhealth
 akqa
 creditkarma
 project44
-fabfitfun
 collibra
 cloudflare
 codeacademy
@@ -293,7 +289,6 @@ bandainamco
 tripactions
 evidation
 unisonhomeownershipinvestors
-pricespider
 stashinvest
 sumup
 strike
@@ -329,12 +324,9 @@ pointdigitalfinance
 floridamedicalclinic
 axiom
 synack
-dalbergdesign
 nichecom
 zylo
-latentai
 id5
-eviationaircraft
 scalesec
 paralleljobs
 fandom
@@ -564,7 +556,6 @@ dxacirca
 appdirect
 expressvpn
 springfieldprep
-soundhoundinc
 achievementfirst
 figma
 coneyislandprep
@@ -763,7 +754,6 @@ optimaldynamics
 fossainc
 messari
 openzeppelin
-cmrsurgical
 honeybook
 yieldmo
 jumo
@@ -776,7 +766,6 @@ stockx
 applecart
 valerahealth
 kiavi
-agolo
 companycam
 onrunning
 jumio
@@ -801,7 +790,6 @@ thoughtworksreferral
 juullabs
 shelf
 fundedclub
-dianahealth
 hitachivantaracorporation
 d2l
 firstkeyhomes
@@ -823,7 +811,6 @@ intervenn
 hourglasscosmetics
 homage
 dimagi
-integrate
 sagansystems
 practicefusion
 evergreennephrology
@@ -840,7 +827,6 @@ hightouch
 substack
 broadsign
 raft
-prefect
 orcasecurity
 sendcloud
 guidepoint
@@ -1171,7 +1157,6 @@ octanelending
 bigleafnetworks
 higherlogic
 shunnarahcareers
-hotjar
 deepwatchinc
 corpaxe
 withumsmithbrown
@@ -1257,7 +1242,6 @@ telixus
 ninjatrader
 bobsledinc
 scoutmotors
-digitalfemsa
 toogoodtogo
 blenheimchalcotindia
 thejpbfoundation
@@ -1268,7 +1252,6 @@ arcinstitute
 chrockville
 momentumww
 zenoti
-surgicalnotes
 mediabrands
 leaflink
 perpay
@@ -1278,7 +1261,6 @@ knoetic
 brooklinen
 newglobesandbox
 thebaltimorebanner
-centerforreproductiverights
 chalexandria
 chashburn
 gwkinvestmentmanagementllc
@@ -1334,7 +1316,6 @@ lokalise
 boardable
 andurilindustries
 boomilp
-irhythm
 pinterest
 itrek
 feedzai
@@ -1342,7 +1323,6 @@ spire
 travelperk
 esri
 taboola
-medicalinformatics
 urbancompass
 fairmarkit
 bendhealth
@@ -1478,7 +1458,6 @@ liaisoninternational
 saltsecurity
 xai
 aottechnologies
-infuseukraine
 reach
 nycedc
 itcss
@@ -1534,3 +1513,13 @@ monroetractor
 genedx
 firstglobalmanagementservicesinc
 bozzuto
+toloka
+validationcloud
+9thwayinsignia
+agio
+imafinancialgroup
+seenhealth
+platacard
+agilelegal
+coreweave
+aparavisandbox

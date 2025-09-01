@@ -4,3 +4,6 @@ zebra`n/a`https://static.vscdn.net/images/careers/demo/zebra/1652831607::pcs-log
 dsm`n/a`https://static.vscdn.net/images/careers/demo/dsm-sandbox/dsm_masterlogo.png
 eaton`n/a`https://static.vscdn.net/images/careers/demo/eaton/1676277484::EatonLogo
 etihad`n/a`https://static.vscdn.net/images/careers/demo/etihad/1688716131::etihad_logo.svg
+libertymutual`n/a`https://cdn-static.findly.com/wp-content/uploads/sites/748/2018/09/LM_Liberty-Logo.svg
+ralliant`n/a`
+https://static.vscdn.net/images/careers/demo/ralliant/1749539422::top-logo.svg

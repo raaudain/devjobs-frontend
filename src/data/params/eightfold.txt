@@ -89,3 +89,6 @@ hsbc
 app
 bayer
 ralliant
+ukg
+sephora
+britishcouncil

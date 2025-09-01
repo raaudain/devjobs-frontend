@@ -14,25 +14,26 @@ FILE_PATH = "src/data/params/eightfold.txt"
 
 
 def get_results(item: str, param: str):
-    jobs = item["positions"]
-    company_name = item["branding"]["companyName"].strip(
-    ) if "companyName" in item["branding"] else param.capitalize()
+    jobs = item
+    company_name = param.capitalize()
     logo = None
     source_url = f"https://{param}.eightfold.ai/careers/"
     ef = "src/data/assets/eightfold_assets.txt"
     table = process_data.get_stored_data(ef)
+
     if param in table:
         logo = table[param]["logo"]
     else:
         try:
             r = requests.get(source_url)
             tree = html.fromstring(r.content)
-            logo = tree.xpath(
-                "//img[@alt='eightfold-logo']/@src")[0]
+            logo = tree.xpath("//strong[@class='logo']//img/@src | //img[contains(@alt, 'logo')]/@src")[0]
+
             with open(ef, "a") as a:
                 a.write(f"{param}`n/a`{logo}\n")
         except Exception as e:
             print(f"=> eightfold.ai: Error getting logo for {param}. {e}.")
+    
     for j in jobs:
         date = datetime.fromtimestamp(j["t_create"])
         post_date = datetime.timestamp(
@@ -61,21 +62,29 @@ def get_url(companies: list):
     for company in companies:
         try:
             headers = {"User-Agent": random.choice(user_agents)}
-            url = f"https://{company}.eightfold.ai/api/pcsx/search?domain={company}.com&query=&location=&start=0&sort_by=timestamp"
-            response = requests.get(url, headers=headers)
-            if response.ok:
-                data = json.loads(response.text)
-                get_results(data, company)
-                if count % 15 == 0:
-                    time.sleep(60)
+
+            for page in range(0, 1000, 10):
+                url = f"https://{company}.eightfold.ai/api/apply/v2/jobs?start={page}&num=10&sort_by=date"
+                print("====================",url)
+                response = requests.get(url, headers=headers)
+                if response.ok:
+                    data = json.loads(response.text).get("positions")
+                    
+                    if not data:
+                        break
+
+                    get_results(data, company)
+                    if count % 15 == 0:
+                        time.sleep(60)
+                    else:
+                        time.sleep(0.2)
+                    count += 1
+                elif response.status_code == 404:
+                    process_data.remove_not_found(FILE_PATH, company)
                 else:
-                    time.sleep(0.2)
-                count += 1
-            elif response.status_code == 404:
-                process_data.remove_not_found(FILE_PATH, company)
-            else:
-                print(
-                    f"=> eightfold.ai: Status code {response.status_code} for {company}.")
+                    print(
+                        f"=> eightfold.ai: Status code {response.status_code} for {company}.")
+                    break
         except Exception as e:
             print(f"=> eightfold.ai: Error for {company}. {e}.")
 

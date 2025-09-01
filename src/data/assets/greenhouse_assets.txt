@@ -2353,3 +2353,15 @@ urpt`Upstream Rehabilitation`None
 genedx`GeneDx`None
 bozzuto`Bozzuto`None
 firstglobalmanagementservicesinc`First Global Management Services, Inc.`None
+toloka`Toloka`None
+agio`Agio, Inc.`None
+seenhealth`Seen Health`None
+agilelegal`Agile Legal`None
+aparavisandbox`Aparavi`None
+spacex`SpaceX`None
+hilabs`HiLabs`None
+validationcloud`Validation Cloud`None
+9thwayinsignia`9th Way Insignia`None
+imafinancialgroup`IMA Financial Group`None
+platacard`Plata Card`None
+coreweave`CoreWeave`None
