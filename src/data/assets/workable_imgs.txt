@@ -2693,3 +2693,15 @@ laravel`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/647763/logo
 enroute`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/39239/logo
 avant-tech-jobs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/704863/logo
 the-marketing-practice`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/529637/logo
+emapply`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/648200/logo
+amax-1`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/603369/logo
+attica-department-stores`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/643254/logo
+gocertify`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/599805/logo
+bank-of-jordan`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/621249/logo
+afriglobal-medicare`n/a`None
+allevents-dot-i-n`n/a`None
+activatecare`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/612651/logo
+wantable-careers`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/438100/logo
+ag-spray-equipment`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/325294/logo
+aontas`n/a`None
+welcome-jobs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/412742/logo

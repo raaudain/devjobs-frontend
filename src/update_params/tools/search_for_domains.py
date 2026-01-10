@@ -12,9 +12,8 @@ Return : Generator (iterator) that yields found URLs. If the stop parameter is N
 
 
 from googlesearch import search
-from duckduckgo_search import DDGS
+from ddgs import DDGS
 import time
-
 
 
 def query_google(query):
@@ -34,8 +33,9 @@ def query_duckduckgo(query):
     loop = 1
     results = []
 
-    while loop < 6:
-        results.append(DDGS().text(query, max_results=5, region="us-en"))
+    while loop < 11:
+        response = DDGS().text(query, max_results=5, region="us-en")
+        results.extend(response)
         print(results)
         time.sleep(10)
         loop+=1

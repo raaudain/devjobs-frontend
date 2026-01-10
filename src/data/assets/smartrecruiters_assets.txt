@@ -1008,3 +1008,6 @@ Ateeca`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/5a8aecb3e4
 Boulanger`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/670525a98c73a772aa818975/5c17e1f5-6c0d-4c6f-bbfc-0f19fbe2a784?r=s3-eu-central-1
 Coface`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/6423ca7a2cbca347907adf84/8067ab36-3f1e-47fd-a991-da4776ffa637?r=s3-eu-central-1
 AECOM2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/62fac73f75346b44f7c93533/huge?r=s3-eu-central-1
+FredleyGroupOfCompanies`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/611f2f514544876b0cd421bf/huge?r=s3-eu-central-1
+TivertonAdvisors`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/5ee9359367145c273cb0b776/huge?r=s3-eu-central-1
+GalileoLearning`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/6516064c48cbf0414e8c68cc/d228964f-0bc2-4393-bd78-2f53716ca7a6?r=s3-eu-central-1

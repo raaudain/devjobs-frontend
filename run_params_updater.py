@@ -3,7 +3,7 @@
 import sys
 sys.path.insert(0, ".")
 from src.update_params.utils import ats
-from src.update_params.tools import query_google, process_urls
+from src.update_params.tools import query_google, process_urls, query_duckduckgo
 
 
 def main():
@@ -12,7 +12,10 @@ def main():
         print("\ncurrent query:", query)
         params = a["params"]
         uri = a["uri"]
-        urls = query_google(query)
+        # google_urls = query_google(query)
+        ddg_urls = query_duckduckgo(query)
+        urls = ddg_urls
+        print(urls)
         process_urls(urls, params, uri)
 
 if __name__ == "__main__":

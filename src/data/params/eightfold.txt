@@ -1,5 +1,4 @@
 aexp
-akamai
 micron
 bnymellon
 volkscience
@@ -23,7 +22,6 @@ noom
 directsourcepro-nov
 vodafone
 zillowgroup
-chevron
 conagra
 samsungnext
 directsourcepro-bri
@@ -63,7 +61,6 @@ etihad
 neom
 libertymutual
 amdocs
-siemens
 insight
 mlp
 starbucks
@@ -92,3 +89,4 @@ ralliant
 ukg
 sephora
 britishcouncil
+bcg

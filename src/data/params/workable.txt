@@ -60,7 +60,6 @@ crave-delivery
 taskforce
 kidztopros
 kianite
-frontiers
 lawn-love
 plutus-dot-it
 rabbet
@@ -147,7 +146,6 @@ conversion
 within3
 hussle
 instanda
-tado
 trala
 itsasap
 daybreaker
@@ -634,7 +632,6 @@ coinmetro
 factory14
 dcthomson
 lula
-signalwire
 electrameccanica
 levelshealth
 corcentric
@@ -743,7 +740,6 @@ thinkwell
 corincareers
 chaucer
 weymedia
-prepo
 superfluid
 foodrevolutionnetwork
 pulsepoint
@@ -770,7 +766,6 @@ torinit-technologies-inc
 teleasing
 singakaraoke
 latitudecrew
-csenergy
 floatcard
 recargapay
 qredo
@@ -915,7 +910,6 @@ uplearn
 neoleap
 bchannels
 laba
-telesoftas
 dialexa
 sfskc
 alchemy
@@ -1089,7 +1083,6 @@ foresightgroup
 infopro-digital
 bioiatriki
 ttro-1
-southstar
 intropic
 chronomics
 durrah
@@ -1538,7 +1531,6 @@ liferaft
 avantstay
 dlthub
 campusink
-gelato-digital
 upclear
 hextrust
 conjointly
@@ -1665,7 +1657,6 @@ the-drum
 whiteshield
 navionsl
 branchingminds
-zenni-optical
 ecoligo
 iclasspro
 dev-tavus
@@ -1743,7 +1734,6 @@ ironwear
 cvc-credit-partners
 allwynls
 joey-restaurants-1
-portraitholdings
 love-strategies-inc
 goldair-handling-s-dot-a
 murmuration
@@ -1782,7 +1772,6 @@ junglee-games
 skinandme
 trustmi
 jagex-limited
-vitally
 codurance
 giant-animation
 zealgroup
@@ -1822,7 +1811,6 @@ knok
 fergus
 financeit
 mori
-holoniq
 turtl
 tryprospect
 k1x
@@ -1857,7 +1845,6 @@ livestock-information
 protera
 situationgroup
 verbinteractive
-currentbody
 msps
 auprosports
 quickrelease
@@ -1916,7 +1903,6 @@ rapyuta-robotics
 aethir
 careers-at-sleek
 owlchemy-labs
-faptic-tech
 optix
 benivo
 ai-now-institute
@@ -1934,7 +1920,6 @@ zzish
 codeninjapk
 escape-velocity-entertainment-inc
 auto24
-olrretail
 ananinja
 owl-dot-co
 skidmore-studio
@@ -2202,7 +2187,6 @@ deepsource
 tingathe
 wearebulletproof
 verista
-alliad
 arfa
 neoreach
 innerplant
@@ -2211,7 +2195,6 @@ axle-energy
 funempire
 ikan
 atarim
-hiresur
 mooremechanical
 organox
 gathern
@@ -2239,7 +2222,6 @@ kaizenams
 blacklinesafety
 wonderbly
 uncommonagency
-littlepay
 jentic
 hedepy
 proveai
@@ -2374,8 +2356,6 @@ sourgum
 montrose-international
 stanbridge
 joincheckmate
-fyxer-ai
-translucent
 dash-water
 infinite-locus
 phoenix-home-care-and-hospice
@@ -2420,7 +2400,6 @@ mangonelawfirm
 maneva
 turnoutpac
 tatucity
-papel
 chapa
 flapen
 windermere-real-estate
@@ -2509,3 +2488,15 @@ wateraid
 c-serv
 policystreet
 daniels-solutions
+wantable-careers
+welcome-jobs
+attica-department-stores
+activatecare
+amax-1
+ag-spray-equipment
+bank-of-jordan
+afriglobal-medicare
+allevents-dot-i-n
+emapply
+aontas
+gocertify

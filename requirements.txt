@@ -4,4 +4,5 @@ feedparser
 lxml
 playwright
 google
-duckduckgo-search
+furl
+ddgs

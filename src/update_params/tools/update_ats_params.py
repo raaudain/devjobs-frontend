@@ -1,4 +1,5 @@
 import re
+from furl import furl
 
 
 def process_urls(urls, params, uri):

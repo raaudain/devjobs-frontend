@@ -2365,3 +2365,7 @@ validationcloud`Validation Cloud`None
 imafinancialgroup`IMA Financial Group`None
 platacard`Plata Card`None
 coreweave`CoreWeave`None
+applytoaktos`Aktos`None
+clickhouse`ClickHouse`None
+doordashusa`DoorDash USA`None
+globalizationpartners`G-P`None
