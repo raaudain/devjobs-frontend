@@ -1011,3 +1011,4 @@ AECOM2`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/62fac73f75
 FredleyGroupOfCompanies`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/611f2f514544876b0cd421bf/huge?r=s3-eu-central-1
 TivertonAdvisors`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/5ee9359367145c273cb0b776/huge?r=s3-eu-central-1
 GalileoLearning`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/6516064c48cbf0414e8c68cc/d228964f-0bc2-4393-bd78-2f53716ca7a6?r=s3-eu-central-1
+SibyllineLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/64f6d65b98399f1b8e939394/huge?r=s3-eu-central-1

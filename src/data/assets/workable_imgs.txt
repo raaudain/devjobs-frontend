@@ -2705,3 +2705,5 @@ wantable-careers`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/43
 ag-spray-equipment`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/325294/logo
 aontas`n/a`None
 welcome-jobs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/412742/logo
+jenzabar1`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/695414/logo
+applicantsystem`n/a`None

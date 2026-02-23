@@ -21,7 +21,6 @@ mercadolibre
 noom
 directsourcepro-nov
 vodafone
-zillowgroup
 conagra
 samsungnext
 directsourcepro-bri
@@ -35,7 +34,6 @@ directsourcepro-rch
 paypal
 10xgenomics
 hasbro
-modernatx
 amgen
 rotoplas
 faurecia

@@ -2369,3 +2369,4 @@ applytoaktos`Aktos`None
 clickhouse`ClickHouse`None
 doordashusa`DoorDash USA`None
 globalizationpartners`G-P`None
+bruntworkwear`BRUNT Workwear`None

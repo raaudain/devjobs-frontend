@@ -589,7 +589,6 @@ wearesocialchain
 teaminternational
 quast
 biffa
-safranpassengerinnovations
 thepurplecarrot
 sixninesit
 ninja
@@ -610,7 +609,6 @@ verneek
 armcareer
 mutiny
 pointbiopharma
-azafinance
 quimbee
 foundry
 casknx
@@ -739,7 +737,6 @@ pinkgg
 thinkwell
 corincareers
 chaucer
-weymedia
 superfluid
 foodrevolutionnetwork
 pulsepoint
@@ -1276,7 +1273,6 @@ dext
 orderdesk
 moviepass
 realpython
-gohenry
 thoughtbot
 mmit
 optimegroup
@@ -1513,7 +1509,6 @@ chandonusa
 papier
 jigsaw
 flight-story-1
-okto
 ndreams
 angkas
 primait
@@ -2103,7 +2098,6 @@ air
 dow-janes
 airhubaviation
 sapigroup
-eightx
 gorilla
 keller-executive-search
 a2mac1
@@ -2466,7 +2460,6 @@ groundtruth
 ortushealth
 assurity-trusted-solutions
 flexcompute
-complyx
 cosmo
 sun-itsolutions-inc
 walter-careers
@@ -2500,3 +2493,5 @@ allevents-dot-i-n
 emapply
 aontas
 gocertify
+applicantsystem
+jenzabar1
