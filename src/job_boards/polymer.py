@@ -25,7 +25,7 @@ def get_results(item: str, param: str):
         try:
             r = requests.get(source_url)
             tree = html.fromstring(r.content)
-            logo = tree.xpath("//div[@class='header__logo']/img/@src")[0]
+            # logo = tree.xpath("//div[@class='header__logo']/img/@src")[0]
             with open(wrk, "a") as a:
                 a.write(f"{param}`n/a`{logo}\n")
         except Exception as e:
@@ -48,7 +48,7 @@ def get_results(item: str, param: str):
             "timestamp": post_date,
             "title": position,
             "company": company_name,
-            "company_logo": logo,
+            # "company_logo": logo,
             "url": apply_url,
             "location": location,
             "source": company_name,

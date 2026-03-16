@@ -88,3 +88,4 @@ ukg
 sephora
 britishcouncil
 bcg
+infineon

@@ -1902,3 +1902,5 @@ massive-rocket
 Earnestpartners
 coinmarketcap
 eleks
+computercare
+distro

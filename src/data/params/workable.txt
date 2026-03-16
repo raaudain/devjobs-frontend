@@ -664,7 +664,6 @@ leadhome
 cognigy
 bigchange
 exotec
-komoot
 articulate
 labtwin
 lawyer
@@ -974,7 +973,6 @@ burq
 clubrare
 lumanity
 untuckit
-soona
 awesomemotive
 returnmates
 workmoney
@@ -2473,7 +2471,6 @@ harveywatersofteners
 averi
 enrollhere
 360dialog-gmbh
-superlogic
 crystalia-glass
 avant-tech-jobs
 headquarters
@@ -2495,3 +2492,8 @@ aontas
 gocertify
 applicantsystem
 jenzabar1
+applied-blockchain-1
+charlotte-tilbury
+navarro-inc
+ecp-123
+aurora-3

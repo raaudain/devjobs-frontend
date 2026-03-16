@@ -11,7 +11,8 @@ pause : Lapse to wait between HTTP requests. Lapse too short may cause Google to
 Return : Generator (iterator) that yields found URLs. If the stop parameter is None the iterator will loop forever.'''
 
 
-from googlesearch import search
+from googlesearch.googlesearch import GoogleSearch
+from google_search_scraper import search
 from ddgs import DDGS
 import time
 
@@ -20,31 +21,47 @@ def query_google(query):
     urls = set()
     count = 1
 
-    for url in search(query, num=100, start=0, stop=500, pause=90):
-        if not url in urls:
-            print(count, url)
-            urls.add(url)
-            count+=1
-    return urls
+    # response = GoogleSearch().search(query, num_results=10)
+    response = search(query, max_results=10)
+
+    print(response.urls)
+
+    # for url in search(query, num=100, start=0, stop=500, pause=90):
+    #     if not url in urls:
+    #         print(count, url)
+    #         urls.add(url)
+    #         count+=1
+    # return urls
 
 def query_duckduckgo(query):
     urls = set()
+    max_loop = 20
+    max_results = 13
     count = 1
     loop = 1
     results = []
 
-    while loop < 11:
-        response = DDGS().text(query, max_results=5, region="us-en")
-        results.extend(response)
-        print(results)
+    while loop < max_loop:
+        response = DDGS().text(query, max_results=max_results, region="us-en")
+        
+        for item in response:
+            # results.extend(response)
+            url = item.get("href")
+
+            if url:
+                urls.add(url)
+
+        print(len(urls))
         time.sleep(10)
         loop+=1
 
-    for result in results:
-        url = result["href"]
+    # for result in results:
+    #     url = result["href"]
 
-        if not url in urls:
-            print(count, url)
-            urls.add(url)
-            count+=1
+    #     if not url in urls:
+    #         print(count, url)
+    #         urls.add(url)
+    #         count+=1
+    for url in urls:
+        print(url)
     return urls

@@ -1,9 +1,18 @@
 import random, sys
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 sys.path.insert(0, ".")
 from src.job_boards.tools import CreateJson
 from src.job_boards import amazon, ashbyhq, builtin, dailyremote, diversifytech, eightfold, fullstackjob, greenhouse_io, hireart, jobvite, lever_co, nbc, nintendo, polymer, remote_co, remoteok, smartrecruiters, usajobs, weworkremotely, workable, workwithindies, craigslist, breezyhr, bamboohr
 
+
+def run(job_board):
+    try:
+        print(job_board)
+        job_board
+    except Exception as e:
+        print(e)
+        pass
 
 def main():
     create_json = CreateJson()
@@ -68,13 +77,16 @@ def main():
     ]
     
     
-    for board in job_boards:
-        try:
-            print(board)
-            board
-        except Exception as e:
-            print(e)
-            pass
+    # for board in job_boards:
+    #     try:
+    #         print(board)
+    #         board
+    #     except Exception as e:
+    #         print(e)
+    #         pass
+
+    with ThreadPoolExecutor(max_workers=10) as exe:
+        exe.map(run, job_boards)
 
     create_json.create_temp_file()
     create_json.create_file()

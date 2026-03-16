@@ -2707,3 +2707,8 @@ aontas`n/a`None
 welcome-jobs`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/412742/logo
 jenzabar1`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/695414/logo
 applicantsystem`n/a`None
+applied-blockchain-1`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/336250/logo
+ecp-123`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/545749/logo
+navarro-inc`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/246397/logo
+aurora-3`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/667349/logo
+charlotte-tilbury`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/183411/logo

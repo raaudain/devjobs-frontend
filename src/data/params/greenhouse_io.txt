@@ -108,7 +108,6 @@ triplelift
 twitch
 unqork
 upstart
-vidyard
 wizeline
 yext
 yipitdata
@@ -167,7 +166,6 @@ outsetmedical
 talkspace
 lift
 xapo61
-signifyhealth
 coherehealth
 khanacademy
 bottomlinetechnologies
@@ -229,7 +227,6 @@ questbridge
 homeward
 vardaspace
 ebanx
-sondermind
 catawiki
 customerio
 pathstream
@@ -276,7 +273,6 @@ a16z
 pokemoncareers
 maven
 smugmug
-snapdocs
 exxactcorp
 a3c41b8b71eff8c4
 twilio
@@ -396,7 +392,6 @@ openweb
 headway
 phdata
 acadiapharmaceuticals
-enfusion
 bigosmanagement
 baublebar
 fischerhomes
@@ -435,7 +430,6 @@ cabify
 greenthumbindustries
 centriahealthcare
 vixxo
-zenjob
 galaxydigitalservices
 internaljobsatlush
 agero
@@ -474,7 +468,6 @@ supplyhouse
 ngmbiopharmaceuticals
 scout24
 acuitymd
-synchron
 BoomEntertainment
 bishopfox
 regent
@@ -575,7 +568,6 @@ bloomreach
 sumologic
 taxbit
 diligentcorporation
-glovo
 nomadhealth
 silananotechnologies
 junglescout
@@ -672,7 +664,6 @@ pebblepost
 majorleaguebaseball
 verifone
 truecaller
-babbel
 insider
 arctouch
 evolvevacationrental
@@ -720,7 +711,6 @@ shelf
 fundedclub
 hitachivantaracorporation
 d2l
-firstkeyhomes
 clarifai
 polymathventures
 cambridgemobiletelematics
@@ -829,7 +819,6 @@ bancopan
 truebill
 energyandenvironmentlab
 billtrust
-healthgorilla
 rightwayhealthcare
 appliedintuition
 wheely
@@ -966,7 +955,6 @@ weinsteinproperties
 bayada
 workatbackbase
 inter
-teads
 incode
 squarepointcapital
 tide
@@ -984,7 +972,6 @@ gafg
 onetrust
 thenewyorktimes
 lookoutinc
-valimailinc
 viamrobotics
 wizinc
 gomotive
@@ -1059,7 +1046,6 @@ recordedfuture
 truehold
 webershandwick
 generatebiomedicines
-genies
 hungryroot
 inflectionai
 altisales
@@ -1132,7 +1118,6 @@ leaflink
 perpay
 spotme
 gocardless
-knoetic
 brooklinen
 newglobesandbox
 thebaltimorebanner
@@ -1175,7 +1160,6 @@ connecteam
 morty
 teamsense
 bitso
-makersights
 kidango
 purposemed
 dental365
@@ -1372,7 +1356,6 @@ bozzuto
 toloka
 validationcloud
 9thwayinsignia
-agio
 imafinancialgroup
 seenhealth
 platacard
@@ -1382,3 +1365,6 @@ applytoaktos
 doordashusa
 clickhouse
 globalizationpartners
+blinkhealth
+muckrack
+prove

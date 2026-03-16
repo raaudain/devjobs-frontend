@@ -1,6 +1,7 @@
 #!/user/bin/env python3
 
 import sys, subprocess
+from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, ".")
 from src.job_boards._main import main as scrap_sites
 from run_params_updater import main as params_updater
