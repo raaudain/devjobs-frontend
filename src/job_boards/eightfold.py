@@ -59,6 +59,9 @@ def get_results(item: str, param: str):
 
 def get_url(companies: list):
     count = 1
+
+    
+
     for company in companies:
         try:
             headers = {"User-Agent": random.choice(user_agents)}
@@ -75,9 +78,9 @@ def get_url(companies: list):
 
                     get_results(data, company)
                     if count % 15 == 0:
-                        time.sleep(60)
+                        time.sleep(2)
                     else:
-                        time.sleep(0.2)
+                        time.sleep(2)
                     count += 1
                 elif response.status_code == 404:
                     process_data.remove_not_found(FILE_PATH, company)

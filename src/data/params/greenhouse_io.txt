@@ -26,7 +26,6 @@ classpass
 2u
 acquia
 actblue
-agoric
 airbnb
 alayacare
 alphasense
@@ -129,7 +128,6 @@ vsco39
 braze
 renttherunway
 bark
-grammarly
 crunchyroll
 pagerduty
 gohealth
@@ -236,7 +234,6 @@ misfitsmarket
 hackerrank
 affinitiv
 workato
-solana
 neuralink
 gradle
 blacklane
@@ -245,7 +242,6 @@ sonicwall
 greenpeace
 blockchain
 carerev
-freewill
 smartling
 versprite
 oliver
@@ -363,14 +359,12 @@ recharge
 zupinnovation
 sada
 nuro
-seldon
 bandwidth
 digitalocean98
 rhombuspower
 goodnotes
 afresh
 zestai
-ontracareers
 stridehealth
 bluecoreinc
 whogivesacrap
@@ -407,7 +401,6 @@ fareharbor
 credera
 array
 braineffectjobs
-vendia
 pangaea
 tandemlaunch
 themarketingarm
@@ -643,7 +636,6 @@ generalassembly
 compassindia
 knowbe4
 c6bank
-synctera
 MaterialBank
 rubrik
 blacksky
@@ -659,7 +651,6 @@ sonic
 laika
 flyzipline
 spins
-linx
 pebblepost
 majorleaguebaseball
 verifone
@@ -691,7 +682,6 @@ onrunning
 jumio
 scaleai
 bloombergorg
-kasaliving
 humanrightswatch
 proyectosenmexycentroamerica
 transmitsecurity
@@ -709,7 +699,6 @@ thoughtworksreferral
 juullabs
 shelf
 fundedclub
-hitachivantaracorporation
 d2l
 clarifai
 polymathventures
@@ -765,7 +754,6 @@ astspacemobile
 smartcatplatforminc
 greynoiseintelligence
 manticoregames
-weavegrid
 shift5
 uchicagoepic
 insomniac
@@ -928,7 +916,6 @@ elevatek12teachwithus
 educate
 stone
 ilia
-motivpowersystems
 cityoffortworth
 storablecareers
 medecinssansfrontieres
@@ -976,7 +963,6 @@ viamrobotics
 wizinc
 gomotive
 leveltenenergy
-pfl
 atomwise
 glance
 biofourmis
@@ -1056,7 +1042,6 @@ janestreet
 typeform
 eyecareassociates
 sbenergy
-fluxfederation
 quantumvisioncenters
 couchbaseinc
 4dmoleculartherapeutics
@@ -1064,7 +1049,6 @@ headoutlinkedin
 wellsaidlabs
 hexagonbio
 simpsongumpertzheger
-codeforsciencesociety
 vegaamericas
 mainstreethealth
 kindsnacks
@@ -1075,7 +1059,6 @@ ogilvyuk
 seed
 drweng
 flamboyanfoundation
-runwayml
 linushealth
 karrotca
 neuraflash
@@ -1087,7 +1070,6 @@ kmgmedicalgroup
 hs
 cmtinternships
 brandnewschool
-density
 mullenlowegroupuk
 deepmind
 philzcoffeecareers
@@ -1214,12 +1196,10 @@ helsing
 energyhub
 netradyne
 assetwatch
-freedomofthepressfoundation
 buzzfeed
 paypaycard
 bezosearthfund
 levelaccess
-abacusgroup
 bbyo
 lakewoodanimalhospitalva
 dropbox
@@ -1229,7 +1209,6 @@ block
 canto
 performline
 basejobs
-loopearplugs
 ionq
 place
 vast
@@ -1368,3 +1347,8 @@ globalizationpartners
 blinkhealth
 muckrack
 prove
+coreweave
+veracyte
+coast
+realm
+scm

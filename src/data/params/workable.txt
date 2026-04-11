@@ -562,7 +562,6 @@ voicy
 carwow
 interapt
 pamb
-riskmethods
 leadtech
 insighttimer
 nmipayments
@@ -1137,7 +1136,6 @@ climatearc
 besterand-co
 supportyourapp
 beyond12
-glucare
 fivelives
 kybotech
 coreblue
@@ -1239,7 +1237,6 @@ eandd
 joinmakropro
 counciloncj
 v7labs
-welcome
 qminder
 mdlz
 sh24
@@ -1398,7 +1395,6 @@ molecule
 livemorecapital
 aryeo
 openhealth
-tyme
 kidadl
 experoinc
 oqc
@@ -1741,7 +1737,6 @@ joy-wallet
 quickhireva
 troop-1
 cloudhire1
-grapevinegr
 meyersarchitects
 low-carbon
 ackerherz
@@ -2497,3 +2492,5 @@ charlotte-tilbury
 navarro-inc
 ecp-123
 aurora-3
+sparx-engineering
+skillshare

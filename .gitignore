@@ -141,3 +141,5 @@ dmypy.json
 *.log
 *.DS_Store
 *log_file
+
+__*

@@ -1013,3 +1013,5 @@ TivertonAdvisors`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/
 GalileoLearning`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc5/6516064c48cbf0414e8c68cc/d228964f-0bc2-4393-bd78-2f53716ca7a6?r=s3-eu-central-1
 SibyllineLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/64f6d65b98399f1b8e939394/huge?r=s3-eu-central-1
 TALENTSQUARE`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/57c92747e4b04bd07d06ce80/150px?r=s3
+Froedtert3`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc11/5fda28cbad723d733fd487ff/huge?r=s3-us-east-2
+HaltonHealthcare1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc11/66180d8a2aa39328229d7c50/5d75d648-f413-4720-a157-7299190ae5e9?r=s3-us-east-2

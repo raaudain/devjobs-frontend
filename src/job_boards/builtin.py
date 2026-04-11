@@ -1,6 +1,7 @@
 import requests
 import sys
 import random
+import time
 from bs4 import BeautifulSoup
 from datetime import datetime
 sys.path.insert(0, ".")
@@ -14,18 +15,19 @@ def get_results(page):
     for posting in soup.find_all("div", attrs={"data-id":"job-card"}):
         date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
         post_date = datetime.timestamp(datetime.strptime(date, "%Y-%m-%d %H:%M:%S"))
-        card_alias = posting.find("a", attrs={"id":"job-card-alias"})
-
+        card_alias = posting.find("a", attrs={"data-id":"job-card-title"})
+        
         data = {
             "timestamp": post_date,
             "title": card_alias.text,
-            "company": posting.find("div",  attrs={"data-id":"company-title"}).text,
+            "company": posting.find("a",  attrs={"data-id":"company-title"}).find("span").text,
             "company_logo": posting.find("img", attrs={"data-id":"company-img"}).get("src"),
             "url": "https://builtin.com" + card_alias.get("href"),
-            "location": posting.find_all(class_="text-gray-03")[1].text,
+            "location": posting.find_all(class_="font-barlow text-gray-04")[1].text,
             "source": "Built In",
             "source_url": "https://builtin.com/"
         }
+        print(data)
         process_data.filter_jobs(data)
 
 def get_url():
@@ -35,7 +37,7 @@ def get_url():
             "Origin": "https://builtin.com", 
             "Referer": "https://builtin.com/"
         }
-        url = f"https://builtin.com/jobs/remote/hybrid/office?page={page}"
+        url = f"https://builtin.com/jobs/remote/hybrid/office?page={page}&daysSinceUpdated=7"
         response = requests.get(url, headers=headers)
 
         if response.ok:
@@ -43,6 +45,8 @@ def get_url():
         else:
             print(f"=> builtin: Failed on page {page}. Status code: {response.status_code}.")
             break
+
+        time.sleep(3)
 
 def main():
     get_url()

@@ -11,7 +11,7 @@ pause : Lapse to wait between HTTP requests. Lapse too short may cause Google to
 Return : Generator (iterator) that yields found URLs. If the stop parameter is None the iterator will loop forever.'''
 
 
-from googlesearch.googlesearch import GoogleSearch
+# from googlesearch.googlesearch import GoogleSearch
 from google_search_scraper import search
 from ddgs import DDGS
 import time

@@ -3,12 +3,37 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 sys.path.insert(0, ".")
 from src.job_boards.tools import CreateJson
-from src.job_boards import amazon, ashbyhq, builtin, dailyremote, diversifytech, eightfold, fullstackjob, greenhouse_io, hireart, jobvite, lever_co, nbc, nintendo, polymer, remote_co, remoteok, smartrecruiters, usajobs, weworkremotely, workable, workwithindies, craigslist, breezyhr, bamboohr
+from src.job_boards import (
+    amazon, 
+    ashbyhq, 
+    builtin, 
+    dailyremote, 
+    diversifytech, 
+    eightfold, 
+    fullstackjob, 
+    greenhouse_io, 
+    hireart, 
+    jobvite, 
+    lever_co, 
+    nbc, 
+    nintendo, 
+    polymer, 
+    remote_co, 
+    remoteok, 
+    smartrecruiters, 
+    usajobs, 
+    weworkremotely, 
+    workable, 
+    workwithindies, 
+    craigslist, 
+    breezyhr, 
+    bamboohr
+)
 
 
 def run(job_board):
     try:
-        print(job_board)
+        print(job_board.__name__)
         job_board
     except Exception as e:
         print(e)
@@ -44,7 +69,7 @@ def main():
         lever_co.main(),
         # bamboohr.main(),
         # breezyhr.main(),
-        # builtin.main(),
+        builtin.main(),
         usajobs.main(),
         workable.get_url(work[::5]),
         # diversifytech.main(),
@@ -75,17 +100,9 @@ def main():
         # dailyremote.main(),
         workable.get_url(work[4::5]),
     ]
-    
-    
-    # for board in job_boards:
-    #     try:
-    #         print(board)
-    #         board
-    #     except Exception as e:
-    #         print(e)
-    #         pass
+    max_workers = 40
 
-    with ThreadPoolExecutor(max_workers=10) as exe:
+    with ThreadPoolExecutor(max_workers=max_workers) as exe:
         exe.map(run, job_boards)
 
     create_json.create_temp_file()
