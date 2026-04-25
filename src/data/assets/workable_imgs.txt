@@ -2714,3 +2714,4 @@ aurora-3`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/667349/log
 charlotte-tilbury`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/183411/logo
 sparx-engineering`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/576503/logo
 skillshare`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/721338/logo
+scale-virtually`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/676793/logo

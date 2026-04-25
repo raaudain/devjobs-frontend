@@ -1,11 +1,13 @@
 import requests
-import json
+from pprint import pprint
 import sys
 import time
 import random
+import re
 from lxml import html
 from datetime import datetime
 sys.path.insert(0, ".")
+from traceback import format_stack
 from src.job_boards.tools import user_agents, ProcessCompanyJobData
 
 
@@ -13,9 +15,15 @@ process_data = ProcessCompanyJobData()
 FILE_PATH = "src/data/params/eightfold.txt"
 
 
-def get_results(item: str, param: str):
-    jobs = item
-    company_name = param.capitalize()
+def get_results(item, param):
+    if "data" in item:
+        jobs = item["data"]["positions"]
+        company_name = param.capitalize()
+    else:
+        jobs = item["positions"]
+        company_name = item["branding"]["companyName"]
+
+    print("=======", company_name)
     logo = None
     source_url = f"https://{param}.eightfold.ai/careers/"
     ef = "src/data/assets/eightfold_assets.txt"
@@ -39,9 +47,9 @@ def get_results(item: str, param: str):
         post_date = datetime.timestamp(
             datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         position = j["name"].strip()
-        description = j["job_description"]
-        department = j["department"]
-        apply_url = f"https://{param}.eightfold.ai/careers/?pid={j['id']}"
+        # description = j["job_description"]
+        # department = j["department"]
+        apply_url = j["canonicalPositionUrl"] if j.get("canonicalPositionUrl") else f"https://{param}.eightfold.ai{j['positionUrl']}"
         location = " | ".join(j["locations"])
         process_data.filter_jobs({
             "timestamp": post_date,
@@ -59,19 +67,34 @@ def get_results(item: str, param: str):
 
 def get_url(companies: list):
     count = 1
-
-    
+    domain = None
 
     for company in companies:
         try:
-            headers = {"User-Agent": random.choice(user_agents)}
-
             for page in range(0, 1000, 10):
                 url = f"https://{company}.eightfold.ai/api/apply/v2/jobs?start={page}&num=10&sort_by=date"
-                print("====================",url)
-                response = requests.get(url, headers=headers)
+                response = send_requests(url)
+                
+                if response.status_code == 403:
+                    if domain is None:
+                        url = f"https://{company}.eightfold.ai/careers"
+                        response = send_requests(url)
+                        pattern = r"(?<=domain=)[^&]+"
+                        result = re.search(pattern, response.text)
+                        
+                        if result:
+                            domain = result.group(0)
+
+                            url = f"https://{company}.eightfold.ai/api/pcsx/search?domain={domain}&start={page}&num=10&sort_by=date"
+                            print(url)
+                            response = send_requests(url)
+                        
+                        if not response.ok:
+                            break
+
                 if response.ok:
-                    data = json.loads(response.text).get("positions")
+                    data = response.json()
+                    print("=======", url)
                     
                     if not data:
                         break
@@ -90,7 +113,14 @@ def get_url(companies: list):
                     break
         except Exception as e:
             print(f"=> eightfold.ai: Error for {company}. {e}.")
+            print(format_stack())
+    
+    domain = None
 
+def send_requests(url):
+    headers = {"User-Agent": random.choice(user_agents)}
+    response = requests.get(url, headers=headers)
+    return response
 
 def main():
     companies = process_data.read_list_of_companies(FILE_PATH)

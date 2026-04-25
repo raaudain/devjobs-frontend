@@ -153,7 +153,6 @@ sharebite
 naughtydog
 lyft
 mbooth
-picnichealth
 robinhood
 takealotcom
 allwebleads
@@ -343,7 +342,6 @@ telnyx54
 berlinbrands
 digrestaurants
 gcmgrosvenor
-tridge
 rocketchat
 appnovation
 showpad
@@ -520,7 +518,6 @@ onemedical
 thymecare
 annexushealth
 a3c41b8b71eff8c4
-decodable
 tubitv
 oddball
 fingerprint
@@ -639,7 +636,6 @@ c6bank
 MaterialBank
 rubrik
 blacksky
-abodo
 samsungresearchamerica
 fundraiseup
 vim
@@ -755,7 +751,6 @@ smartcatplatforminc
 greynoiseintelligence
 manticoregames
 shift5
-uchicagoepic
 insomniac
 snackpass
 snackpasspt
@@ -768,7 +763,6 @@ alabamavisioncenter
 aztecgroup
 sollishealth
 razorpaysoftwareprivatelimited
-alchemy
 cerebral
 financialtimes33
 escribers
@@ -911,7 +905,6 @@ inovalon
 maymobility
 transcarent
 modernmeadow
-beekeeper
 elevatek12teachwithus
 educate
 stone
@@ -934,7 +927,6 @@ appier
 ghd
 ogilvy
 syndigo
-avalabs
 jobsforthefuture
 goatgroup
 taketwo
@@ -981,7 +973,6 @@ earnin
 lifesciencedynamics
 flipp
 duda
-spotnanatechnology
 faire
 alertmedia
 smartwarehousing
@@ -1285,7 +1276,6 @@ perscholashires
 corbins
 captiveaire
 exiger
-happening
 fletcherjonesimports
 simpletechnologysolutions
 msgentertainmentholdingsllc
@@ -1352,3 +1342,4 @@ veracyte
 coast
 realm
 scm
+rocketlab

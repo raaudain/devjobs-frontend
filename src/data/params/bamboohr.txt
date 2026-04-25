@@ -2066,3 +2066,5 @@ newspring
 caliente
 kchc
 lavaisland
+rcubed
+flagship

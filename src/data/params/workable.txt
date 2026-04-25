@@ -765,7 +765,6 @@ floatcard
 recargapay
 qredo
 uworld
-himalayaexchange
 goodhabitz
 biller
 livehealthily
@@ -2494,3 +2493,4 @@ ecp-123
 aurora-3
 sparx-engineering
 skillshare
+scale-virtually

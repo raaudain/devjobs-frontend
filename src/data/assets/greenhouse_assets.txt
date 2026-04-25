@@ -2377,3 +2377,4 @@ veracyte`Veracyte`None
 realm`Realm`None
 coast`Coast`None
 scm`Stevens Capital Management LP`None
+rocketlab`Rocket Lab Corporation`None

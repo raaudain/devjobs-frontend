@@ -42,7 +42,13 @@ def query_duckduckgo(query):
     results = []
 
     while loop < max_loop:
-        response = DDGS().text(query, max_results=max_results, region="us-en")
+        response = DDGS().text(
+            query, 
+            max_results=max_results, 
+            region="us-en", 
+            timelimit="y", 
+            safesearch="off"
+        )
         
         for item in response:
             # results.extend(response)

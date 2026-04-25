@@ -1015,3 +1015,4 @@ SibyllineLtd`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/64f6
 TALENTSQUARE`n/a`https://c.smartrecruiters.com/sr-company-logo-prod/57c92747e4b04bd07d06ce80/150px?r=s3
 Froedtert3`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc11/5fda28cbad723d733fd487ff/huge?r=s3-us-east-2
 HaltonHealthcare1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws-dc11/66180d8a2aa39328229d7c50/5d75d648-f413-4720-a157-7299190ae5e9?r=s3-us-east-2
+TheNielsenCompany`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc11/67bc412a233a133db9ab1bc9/150px?r=s3-us-east-2
