@@ -1,6 +1,5 @@
 aexp
 micron
-bnymellon
 volkscience
 netapp
 endevis
@@ -71,3 +70,6 @@ britishcouncil
 bcg
 nvidia
 albemarle
+lamresearch
+atb
+infineon

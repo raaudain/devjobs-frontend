@@ -339,3 +339,9 @@ medical-marijuana-clinic`n/a`None
 rstream`n/a`None
 fleet-robotics`n/a`None
 vals-ai`n/a`None
+textbook-painting`n/a`None
+vibe-kanban`n/a`None
+16vc`n/a`None
+invicta-software`n/a`None
+hublead`n/a`None
+uservoice`n/a`None

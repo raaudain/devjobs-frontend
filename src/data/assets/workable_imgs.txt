@@ -2715,3 +2715,4 @@ charlotte-tilbury`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/1
 sparx-engineering`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/576503/logo
 skillshare`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/721338/logo
 scale-virtually`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/676793/logo
+apply2day`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/582198/logo

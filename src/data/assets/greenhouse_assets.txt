@@ -2378,3 +2378,6 @@ realm`Realm`None
 coast`Coast`None
 scm`Stevens Capital Management LP`None
 rocketlab`Rocket Lab Corporation`None
+ithaka`ITHAKA`None
+workshop`Workshop`None
+branch`Branch`None

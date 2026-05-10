@@ -942,7 +942,6 @@ thedishpatch
 disco
 magicrecruitment
 sensynehealth
-busuu
 middleburycollege
 limewire
 ancienthealingteas
@@ -1799,7 +1798,6 @@ fergus
 financeit
 mori
 turtl
-tryprospect
 k1x
 bigdatacorp
 cache
@@ -2151,7 +2149,6 @@ unchained
 kcgcompanies
 arcsen
 latticeflow
-breaker19
 kody
 onbeam
 complexio
@@ -2494,3 +2491,4 @@ aurora-3
 sparx-engineering
 skillshare
 scale-virtually
+apply2day

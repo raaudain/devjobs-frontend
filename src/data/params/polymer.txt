@@ -341,3 +341,9 @@ antioch
 vals-ai
 rstream
 popcorn-ai
+16vc
+vibe-kanban
+hublead
+invicta-software
+uservoice
+textbook-painting

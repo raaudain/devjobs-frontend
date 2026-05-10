@@ -18,7 +18,6 @@ ultramobile
 pulumicorporation
 housecall
 samsara
-angi
 idme
 cobaltio
 alma
@@ -41,7 +40,6 @@ cargurus
 chargepoint
 circleci
 contentful
-craftjack
 datadog
 dealpath
 descript
@@ -57,7 +55,6 @@ fubotv
 gemini
 glossier
 gofundme
-goldbelly
 hellofresh
 homelight
 hover
@@ -85,7 +82,6 @@ mozilla
 narvar
 netlify
 netskope
-neuroflow
 okta
 ordergroove
 pantheon
@@ -102,7 +98,6 @@ splice
 squarespace
 stripe
 tanium
-thumbtack
 triplelift
 twitch
 unqork
@@ -157,7 +152,6 @@ robinhood
 takealotcom
 allwebleads
 geniussports
-dailyharvest
 calm
 outsetmedical
 talkspace
@@ -186,7 +180,6 @@ boltv2
 morganfranklinconsultingllc
 tucows
 unity3d
-coinbase
 crysler
 seekout
 databricks
@@ -240,7 +233,6 @@ ergeon
 sonicwall
 greenpeace
 blockchain
-carerev
 smartling
 versprite
 oliver
@@ -379,7 +371,6 @@ caribou
 humaninterest
 lattice
 subsplash
-mythicalgames
 openweb
 headway
 phdata
@@ -524,7 +515,6 @@ fingerprint
 cyware
 aura798
 survata
-singulargenomics
 aalphabio
 dominodatalab
 understood
@@ -532,7 +522,6 @@ crookedmedia
 veracode
 aviatrix
 miqdigital
-greenlightbiosciences
 shopmonkey
 remotetcx
 johnkenyoneyecenter
@@ -626,7 +615,6 @@ mirakl
 givedirectly
 welbehealth
 leagueinc
-mediacurrent
 parsleyhealth
 omadahealth
 generalassembly
@@ -738,7 +726,6 @@ vicarioussurgical
 equipmentsharecom
 growtherapy
 civisanalytics
-aspireio
 filescom
 thirtymadison
 orium
@@ -863,7 +850,6 @@ goldenhippo
 earli
 beyond
 gympass
-arenanet
 stepstone
 credible
 Mill
@@ -1037,7 +1023,6 @@ quantumvisioncenters
 couchbaseinc
 4dmoleculartherapeutics
 headoutlinkedin
-wellsaidlabs
 hexagonbio
 simpsongumpertzheger
 vegaamericas
@@ -1078,7 +1063,6 @@ ninjatrader
 scoutmotors
 toogoodtogo
 blenheimchalcotindia
-thejpbfoundation
 roadie
 realtimeboardglobal
 hoyoverse
@@ -1199,7 +1183,6 @@ zoro
 block
 canto
 performline
-basejobs
 ionq
 place
 vast
@@ -1343,3 +1326,7 @@ coast
 realm
 scm
 rocketlab
+branch
+ithaka
+redventures
+workshop
