@@ -38,7 +38,6 @@ directsourcepro-inv
 costar
 morganstanley
 eaton
-etihad
 neom
 libertymutual
 insight

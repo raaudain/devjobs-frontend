@@ -2381,3 +2381,5 @@ rocketlab`Rocket Lab Corporation`None
 ithaka`ITHAKA`None
 workshop`Workshop`None
 branch`Branch`None
+abakaai`Abaka AI`None
+tailscale`Tailscale`None

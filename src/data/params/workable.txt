@@ -75,7 +75,6 @@ go1careers
 equip
 cobs-bread-2
 phocassoftware
-flylance
 genesistrading
 constructor-1
 tenantbase
@@ -324,7 +323,6 @@ dextra
 digiterre
 healthify
 jdk
-resonance
 distalmotion
 dodobrands
 mswalker
@@ -1130,7 +1128,6 @@ routereports
 fieldfisherbelgium
 carbonre
 answerrocket
-climatearc
 besterand-co
 supportyourapp
 beyond12
@@ -2016,7 +2013,6 @@ wecloneyou
 clearbank
 hr-force
 otdcareers
-mavenagi
 ojdigitalsolutions
 parallelz
 agency-services
@@ -2044,7 +2040,6 @@ withings
 abtrace
 bbgc
 howso
-kubapay
 righttobe
 offline
 neowork
@@ -2182,7 +2177,6 @@ mooremechanical
 organox
 gathern
 curology
-oritain
 relminsurance
 borrowmydoggy
 muchbetteradventures
