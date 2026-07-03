@@ -3,7 +3,6 @@ micron
 volkscience
 netapp
 endevis
-ptc
 lkqcorp
 vale
 creditsesame

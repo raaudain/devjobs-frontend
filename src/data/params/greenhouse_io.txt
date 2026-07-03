@@ -19,7 +19,6 @@ housecall
 samsara
 idme
 cobaltio
-alma
 classpass
 2u
 acquia
@@ -169,10 +168,8 @@ sisense
 upwork
 wildlifestudios
 picsart
-boltv2
 morganfranklinconsultingllc
 tucows
-unity3d
 crysler
 seekout
 databricks
@@ -335,7 +332,6 @@ earlycareerprograms
 duolingo
 nubank
 fender
-recharge
 zupinnovation
 sada
 nuro
@@ -345,7 +341,6 @@ rhombuspower
 goodnotes
 afresh
 zestai
-stridehealth
 bluecoreinc
 whogivesacrap
 twinhealth
@@ -375,7 +370,6 @@ eyecarecenter
 bitmovin
 otterbein
 fareharbor
-credera
 array
 braineffectjobs
 pangaea
@@ -405,7 +399,6 @@ internaljobsatlush
 agero
 nuvalent
 flatironhealth
-forethought
 nintex
 axios
 sourcegraph91
@@ -460,7 +453,6 @@ sonyinteractiveentertainmentglobal
 singularity6
 dxacirca
 appdirect
-expressvpn
 springfieldprep
 achievementfirst
 figma
@@ -525,7 +517,6 @@ cobblestoneenergy2
 simplepractice55
 carta
 levio
-ibkr
 lush
 bloomreach
 sumologic
@@ -667,7 +658,6 @@ juullabs
 shelf
 fundedclub
 d2l
-clarifai
 cambridgemobiletelematics
 mcpeakvisionpartners
 samsungsemiconductor
@@ -717,11 +707,8 @@ udemy
 astspacemobile
 smartcatplatforminc
 greynoiseintelligence
-manticoregames
 shift5
 insomniac
-snackpass
-snackpasspt
 cobblestoneenergy
 secondharvest
 springhealth66
@@ -752,7 +739,6 @@ shipbobinc
 xpinc
 riotgamesinc
 lisc
-seamlessai
 processstreet
 bamboohr17
 apolloio
@@ -854,7 +840,6 @@ barstoolsports
 trumid
 hopskipdrive
 arkoselabs
-elevatek12
 builder
 mizzenandmain
 tatari
@@ -868,15 +853,12 @@ seres
 mighty
 inovalon
 maymobility
-transcarent
 modernmeadow
-elevatek12teachwithus
 educate
 stone
 ilia
 cityoffortworth
 storablecareers
-medecinssansfrontieres
 vervetherapeuticsinc
 jumptrading
 mindbody
@@ -924,7 +906,6 @@ hederahashgraph77
 wrike
 diligentrobotics
 curaleaf
-la2028
 definitivehcindia
 googlefiber
 tarsusrx
@@ -958,7 +939,6 @@ applovin
 iherb
 qcentrix
 tia
-memphismeats
 dialpad
 carbonrobotics
 meritamerica
@@ -1041,7 +1021,6 @@ arcinstitute
 chrockville
 momentumww
 zenoti
-mediabrands
 leaflink
 perpay
 spotme

@@ -747,7 +747,6 @@ pepperbodyinc
 symmetricalai
 napster
 tonycs
-outdoorsy
 stitchmoney
 araic
 colliers
@@ -1101,7 +1100,6 @@ autofleet
 maveriscareers
 denverpolicerecruiting
 foundersforum
-inspectorio
 zoneandco
 divestudiosmindset
 houst
@@ -1309,7 +1307,6 @@ legalmatch
 supernormal
 setflow
 neuralspace
-quasar
 virtualstaffing
 main-sequence
 fraport-greece
@@ -2323,7 +2320,6 @@ graza
 flowdesk
 algaecal
 arcsite
-smartdesc
 defiant
 partechpartners
 eldoradogold
