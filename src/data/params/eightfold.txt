@@ -19,7 +19,6 @@ anywhere
 directsourcepro-rch
 paypal
 10xgenomics
-hasbro
 rotoplas
 faurecia
 directsourcepro-arb
@@ -71,3 +70,4 @@ albemarle
 lamresearch
 atb
 infineon
+corteva

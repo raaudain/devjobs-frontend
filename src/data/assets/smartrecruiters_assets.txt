@@ -1018,3 +1018,4 @@ HaltonHealthcare1`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod-aws
 TheNielsenCompany`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc11/67bc412a233a133db9ab1bc9/150px?r=s3-us-east-2
 Thungela`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/65c491eb5a261678a5aba6d8/huge?r=s3-eu-central-1
 WorldWildlifeFundInc1`n/a`https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/664789e68cfd33062a3adf9e/huge?r=s3-eu-central-1
+HCIHospitality`n/a`https://c.smartrecruiters.com/sr-careersite-image-prod/549d820de4b04356b8db88c2/94e19ef5-bc3e-436c-9645-2c3af399e859?r=s3

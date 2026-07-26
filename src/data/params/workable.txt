@@ -43,7 +43,6 @@ electric-coin-company
 xos-trucks
 ballotpedia
 io-global
-assima
 routable
 mediavine
 finitestate
@@ -386,7 +385,6 @@ mediacorp
 inboxhealth
 qoala
 uswitch
-multiplicatalent
 elephanthealthcare
 seedlegals
 globaldllc
@@ -946,7 +944,6 @@ cghero
 legatics
 kaleyra
 exscientia
-hertilityhealth
 silvertreelabs
 hived
 swank-motion-pictures
@@ -2425,7 +2422,6 @@ virtual-assist
 enroute
 optimiza-4
 swot-hospitality-management-company
-australian-healthcare-associates
 wsutech
 azeus-convene
 veriswap
@@ -2482,3 +2478,10 @@ sparx-engineering
 skillshare
 scale-virtually
 apply2day
+amprius
+talentpluto
+remotepass
+alongside-team
+humanintelligence
+m-files
+about

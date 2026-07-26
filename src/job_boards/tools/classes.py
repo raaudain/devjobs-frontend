@@ -14,6 +14,7 @@ class ProcessCompanyJobData:
             return companies
 
     def remove_not_found(self, file_path: str, param: str):
+        print(f"removing {param} from {file_path}")
         f = open(file_path, "r+")
         params = [param.strip() for param in f]
         f.truncate(0)

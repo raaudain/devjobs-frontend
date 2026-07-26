@@ -184,7 +184,6 @@ clarksoneyecare
 lob
 elationhealth
 akqa
-creditkarma
 project44
 collibra
 cloudflare
@@ -276,7 +275,6 @@ udacity
 alarmcom
 konux
 cannondesign
-glassdoor
 hugeinc
 shieldshealthsolutions
 roivantsciences
@@ -341,7 +339,6 @@ rhombuspower
 goodnotes
 afresh
 zestai
-bluecoreinc
 whogivesacrap
 twinhealth
 8thlightrebuild
@@ -420,7 +417,6 @@ cdbabyjobs
 OKX
 modernanimal
 salsify
-voltaiq
 employeenavigator
 scandit
 collectivehealth
@@ -524,7 +520,6 @@ taxbit
 diligentcorporation
 nomadhealth
 silananotechnologies
-junglescout
 berlinrosen
 point72
 komodohealth
@@ -558,7 +553,6 @@ calendly
 technologyadvice
 doctolib
 lively43
-absci
 phoenixcontact
 pilothq
 assuredguaranty
@@ -669,7 +663,6 @@ trace3
 cordial81
 stokespacetechnologies
 vynyl
-intervenn
 hourglasscosmetics
 dimagi
 sagansystems
@@ -698,7 +691,6 @@ vicarioussurgical
 equipmentsharecom
 civisanalytics
 filescom
-thirtymadison
 orium
 dashlane
 fieldwire
@@ -805,9 +797,7 @@ lastpass
 saltbox
 morganmorganjobsapplynow
 runzero
-zenvia
 goalzimbabwe
-ideoorg
 casetify
 innovecs
 marketaxesscorporation
@@ -859,7 +849,6 @@ stone
 ilia
 cityoffortworth
 storablecareers
-vervetherapeuticsinc
 jumptrading
 mindbody
 brainpop
@@ -937,7 +926,6 @@ forgebiologics
 oneproject
 applovin
 iherb
-qcentrix
 tia
 dialpad
 carbonrobotics
@@ -951,7 +939,6 @@ higherlogic
 shunnarahcareers
 deepwatchinc
 corpaxe
-withumsmithbrown
 cleoindia
 mediaartslab
 olipop
@@ -964,7 +951,6 @@ webershandwick
 generatebiomedicines
 hungryroot
 inflectionai
-altisales
 getyourguide
 shifttechnology
 archrivaladidas
@@ -1004,7 +990,6 @@ feastables
 chime
 papa
 adasiaholdings
-hibu
 kao
 stitchfix
 chclarendon
@@ -1155,7 +1140,6 @@ tigera
 sitsgroup
 thltestcareers
 careerspomelo
-ezinc
 sphereentertainment
 owllabs
 databento
@@ -1220,7 +1204,6 @@ zoominfo
 thegoodfoodinstitute80
 silversky
 adicettherapeuticsinc
-simply
 make
 veterinaryinnovativepartners
 redbadger
@@ -1278,3 +1261,5 @@ redventures
 workshop
 abakaai
 tailscale
+sunpro
+launch2

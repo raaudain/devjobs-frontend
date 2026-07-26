@@ -378,7 +378,6 @@ varonis
 amplifon-il
 gohealthuc
 pathwayshealth
-yespreppublicschools
 nirvc
 mersana
 alverno-laboratories
@@ -1142,3 +1141,4 @@ curtiscreek
 reedfamilycompanies
 kymanox
 moz-group
+national-university

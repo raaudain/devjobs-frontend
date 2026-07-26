@@ -19,25 +19,25 @@ def get_results(item: str, param: str):
     company_name = param.capitalize()
     logo = None
     jobs = item["jobs"]
-    table = process_data.get_stored_data(gh)
-    if param in table:
-        company_name = table[param]["name"]
-        logo = table[param]["logo"]
-    else:
-        try:
-            res = requests.get(
-                f"https://boards-api.greenhouse.io/v1/boards/{param}/")
-            company_name = json.loads(res.text)["name"].strip(
-            ) if "name" in json.loads(res.text) else param.capitalize()
-            r = requests.get(source_url)
-            soup = BeautifulSoup(r.text, "lxml")
-            logo = soup.find(id="logo").find("img")[
-                "src"].rsplit("?")[0] if soup.find(id="logo") else None
-            with open(gh, "a") as a:
-                a.write(f"{param}`{company_name}`{logo}\n")
-        except Exception as e:
-            print(
-                f"=> greenhouse.io: Error getting logo for {param}. {e}.")
+    # table = process_data.get_stored_data(gh)
+    # if param in table:
+    #     company_name = table[param]["name"]
+    #     logo = table[param]["logo"]
+    # else:
+    try:
+        res = requests.get(
+            f"https://boards-api.greenhouse.io/v1/boards/{param}/")
+        company_name = json.loads(res.text)["name"].strip(
+        ) if "name" in json.loads(res.text) else param.capitalize()
+        r = requests.get(source_url)
+        soup = BeautifulSoup(r.text, "lxml")
+        logo = soup.find(id="logo").find("img")[
+            "src"].rsplit("?")[0] if soup.find(id="logo") else None
+        # with open(gh, "a") as a:
+        #     a.write(f"{param}`{company_name}`{logo}\n")
+    except Exception as e:
+        print(
+            f"=> greenhouse.io: Error getting logo for {param}. {e}.")
     for j in jobs:
         date = datetime.strptime(
             j["updated_at"], "%Y-%m-%dT%H:%M:%S%z")

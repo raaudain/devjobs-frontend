@@ -23,29 +23,28 @@ def get_results(item, param):
         jobs = item["positions"]
         company_name = item["branding"]["companyName"]
 
-    print("=======", company_name)
     logo = None
     source_url = f"https://{param}.eightfold.ai/careers/"
-    ef = "src/data/assets/eightfold_assets.txt"
-    table = process_data.get_stored_data(ef)
+    # ef = "src/data/assets/eightfold_assets.txt"
+    # table = process_data.get_stored_data(ef)
 
-    if param in table:
-        logo = table[param]["logo"]
-    else:
-        try:
-            r = requests.get(source_url)
-            tree = html.fromstring(r.content)
-            logo = tree.xpath("//strong[@class='logo']//img/@src | //img[contains(@alt, 'logo')]/@src")[0]
+    # if param in table:
+    #     logo = table[param]["logo"]
+    #     print("l============ log", logo)
+    # else:
+    try:
+        r = requests.get(source_url)
+        tree = html.fromstring(r.content)
+        logo = tree.xpath("//strong[@class='logo']//img/@src | //img[contains(@alt, 'logo')]/@src")[0]
 
-            with open(ef, "a") as a:
-                a.write(f"{param}`n/a`{logo}\n")
-        except Exception as e:
-            print(f"=> eightfold.ai: Error getting logo for {param}. {e}.")
+        # with open(ef, "a") as a:
+        #     a.write(f"{param}`n/a`{logo}\n")
+    except Exception as e:
+        print(f"=> eightfold.ai: Error getting logo for {param}. {e}.")
     
     for j in jobs:
         date = datetime.fromtimestamp(j["t_create"])
-        post_date = datetime.timestamp(
-            datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
+        post_date = datetime.timestamp(datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S"))
         position = j["name"].strip()
         # description = j["job_description"]
         # department = j["department"]
@@ -100,6 +99,7 @@ def get_url(companies: list):
                         break
 
                     get_results(data, company)
+
                     if count % 15 == 0:
                         time.sleep(2)
                     else:

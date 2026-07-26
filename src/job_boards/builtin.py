@@ -27,7 +27,6 @@ def get_results(page):
             "source": "Built In",
             "source_url": "https://builtin.com/"
         }
-        print(data)
         process_data.filter_jobs(data)
 
 def get_url():

@@ -2716,3 +2716,10 @@ sparx-engineering`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/5
 skillshare`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/721338/logo
 scale-virtually`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/676793/logo
 apply2day`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/582198/logo
+alongside-team`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/706982/logo
+about`n/a`None
+talentpluto`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/694394/logo
+m-files`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/501951/logo
+amprius`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/598512/logo
+humanintelligence`n/a`None
+remotepass`n/a`https://workablehr.s3.amazonaws.com/uploads/account/logo/719260/logo
